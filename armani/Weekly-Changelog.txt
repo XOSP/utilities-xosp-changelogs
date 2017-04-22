@@ -1,0 +1,581 @@
+
+ Copyright (C) 2013-2017 Xperia Open Source Project
+
+
+ Notice
+ This is an auto generated changelog for the XOSPChangeLOGApp.
+ The changelog is done only for official supported devices and it is updated each week.
+ If you want to see the changelog of a specific weekly build,
+ check this repository: https://github.com/XOSP-Project/utilities-xosp-changelogs
+ Find your device and check the history of the commits
+
+
+====================
+     04-22-2017
+====================
+
+
+   * android/
+5483247 README: let the maintainers know how to include root in their builds
+42448dd xosp: switch missing repos to correct revision
+
+   * device/xiaomi/armani/
+e0f5ac9 Create xosp.dependencies
+
+   * frameworks/base/
+baeaf72 Fix some derps
+d687bba Blur: Color Filters implementation (1/2)
+d0bfeec RecentsBlur: Fix SystemUI crash
+e5fb40c RecentsBlur: More imports
+57fd4ad RecentsBlur: Fixes
+ea66b63 Blur: Implement Recents Blur (1/2)
+22478b7 [SQUASHED] Implement XOSP Blur personalization options (1/2)
+
+   * hardware/intel/common/libmix/
+7ea487b Libmix : Add proper support for LP blobs Asus Zenfone 2 still needs the good old way of setting GrallocMod
+
+   * hardware/intel/common/omx-components/
+181d6f5 omx-ccomponents : Zenfone 2 cannot properly utilize flushmode switch to test HandleFormatchange() directly instead of testing flushmode
+
+   * hardware/intel/img/hwcomposer/
+e5f1008 Revert "Merge tag 'android-7.1.2_r5' into xosp-n-rebase"
+
+   * hardware/intel/img/psb_video/
+95f03f1 psb_video: fix video encoding on clovertrail once again
+0264824 psb_video : remember good old moorefield
+f47a00e Revert "Merge tag 'android-7.1.2_r5' into xosp-n-rebase"
+
+   * kernel/motorola/msm8916/
+d6a896e wlan: ARP stats for only request and reponse from gateway IP
+0bacdae wlan: Send DELBA for BA session set up to test connection
+ab8b381 wlan: Refactor trigger ADDBA code for test connection status
+a4eeb51 wlan: Send ADDBA req to test the connection status
+0ea3ee5 wlan: Don't reset the dad variable for non duplicate address ARP requests
+290898a wlan: Implement Duplicate Address Detection (DAD)
+bd08fb5 wlan: Add ARP stats to WE_GET_STATS ioctl
+a5ebafc wlan: Add changes to collect Arp packet stats
+ff0194d wlan: During ARP debug set FW in datapath for ARP
+f4fea9e wlan: Add Vendor command to set/get NUD debug stats
+85e26c6 wlan: Fix SAP SSR reinit for uninitialized config
+1517066 wlan: Interface API change for NUD stats debug
+107a88b wlan: Indicate disconnect to SME to abort pre-auth
+1be4a03 wlan: Changes to force roam in low RSSI scenarios
+ade55c0 ipv4: keep skb->dst around in presence of IP options
+c100730 Android: sdcardfs: Don't complain in fixup_lower_ownership
+c6e916c ANDROID: sdcardfs: ->iget fixes
+6d340f9 Android: sdcardfs: Change cache GID value
+63cfc76 ANDROID: sdcardfs: Directly pass lower file for mmap
+
+   * packages/apps/Settings/
+74e058f Blur: Color Filters implementation (2/2)
+0f780a2 Blur: Implement Recents Blur (2/2)
+3b2c137 As I said, not ready
+1686645 Blur: Fix maximum values for SeekBar Preferences
+6ef50ab Blur: Translucent notifications are not yet ready
+abd2758 [SQUASHED] Implement XOSP Blur personalization options (2/2)
+413c6ba Added modded marginov color picker
+
+====================
+     04-21-2017
+====================
+
+
+   * android/
+60dc5d3 Fix an incredible typo
+e468605 Merge pull request #38 from axxx007xxxz/patch-1
+879dec4 xosp:Switch to android-7.1.1_r38
+
+   * build/
+d867751 Revert "CHANGELOG: moved to vendor"
+ad9885b Merge tag 'android-7.1.1_r38' into xosp-n-rebase
+
+   * external/wpa_supplicant_8/
+fd4ba14 Revert "Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase"
+
+   * frameworks/base/
+46d2781 Double tap to sleep on navigation bar [1/2]
+939bdda Fw_base - Proximity speaker [1/2]
+
+   * hardware/qcom/audio-caf/msm8952/
+c0a14c1 audio: Fix msm8952-snd-card-mtp support
+ec6df28 Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.16' into xosp-n-caf-8952
+
+   * hardware/qcom/audio/default/
+b066390 Merge tag 'android-7.1.1_r38' into xosp-n-rebase
+
+   * packages/apps/Dialer/
+50b4ad2 [2/2] Dialer: Proximity Speakerphone originally done by dankoman30 rewritten and moved to dialer by beanstown106
+ccbf177 Revert "Let InCallUI handle proximity sensor for incoming calls [2/2]"
+
+   * packages/apps/Settings/
+28b122c Double tap to sleep on navigation bar [2/2]
+8b631ed AboutXOSP: simplify the description
+0a24f4e Fix derp
+d3ca2d9 Revert "Settings: notifications: add tuner's importance level shortcut"
+
+   * packages/resources/devicesettings/
+dccf644 Automatic translation import
+
+   * system/netd/
+9e75b03 Revert "Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase"
+
+   * vendor/huawei/
+2a7292d cherry: Update NFC to M BSP
+
+   * vendor/xosp/
+967dc41 [41.2.A.0.191][PardanaFiles] Updates
+1de2e98 XCA 2.2
+b1f36c4 common: remove old override
+40a0e4b Add XOSPDelta
+
+====================
+     04-20-2017
+====================
+
+
+   * device/xiaomi/armani/
+e1c6312 New trees are up!
+
+   * external/wpa_supplicant_8/
+0390c12 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * frameworks/base/
+9f36092 BatteryLevelTextView: Fixes
+011b3db Adjust a bit more the Xperia Battery
+af47b66 Use a custom charging indicator for the XBP
+ecd137d Make the Xperia Battery icon work in all cases
+672db5f [SQUASHED] Implement Xperia Battery text prototype (1/2)
+7065717 SystemUI: Implement hidden and text battery styles
+f5299f8 SystemUI: Implement battery level text customisations
+129a142 SystemUI: tuner: Allow Tuner API for System settings
+aacac02 Network traffic indicators: Use vectorized arrow icons
+63e8877 [1/2] base: Network Traffic
+
+   * libcore/
+e6cc1c0 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * packages/apps/Bluetooth/
+d848561 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * packages/apps/Equalizer/
+df0d2db Fix typos
+c0bcd16 Equalizer: de-hardcode some colors values
+
+   * packages/apps/Settings/
+2be5382 LockScreenPersonalizations: Add remnant code for DT2SAnywhere
+4741ef5 Move About XOSP to About Phone
+8c0b920 Fix some derps
+711180a Fix NetworkIndicator Autohide
+83dc873 [2/2] Network Traffic
+3879ac0 Battery Customizations
+
+   * system/netd/
+8017980 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+====================
+     04-19-2017
+====================
+
+
+   * build/
+29f6222 tools: we don't need the user to see these
+
+   * hardware/qcom/display-caf/msm8952/
+09a8b8e Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.16' into xosp-n-caf-8952
+2975b54 libmemtrack: Fix integer overflow in kgsl function
+
+   * packages/apps/Contacts/
+1bab071 Revert "RCS: Support for Enrich call"
+
+   * packages/apps/ContactsCommon/
+abffbf5 Revert "RCS: UI support in dialer"
+
+   * packages/apps/Dialer/
+2a74607 Revert "RCS: Support for Enrich Call"
+2ecd67c Fix derp
+
+   * packages/apps/Settings/
+c39544c Implement a simple About XOSP
+16940e0 XOSPWorld: Remove XOSPDelta and BatteryAdviser
+
+   * packages/services/Telecomm/
+3cc6ff3 Revert "RCS: Enrich call support"
+
+   * vendor/xiaomi/
+bfb5522 Merge remote-tracking branch 'upstream/cm-14.1' into xosp-n
+2bf500d kenzo: change goodix netlink group to 29, because it is conflicting with the wifi driver
+9421060 kenzo: use correct Goodix & FPC libs
+bd91986 gemini: Switch to OSS consumerir HAL
+
+====================
+     04-18-2017
+====================
+
+
+   * external/boringssl/
+99be228 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * external/libnfc-nci/
+c3da2ec Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * external/skia/
+5648948 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * external/toybox/
+a7fb0aa Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * frameworks/av/
+b6cc5f8 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * frameworks/base/
+dbd57ba CAF Merge fixes(Final)
+41a7ad9 Revert "SystemUI:Unable to see Power Percentage icon"
+5c4cd0e More CAF merge fixes
+6f5c1e6 Revert "SystemUI: Add battery percentage for RJIL"
+7eb9a48 Revert "SystemUI: Display No SIM and phone affordance for RJIL"
+b40b70f Revert "SystemUI: Change the two operators's seperator."
+c913fb7 CAF Merge fixes
+7ba6206 Revert "[1/2] base: Network Traffic"
+f4d3dca2 Revert "Network traffic indicators: Use vectorized arrow icons"
+e74efa4 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase3
+5617d7f Network traffic indicators: Use vectorized arrow icons
+8bd4311 [1/2] base: Network Traffic
+
+   * frameworks/native/
+e10a89e Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * frameworks/opt/net/wifi/
+6103ed2 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * hardware/broadcom/wlan/
+28d18f8 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * hardware/invensense/
+5a68b49 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * hardware/libhardware/
+eb3e69f Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * hardware/ril/
+8744e05 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * kernel/oneplus/onyx/
+1707b61 drivers: synaptics_s3508: Fix Music Control
+1788711 int_sqrt: Improve 3x faster integer sqrt.
+55b430d int_sqrt: correction square root algo with naming
+75c2717 sched/core: Fix a race between try_to_wake_up() and a woken up task
+aea2905 sched/fair: Optimize find_idlest_cpu() when there is no choice
+becaa11 power: qpnp-charger: Updates and fixes
+
+   * packages/apps/CellBroadcastReceiver/
+276682f Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * packages/apps/CertInstaller/
+d47004c Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * packages/apps/Contacts/
+e7a6437 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * packages/apps/ContactsCommon/
+9d83d80 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * packages/apps/Dialer/
+dab520b Revert "IMS-VT: Send static image in a Video Call"
+1a0b8e9 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * packages/apps/PackageInstaller/
+b660f68 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * packages/apps/Settings/
+76f529d Revert "[2/2] Network Traffic"
+fe17d55 Revert "Fix NetworkIndicator Autohide"
+4e96860 Fix NetworkIndicator Autohide
+88ee913 [2/2] Network Traffic
+
+   * packages/apps/Stk/
+a3e3264 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * packages/services/Telecomm/
+4d5ae90 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * packages/services/Telephony/
+dd3270e Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * system/bt/
+74f0c19 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * system/core/
+0febe0b Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * system/sepolicy/
+3c0852d Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * vendor/codeaurora/telephony/
+45956c9 Merge tag 'LA.UM.5.6.r1-04300-89xx.0' into xosp-n-rebase
+
+   * vendor/xiaomi/
+12c9da4 gemini: Update to the latest fingerpring blobs
+6761336 msm8996-common: Update to MIUI 7.4.14 global dev blobs
+
+====================
+     04-17-2017
+====================
+
+
+   * build/
+0a0acbd build: sdclang: move the host detection logic
+d69164e build: condition cortex-a53-835769 workaround for the linker
+7f0a8b6 build: condition A53 errata workarounds in RenderScript
+d7d9f7b Revert "Add -mfpu=neon-vfpv4 if cpu is krait"
+df91919 build: take ARM erratum cortex-a53-835769 into our hands
+56aa880 Revert "core: Enable -mcpu=cortex-a8 flag for Scorpion cpu variant"
+1847bc9 Revert "core: Enable -mcpu=cortex-a9 flag for Cortex-A9 cpu variant"
+b368858 Revert "Apply correct, optimized mfpu compiler flag for ARMv7-A Cortex CPUs"
+404d03c build: dynamically fix ARM erratum cortex-a53-843419
+85be5fa build: Do proper optimization during SDCLANG_LTO
+b70921c build: ensure QCLD usage when requested
+ac07454 build: cleanup SDCLANG logic
+50c8161 build: QCLD/LTO: support for unsafe filtering
+ce9998f build: Add support for selective LTO with QCLD
+abad220 build: enhance and extend support for SDCLANG
+43931d4 CHANGELOG: moved to vendor
+5d9f201 core: Fix build_{date,number}
+b4acd43 Fix derp
+326046b releasetools: Fix some logic here too
+28ef6d1 Revert "Revert "Add magisk built in flashing support [2/2]""
+19e2cc3 Updating Security String to 2017-03-05 on nyc-dev
+5a4e72f Updating Security String to 2017-03-01 on nyc-dev
+8e92bc2 core: dumpvar: switch SUPERUSER_VARIANT -> ROOT_METHOD
+ccd6428 Revert "Add magisk built in flashing support [2/2]"
+b8f470f makefile: Add missing line
+cdf2dad core: dumpvar: add SUPERUSER_VARIANT to dumpvar
+241a43d build: Fix indentation
+632e004 Add magisk built in flashing support [2/2]
+
+   * frameworks/base/
+6b2eca3 SystemUI: fix errors of commit 371f6691e1bac2fc50182847c5489f260fad3736
+dfa7e3e Fix typo
+74a6f33 Revert "Tethering : Enable/Disable IPv6 tethering feature"
+1154b16 Misc fixes
+3d02260 Fix update of brightness mode in QS slider
+ae65345 Add auto brightness toggle to Quick Settings
+371f669 SystemUI: Double tap to sleep anywhere on the lock screen (1/2)
+9ee86f5 libhwui: enable our advanced compiler features
+198a6db Advanced Reboot + Fixs (Squashed) * SystemUI: Add global reboot option -CAF * AdvancedReboot: Add advanced reboot options -CM * AdvancedReboot: Enhance power menu reboot option -CM * ShutdownThread: Fix longpress power for safemode -EuphoriaOS * ShutdownThread: Enable advanced reboot by default -Beanstown106 * AdvancedReboot: Enable Via overlay instead of Setting -Beanstown106 * AdvancedReboot: adapted to work on android marshmallow -Beanstown106 * AdvancedReboot: Remove keyguard restrictions on advanced reboot -Beanstown106 * AdvancedReboot: Remove and cleanup duplicate strings -Beanstown106 99% of people who flash roms want advanced reboot their was no need for it to be a setting
+aa9352c XOSPNavBarSwitch: Apply the preference only if mNavigationBarView is initialized
+b15089d Implement XOSP NavBar Switch (1/2)
+95b7216 base: Forward Port Volume Long Press Skip Tracks (1/2)
+86963dc input: enable custom key event policy
+f2de816 SystemUI: patch navigation bar to emulate hw keys
+9a58aa4 input: introduce custom key event policy
+7bca717 input: hardware buttons lights integration
+702c5fd Revert "Reintroduce button-backlight (and respective inactivity timeout)"
+fea1002 Revert "keyboard: re-add code to detect lid state and handle lights"
+22189ec Revert "Add PowerManager integration for button and keyboard backlight."
+6d67199 Revert "PowerManagerService: Fix updating of mUserActivitySummary"
+d00d513 input: introduce new navigation bar key event source
+
+   * packages/apps/Settings/
+021d126 Revert: Lockscreen blur & see through (2/2)
+49c495d Misc fixes
+
+   * vendor/lge/
+fc6d9b6 hammerhead: add faceunlock proprietary file libfrsdk.so
+
+   * vendor/motorola/
+108aa97 shamu: add faceunlock proprietary file libfrsdk.so
+
+====================
+     04-16-2017
+====================
+
+
+   * packages/apps/Settings/
+6c67e87 XOSPSettings: enable LockscreenPersonalizations
+bb6233e Double tap to sleep anywhere on the lock screen (2/2)
+26bd22b Lockscreen blur & see through (2/2)
+70d41a1 NavBarSwitch: Automatically reboot SystemUI when preference is changed
+d2bc84e Implement XOSP NavBar Switch (2/2)
+
+   * vendor/sony/
+7b561ce fusion3: Remove prima firmware files
+
+====================
+     04-15-2017
+====================
+
+
+   * kernel/motorola/msm8916/
+7e6711f BACKPORT: UPSTREAM: selinux: fix off-by-one in setprocattr
+cbe5087 BACKPORT: UPSTREAM: sg_start_req(): make sure that there's not too many elements in iovec
+
+   * kernel/oneplus/onyx/
+61474ea Merge pull request #2 from Adesh15/pr
+a34faee random: increase read and write entropy levels
+dd32258 defconfig: Enable USB fast charge
+d8717b2 usb: implement usb fast charge mode
+
+   * vendor/huawei/
+b0f585a angler: add atfwd.apk
+55422fa angler: update blobs from 7.1.2 N2G47H factory image
+
+   * vendor/lge/
+5d86cb3 bullhead: update blobs from 7.1.2 N2G47F factory image
+
+====================
+     04-14-2017
+====================
+
+
+   * android/
+00af011 Merge branch 'xosp-n-rebase' into patch-1
+4b1a59e xosp: Misc stuff
+
+   * kernel/oneplus/onyx/
+dae3f45 drivers: synaptics_s3508: Correct Wrong Gesture IDs
+f8555e5 arm: qdsp6v2: Fixup Multiple Assignments
+950bd52 drivers: soc: Add buffer overflow check for svc send request
+26214c5 msm: ipc: fix leak of kernel memory to userspace
+d648014 msm: ipc: Bind only a client port as control port
+397eef0 msm: camera: isp: Fix warning and errors based on static analysis
+59e65d2 msm: vidc: Use registeredbuf.lock for buffer synchronization
+d94df3a msm: vidc: Clean up video instance locking logic
+f363707 msm: kgsl: Add missing check for alloc size
+c936490 msm: display: Validate MDP, MDDI and HDMI debug reg offset
+e930990 msm: mdss: fix possible out-of-bounds and overflow issue in mdp debugfs
+749807e mm: fix prctl_set_vma_anon_name
+de067aa msm: camera: ispif: Add missing mutex usage in ioctl
+1871a39 [PATCH] arm: fix handling of F_OFD_... in oabi_fcntl64()
+cb841e5 ANDROID: binder: Clear binder and cookie when setting handle in flat binder struct
+01fb7eb qcrypto: protect potential integer overflow.
+9bd8448 block: fix use-after-free in sys_ioprio_get()
+f0837d7 ALSA: seq: Fix race at timer setup and close
+411a729 ASoC: msm: initialize the params array before using it
+7e32769 USB: fix invalid memory access in hub_activate()
+024661c msm: dma_test: Initialize newly allocated memory
+6459e65 msm: kgsl: fix sync file error handling
+9fd09bf prima: Update Driver to CAF LA.BF.1.1.3-02310-8x26.0
+5c8c4f5 tty: fix stall caused by missing memory barrier in drivers/tty/n_tty.c
+b02829e ARM: 7493/1: use generic unaligned.h
+d1e9ffd packet: fix races in fanout_add()
+03d1617 dccp: fix freeing skb too early for IPV6_RECVPKTINFO
+658e3ae ipc/shm: Fix shmat mmap nil-page protection
+1491cde ipc: add COMPAT_SHMLBA support
+dd712e4 mpi: Fix NULL ptr dereference in mpi_powm() [ver #3]
+6ead8ae ALSA: usb-audio: Fix double-free in error paths after snd_usb_add_audio_stream() call
+96dc35f ALSA: usb-audio: Minor code cleanup in create_fixed_stream_quirk()
+9afc304 ASoC: msm: qdsp6v2: fix incomplete playback issue for non-gapless formats
+25c5107 ASoC: msm: audio-effects: misc fixes in h/w accelerated effect
+3493daf perf: duplicate deletion of perf event
+2de0012 HID: core: prevent out-of-bound readings
+a24ee26 UPSTREAM: proc: actually make proc_fd_permission() thread-friendly
+326c8c5 UPSTREAM: proc: make proc_fd_permission() thread-friendly
+b1c453b sg_write()/bsg_write() is not fit to be called under KERNEL_DS
+98bc9fc net: avoid signed overflows for SO_{SND|RCV}BUFFORCE
+1e366f0 net: cleanups in sock_setsockopt()
+c545d12 ALSA: pcm : Call kill_fasync() in stream lock
+dc8af48 platform: msm: sensor: Fix out of bounds and null pointer.
+acb3823 af_unix: speedup /proc/net/unix
+9e1b1cd dm-req-crypt: properly close the current device
+c19ad0b mmc: block: Fix issue with deferred resume when CQ is enabled
+b1320c7 onyx: Enable IP Multicast
+baba2cf mnt: Fail collect_mounts when applied to unmounted mounts
+6ea1aec mm: avoid setting up anonymous pages into file mapping
+09ad328 qcedev: Validate Source and Destination addresses
+4181e14 drivers: soc: Add buffer overflow check for svc send request
+2c04670 BACKPORT: aio: mark AIO pseudo-fs noexec
+a826e74 soc: qcom: smp2p: Fix kernel address leak
+398b35e drivers: soc: add size checks and update log messages
+d14881f msm: thermal: Silence status messages
+99fee7c ASoC: wcd9xxx: Fix unprotected userspace access
+4d43401 ext4: validate s_first_meta_bg at mount time
+747aaa4 net: ipc_router: fix NULL pointer de-reference issue
+35edf24 net/llc: avoid BUG_ON() in skb_orphan()
+d9d2a95 l2tp: fix racy SOCK_ZAPPED flag check in l2tp_ip{,6}_bind()
+497dbae sctp: avoid BUG_ON on sctp_wait_for_sndbuf
+1b07264 ecryptfs: don't allow mmap when the lower fs doesn't support it
+5b4f7f2 UPSTREAM: ring-buffer: Prevent overflow of size in ring_buffer_resize()
+1ff9e22 splice: introduce FMODE_SPLICE_READ and FMODE_SPLICE_WRITE
+d8a7452 tcp: avoid infinite loop in tcp_splice_read()
+1c8f729 msm: kgsl: Change %p to %pK in debug messages
+479c455 msm: cpufreq: Remove acpuclock calls from cpufreq
+8f54c1b sched/fair: Optimize find_busiest_queue()
+
+   * packages/apps/Settings/
+2eb3941 Settings: Forward Port Volume Long Press Skip Tracks (2/2)
+774872b [TEMP] Use png drawables for the Bluetooth setting icon
+9a1a690 DeviceInfoSettings: fix XOSPBanner not being shown up
+0b37376 Buttons: complete the bring up of all Buttons settings
+
+   * vendor/lge/
+ffd5240 w7: Fix camera
+846315c mako: Move tzapps.* to /vendor/firmware
+
+   * vendor/xosp/
+5d45d96 README: clean up
+
+====================
+     04-13-2017
+====================
+
+
+   * android/
+e4c7dd5 Update xosp_devices_deps.xml
+553a496 Update xosp_devices_deps.xml
+8919800 deps: Add packages_resources_devicesettings
+
+   * kernel/oneplus/onyx/
+cffccc1 onyx: Use oom_score_adj rbtree to select the best proecss to kill
+1fc4a5d proc: much faster /proc/vmstat
+be2c0b6 net/core: revert "net: fix __netdev_update_features return.." and add comment
+18ae39b ipv6: fix handling of blackhole and prohibit routes
+49a887f ipv6: don't call fib6_run_gc() until routing is ready
+7686b7b sctp: Prevent soft lockup when sctp_accept() is called during a timeout event
+0c966d3 udp: properly support MSG_PEEK with truncated buffers
+310a0d4 net: Fix skb csum races when peeking
+c4ece50 af_unix: fix a fatal race with bit fields
+03188e7 net: possible use after free in dst_release
+d067b7d ipv6/addrlabel: fix ip6addrlbl_get()
+92f33e3 rfkill: copy the name into the rfkill struct
+e817d2e sctp: start t5 timer only when peer rwnd is 0 and local state is SHUTDOWN_PENDING
+f493d660 net/neighbour: fix crash at dumping device-agnostic proxy entries
+1df478b net: ip6mr: fix static mfc/dev leaks on table destruction
+61c06e2 ip6mr: call del_timer_sync() in ip6mr_free_table()
+c507401 tcp: md5: fix lockdep annotation
+f4d3617 mac80211: mesh: fix call_rcu() usage
+8d544d9 net: fix __netdev_update_features return on ndo_set_features failure
+8e8d668 sctp: translate host order to network order when setting a hmacid
+d3188bc net: fix a race in dst_release()
+7fa5407 ipv6: fix tunnel error handling
+4bb296f mac80211: fix driver RSSI event calculations
+62692e2b cpufreq: Break out early when frequency equals target_freq
+349ea0e drivers: usb: Enabled USB android keyboard and mouse
+c35fd07 introduce for_each_thread() to replace the buggy while_each_thread()
+6060e63 mm: migrate: Close race between migration completion and mprotect
+d226603 vfs: fix data corruption when blocksize < pagesize for mmaped data
+673e797 OOM, PM: OOM killed task shouldn't escape PM suspend
+81eb4b5 android: lowmemorykiller: squash task adj rbtree optimization from Motorola
+094cd28 tcp: fix use after free in tcp_xmit_retransmit_queue()
+1a0b076 Optimized Console FrameBuffer for upto 70% increase in Performance
+21e8810 block: row: use sensible values for our device
+2d8547c msm: sensor: validate the i2c table index before use
+c9cf479 ASoC: msm: lock read/write when add/free audio ion memory
+e18577c msm: mdss: hide kernel addresses from unprevileged users
+c47b100 qcedev: Validate Source and Destination addresses
+0d4934e msm: vidc: use %pK instead of %p which respects kptr_restrict sysctl
+0051490 msm: sensor: Avoid potential stack overflow
+6398ff6 msm: crypto: Fix integer over flow check in qcrypto driver
+2ebeb1c mm: Tweak Virtual Memory Defaults
+17fa4a1 sched: Fix select_idle_sibling() bouncing cow syndrome
+d87298f sched: Force sleep on consecutive sched_yields
+02de58a usb: gadget: mtp: Increase buffer size
+5ff6273 drivers: synaptics_s3508: Add support for old gesture proc nodes
+
+   * packages/apps/Dialer/
+3dd88b2 Let InCallUI handle proximity sensor for incoming calls [2/2]
+
+   * vendor/xosp/
+7cef737 xosp_devices: Remove no more supported devices
+f328192 XCA 2.1
+f889d5f Revert "CHANGELOG: Rework the way the changelog is called"
+
