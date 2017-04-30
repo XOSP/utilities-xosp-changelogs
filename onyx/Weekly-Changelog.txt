@@ -16,6 +16,7 @@
 
 
    * device/oneplus/onyx/
+50cb9d2 It's Official -.-
 dc93e92 Update BoardConfig.mk
 bc8016c Underp dependencies
 
@@ -26,9 +27,6 @@ ff4d124 Update XOSPDelta Updater
      04-29-2017
 ====================
 
-
-   * android/
-e3fd35b Revert "Remove info about IS_ARM64 flag"
 
    * device/oneplus/onyx/
 9494102 Fix typo
@@ -47,7 +45,6 @@ f5f8068 xosp:changelog: correctly point out the days to be included in the file
 7175900 Update XCA
 da314e6 Update XOSPDelta Updater
 8715ab9 vendor:xosp: add the new XOSP Wallpapers line up
-a9c78fb Revert "Get rid of IS_ARM64 flag"
 
 ====================
      04-28-2017
@@ -55,6 +52,7 @@ a9c78fb Revert "Get rid of IS_ARM64 flag"
 
 
    * android/
+e3fd35b Revert "Remove info about IS_ARM64 flag"
 40fe24e Merge pull request #42 from AndropaX/patch-1
 15bf65b Remove info about IS_ARM64 flag
 
@@ -70,6 +68,7 @@ d472073 Update dependencies.
 772e96c [2/2] Settings: Battery and Notification Lights     Put together from:
 
    * vendor/xosp/
+a9c78fb Revert "Get rid of IS_ARM64 flag"
 fca0502 Merge pull request #2 from AndropaX/patch-1
 c11f930 Get rid of IS_ARM64 flag
 
@@ -168,10 +167,6 @@ c9972b4 XOSPNavBarSwitch: remove navbar dependency
    * packages/services/Telecomm/
 92f9637 Merge pull request #1 from EsromG5/patch-1
 1fca1ea Fix audio incall for samsung devices chipset msm8916
-
-   * vendor/oneplus/
-2b571b4 op3: Add missing & remove unused blobs
-bc1b928 op3: Update to OB14 blobs
 
    * vendor/xosp/
 f33b4f4 Revert "Revert "XCA 2.2.1""
