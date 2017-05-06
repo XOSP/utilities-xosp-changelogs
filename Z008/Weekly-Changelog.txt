@@ -11,154 +11,95 @@
 
 
 ====================
-     04-29-2017
+     05-06-2017
+====================
+
+
+   * android/
+c062b21 xosp:Switch to android-7.1.1_r40
+ce2d4a7 xosp: stop using AOSP browser (1/2)
+17fd922 README: remove this...
+
+   * build/
+9df8ffa Merge tag 'android-7.1.1_r40' into xosp-n-rebase
+9df8ed5 build: stop using AOSP browser (2/2)
+33d267f Allow force-sync
+
+   * device/asus/Z008/
+f16cbe8 Z00A: use CHROMIUM_X86 flag
+
+   * frameworks/base/
+02ce04c core: make night display available by default
+e87b25f PhoneWindowManager: underp this
+
+   * vendor/xosp/
+ef2613a Chromium: fix the Makefile
+46f7b9c vendor:xosp: Start using Chromium Prebuilts
+
+====================
+     05-05-2017
+====================
+
+
+   * packages/apps/Settings/
+d20183d System App remover: misc fixes
+43913a8 System AppRemover: Improvements
+889801e Fix system app remover to work in Lollipop
+ebd25f5 SystemApp Remover
+5d40317 Unbreak NotificationLight options
+
+====================
+     05-04-2017
 ====================
 
 
    * frameworks/base/
-29ca89e [1/2] Frameworks_base: Double tap to wake on doze
-323861e [2/2] frameworks_base: SlimDoze 7.1.1
-0efa4f8 Revert "Custom ambient display settings (1/2)"
+783a955 Revert "GlobalActions: Use circular user avatars"
+90ffa79 fix incorrect context classloader initialization in system_server
+189d00e The network event should be an asynchronous callback.
+a4d52b9 Fix keyguard is black background while screen turning off/on quickly
+d028c62 [AssetManager] revert some fastJni
+40d94ca PhoneWindowManager: show transient bar when coming from keyguard
+2002a19 policy: introduce global immersive mode
+d9353fc base: Change toast frames color to some better look ones
+3f50173 hardware: Camera: Return -1 if value does not exist
+18a1f4d Integer.valueOf() -> Integer.parseInt() to avoid allocation.
+2849b38 Avoid needless Integer.valueOf() object allocation.
+37f89c7 DadZone: add missing call to TypedArray.recycle() to prevent leaks when restarting SystemUI for themes
+8c1cd70 KeyButtonView: use a static instance of AudioManager since we don't need a separate one for each KeyButtonView instance
 
-   * packages/apps/Settings/
-bb8fd52 Unbreak NotificationLight options
-c242bef [1/2] Settings: SlimDoze 7.1.1
+   * kernel/asus/moorefield/
+046afae tracing: do not leak kernel addresses
+324e5d0 UPSTREAM: tracing: Fix trace_printk() to print when not using bprintk()
+9691430 Prevent heap overflow in uvc driver
+a3b1670 UPSTREAM: regulator: core: Fix regualtor_ena_gpio_free not to access pin after freeing
+4ee477b BACKPORT: trace: resolve stack corruption due to string copy
+a4daeaa ALSA: pcm : Call kill_fasync() in stream lock
+cd6f51c perf: Tighten (and fix) the grouping condition
+
+   * vendor/asus/
+1e1e343 mofd-common : nuke libvirtualsensor.so
+
+====================
+     05-03-2017
+====================
+
+
+====================
+     05-02-2017
+====================
+
+
+====================
+     05-01-2017
+====================
+
+
+====================
+     04-30-2017
+====================
+
 
    * vendor/xosp/
 ff4d124 Update XOSPDelta Updater
-f5f8068 xosp:changelog: correctly point out the days to be included in the file
-7175900 Update XCA
-da314e6 Update XOSPDelta Updater
-8715ab9 vendor:xosp: add the new XOSP Wallpapers line up
-
-====================
-     04-28-2017
-====================
-
-
-   * android/
-e3fd35b Revert "Remove info about IS_ARM64 flag"
-40fe24e Merge pull request #42 from AndropaX/patch-1
-15bf65b Remove info about IS_ARM64 flag
-
-   * device/asus/Z008/
-c4fc9db Update xosp dependencies
-
-   * device/asus/mofd-common/
-101d853 overylay: config_intrusiveBatteryLed is now supported again
-
-   * frameworks/base/
-28ce446 Lights with Screen On [1/2]: Optional allowment of lights
-
-   * packages/apps/Settings/
-0e67ae4 Lights with Screen On [2/2]: Optional allowment of lights
-6afe436 Settings: Allow/Prevent notification light in Zen mode (2 of 2) This allows the user to prevent the notification lights from showing during DND mode as per Android 5.0.x +
-772e96c [2/2] Settings: Battery and Notification Lights     Put together from:
-
-   * vendor/xosp/
-a9c78fb Revert "Get rid of IS_ARM64 flag"
-fca0502 Merge pull request #2 from AndropaX/patch-1
-c11f930 Get rid of IS_ARM64 flag
-
-====================
-     04-27-2017
-====================
-
-
-   * android/
-6b07bc0 additions: remove device_qcom_common
-beba72f Merge pull request #41 from AndropaX/xosp-n-rebase
-
-   * hardware/libhardware_legacy/
-262000d Merge pull request #1 from AndropaX/xosp-n-rebase
-fdaaea2 wifi: add firmware loader support for the non-LKM case
-
-====================
-     04-26-2017
-====================
-
-
-   * android/
-f3e5302 Get rid of fetching all dependencies
-
-   * frameworks/base/
-90cfd0b keyguard: update font style for lockscreen
-
-   * packages/apps/Settings/
-36809cf Merge pull request #19 from EsromG5/patch-1
-b546d29 values-pt-rBR: Add initial translations
-33c013c Correctly point theme_accent color
-
-   * vendor/xosp/
-4374d08 PNG rules, indeed.
-25f4692 PNG Rules!
-b424c24 [41.2.A.0.191] Add and update current Xperia Wallpapers
-966a752 xosp: remove old XOSP walls
-
-====================
-     04-25-2017
-====================
-
-
-   * frameworks/base/
-55da699 BatteryMeterDrawable: make sure we use our battery icon
-01d2c11 BatteryService: fix build error
-6149a15 Custom ambient display settings (1/2) *This is a rehash of parts of slims and parts of omni's ambient display mods *Added my own little twist on some of the things *Moved all options into a seperate ambient display fragment
-9b9d338 BatteryService: add dash charging support
-a18ff3a FWB: Battery light: 100% charged level (1/2)
-4930678         [1/2] frameworks/base: Battery and Notification Lights
-
-   * packages/apps/Email/
-6478a07 Automatic translation import
-c448762 Automatic translation import
-87f1c3d Automatic translation import
-87113b0 Automatic translation import
-f4a8d47 Automatic translation import
-
-   * packages/apps/Settings/
-64b79cd StatsReceiver: fix null pointer exception
-71758b6 xosp: add StatsReceiver service
-
-   * packages/apps/UnifiedEmail/
-54ea3ac Automatic translation import
-4e55545 Automatic translation import
-fdbfb52 Automatic translation import
-2ded945 Automatic translation import
-565f76f Fix cut off notification sounds.
-8155952 Automatic translation import
-
-   * vendor/xosp/
-d5bff07 apns: fix apns for VoLTE
-
-====================
-     04-24-2017
-====================
-
-
-   * android/
-f63faf0 Merge pull request #40 from nero-d/patch-1
-e7fdad9 Update deps for Onyx.
-
-   * packages/apps/Settings/
-c9972b4 XOSPNavBarSwitch: remove navbar dependency
-
-   * packages/services/Telecomm/
-92f9637 Merge pull request #1 from EsromG5/patch-1
-1fca1ea Fix audio incall for samsung devices chipset msm8916
-
-   * vendor/xosp/
-f33b4f4 Revert "Revert "XCA 2.2.1""
-
-====================
-     04-23-2017
-====================
-
-
-   * android/
-c8a3bc5 xosp: Fix revision for hardware_qcom_wlan-caf
-
-   * vendor/xosp/
-220f56f vendor:xosp:README: Remove BlurSettings old issue
-75708d8 Revert "XCA 2.2.1"
-a282ded XCA 2.2.1
 
