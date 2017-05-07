@@ -11,216 +11,191 @@
 
 
 ====================
-     05-06-2017
+     04-29-2017
 ====================
 
-
-   * android/
-c062b21 xosp:Switch to android-7.1.1_r40
-ce2d4a7 xosp: stop using AOSP browser (1/2)
-
-   * build/
-9df8ffa Merge tag 'android-7.1.1_r40' into xosp-n-rebase
-9df8ed5 build: stop using AOSP browser (2/2)
 
    * device/xiaomi/msm8956-common/
-69df01d msm8956: Clean up kernel cmdline
-74666ce msm8956: Update power configs
+5d4f2dc msm8956: address denials
+955af1a msm8956: doze: Add dashboard summary
+a353f24 msm8956: doze: Use commonized strings translations  * Translations from the new    *     android_packages_resources_devicesettings
+06fa2f0 msm8956: Bring back AOSP Doze
+0805cd2 Revert "msm8956: remove XiaomiDoze"
 
    * frameworks/base/
-02ce04c core: make night display available by default
-
-   * kernel/xiaomi/msm8956/
-9d124c5 kenzo: Import dtsi changes from new miui kernel
-621ddd4 msm8956: fix sdcardfs build errors
-e5ac502 sdcardfs: Change magic value
-90efe2b ANDROID: sdcardfs: Call lower fs's revalidate
-6d3ca60 ANDROID: sdcardfs: Avoid setting GIDs outside of valid ranges
-291c344 Revert "Revert "Android: sdcardfs: Don't do d_add for lower fs""
-a555467 ANDROID: sdcardfs: Use filesystem specific hash
-1b64d74 Revert "Android: sdcardfs: Don't do d_add for lower fs"
-70b27dc Android: sdcardfs: Don't complain in fixup_lower_ownership
-ed300d0 Android: sdcardfs: Don't do d_add for lower fs
-8486ad3 ANDROID: sdcardfs: ->iget fixes
-48c06cc Android: sdcardfs: Change cache GID value
-8f01c2e ANDROID: sdcardfs: Directly pass lower file for mmap
-0ec132e ANDROID: sdcardfs: update module info
-4f68536 ANDROID: sdcardfs: use d_splice_alias
-798b680 ANDROID: sdcardfs: fix ->llseek to update upper and lower offset
-1dcca33 ANDROID: sdcardfs: copy lower inode attributes in ->ioctl
-dc0d24b ANDROID: sdcardfs: remove unnecessary call to do_munmap
-a25ff6e ANDROID: sdcardfs: Fix style issues in macros
-05cd128 ANDROID: sdcardfs: Use seq_puts over seq_printf
-282963d ANDROID: sdcardfs: Use to kstrout
-9995f0f ANDROID: sdcardfs: Use pr_[...] instead of printk
-f897ec4 ANDROID: sdcardfs: remove unneeded null check
-04d1f60 ANDROID: sdcardfs: Fix style issues with comments
-c9d93b5 ANDROID: sdcardfs: Fix formatting
-91b3830 ANDROID: sdcardfs: correct order of descriptors
-1c6c3fa2 ANDROID: sdcardfs: Fix gid issue
-c5c0a57 ANDROID: sdcardfs: Use tabs instead of spaces in multiuser.h
-644b1bd ANDROID: sdcardfs: Remove uninformative prints
-0533cbe ANDROID: sdcardfs: move path_put outside of spinlock
-b923e94 ANDROID: sdcardfs: Use case insensitive hash function
-403a18c ANDROID: sdcardfs: declare MODULE_ALIAS_FS
-d25dd87 ANDROID: sdcardfs: Get the blocksize from the lower fs
-83e4227 ANDROID: sdcardfs: Use d_invalidate instead of drop_recurisve
-d3c4a3a ANDROID: sdcardfs: Switch to internal case insensitive compare
-fbbacc8 ANDROID: sdcardfs: Use spin_lock_nested
-b4e8879 ANDROID: sdcardfs: Replace get/put with d_lock
-a68c68a ANDROID: sdcardfs: rate limit warning print
-79471e4 ANDROID: sdcardfs: Fix case insensitive lookup
-d1f8038 ANDROID: sdcardfs: support direct-IO (DIO) operations
-823a567 ANDROID: sdcardfs: implement vm_ops->page_mkwrite
-58a3843 ANDROID: sdcardfs: Don't bother deleting freelist
-7f17aca ANDROID: sdcardfs: Add missing path_put
-ffabad7 ANDROID: sdcardfs: Fix incorrect hash
-3e09948 ANDROID: sdcardfs: Switch strcasecmp for internal call
-bbeeb0fe ANDROID: sdcardfs: switch to full_name_hash and qstr
-e1db971 ANDROID: sdcardfs: Add GID Derivation to sdcardfs
-8666535 ANDROID: sdcardfs: Remove redundant operation
-23928a7 ANDROID: sdcardfs: add support for user permission isolation
-ec6c9ba ANDROID: sdcardfs: Refactor configfs interface
-821d077 ANDROID: sdcardfs: Allow non-owners to touch
-7924cbc ANDROID: sdcardfs: Fix locking issue with permision fix up
-c672fa8 sdcardfs: Use per mount permissions
-f81cb26 sdcardfs: Add gid and mask to private mount data
-3a99030 sdcardfs: User new permission2 functions
-204d2f1 sdcardfs: Move directory unlock before touch
-8626f0d sdcardfs: fix external storage exporting incorrect uid
-79824e4 sdcardfs: Added top to sdcardfs_inode_info
-05aee0f sdcardfs: Switch package list to RCU
-ae525b7 sdcardfs: Fix locking for permission fix up
-eba7f87 sdcardfs: Check for other cases on path lookup
-a6d5585 sdcardfs: override umask on mkdir and create
-b1df293 ANDROID: sdcardfs: fix itnull.cocci warnings
-255d19b sdcardfs: Truncate packages_gid.list on overflow
-b9eada42 vfs: change d_canonical_path to take two paths
-844e0e3 sdcardfs: remove unneeded __init and __exit
-f89bd04 sdcardfs: Remove unused code
-3d6884a sdcardfs: remove effectless config option
-f6a7c83 sdcardfs: Add support for d_canonicalize
-b33cc6b sdcardfs: Bring up to date with Android M permissions:
-dc9bc2a sdcardfs: Changed type-cast in packagelist management
-f05d23f sdcardfs: port to 3.10
-93077e6 Initial port of sdcardfs
-8324cb4 msm8956: squashed revert of sdcardfs commits Revert "ANDROID: sdcardfs: Fix locking issue with permision fix up"
-
-   * vendor/xosp/
-ef2613a Chromium: fix the Makefile
-46f7b9c vendor:xosp: Start using Chromium Prebuilts
-
-====================
-     05-05-2017
-====================
-
-
-   * android/
-17fd922 README: remove this...
-
-   * build/
-33d267f Allow force-sync
-
-   * frameworks/base/
-e87b25f PhoneWindowManager: underp this
+29ca89e [1/2] Frameworks_base: Double tap to wake on doze
+323861e [2/2] frameworks_base: SlimDoze 7.1.1
+0efa4f8 Revert "Custom ambient display settings (1/2)"
 
    * packages/apps/Settings/
-d20183d System App remover: misc fixes
-43913a8 System AppRemover: Improvements
-889801e Fix system app remover to work in Lollipop
-ebd25f5 SystemApp Remover
-5d40317 Unbreak NotificationLight options
-
-====================
-     05-04-2017
-====================
-
-
-   * frameworks/base/
-783a955 Revert "GlobalActions: Use circular user avatars"
-90ffa79 fix incorrect context classloader initialization in system_server
-189d00e The network event should be an asynchronous callback.
-a4d52b9 Fix keyguard is black background while screen turning off/on quickly
-d028c62 [AssetManager] revert some fastJni
-40d94ca PhoneWindowManager: show transient bar when coming from keyguard
-2002a19 policy: introduce global immersive mode
-d9353fc base: Change toast frames color to some better look ones
-3f50173 hardware: Camera: Return -1 if value does not exist
-18a1f4d Integer.valueOf() -> Integer.parseInt() to avoid allocation.
-2849b38 Avoid needless Integer.valueOf() object allocation.
-37f89c7 DadZone: add missing call to TypedArray.recycle() to prevent leaks when restarting SystemUI for themes
-8c1cd70 KeyButtonView: use a static instance of AudioManager since we don't need a separate one for each KeyButtonView instance
-
-====================
-     05-03-2017
-====================
-
-
-   * device/xiaomi/kenzo/
-9e88ed3 kenzo: update dependencies
-9144c31 kenzo: Hide sRGB toggle in developer options
-0285b43 kenzo: Add BSOD Killer
-7b976a4 kenzo: kang VR HAL from Angler
-48d4cc1 XOSP-ify
-
-   * device/xiaomi/msm8956-common/
-b1563f9 XOSP-ify
-fc1fb7d msm8956: address denials
-c9b2e18 msm8956: correct pixel density
-954a447 msm8956: comment out 'TARGET_PROVIDES_LIBLIGHT'
-66024b9 msm8956: overlay: enable NightDisplay
-6b6c256 msm8956: overlay: uncomment config_deviceHardwareKeys
-2b17e6f msm8956: cleanup CM stuff in overlay
-07d682c msm8956: remove KeyDisabler
-4d8c693 msm8956: doze: Add dashboard summary
-fbabe27 msm8956: doze: Use commonized strings translations  * Translations from the new    *     android_packages_resources_devicesettings
-4899213 msm8956: Bring back AOSP Doze
-695276b Update WCNSS_qcom_cfg.ini
-11a5ffa msm8956: enable HW Acceleration
-b5742e4 dex2oat: Use 6 cores instead of 4
-b713fce msm8956: enable miracast
-
-   * kernel/xiaomi/msm8956/
-f8d11a1 kenzo: fix mistakes
-9a6ffa3 kenzo: enable appsbl qseecom support flag for M boot stack
-6b7c3a7 kenzo: Fix & enable Goodix GF318M fingerprint support
-c38036e msm8956:  move goodix fingerprint
-1738def Revert "drivers: input: misc: include goodix/Kconfig in Kconfig"
-2c4cda9 defconfig: Updates
-29b1f9a Merge remote-tracking branch 'f2fs-stable/linux-3.10.y' into xosp-n
-c11304e drivers: staging: prima: update to LA.BR.1.3.6_rb1.17
-a25b9b5 Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.17' into xosp-n
-
-   * vendor/xiaomi/
-98ff752 Merge remote-tracking branch 'Andro/RR-7.1' into HEAD
-3e69e67 kenzo: use new camera patch
-
-====================
-     05-02-2017
-====================
-
-
-   * device/xiaomi/kenzo/
-87e84e3 kenzo: Add goodix services and sepolicy
-8594e2e kenzo: Support Goodix fingerprint
-84e67a6 kenzo: Remove unused fpc firmware
-
-   * vendor/xiaomi/
-8ce56b8 kenzo: Update
-
-====================
-     05-01-2017
-====================
-
-
-====================
-     04-30-2017
-====================
-
-
-   * device/xiaomi/msm8956-common/
-d10c67a msm8956: Start qseecomd on post-fs
+bb8fd52 Unbreak NotificationLight options
+c242bef [1/2] Settings: SlimDoze 7.1.1
 
    * vendor/xosp/
 ff4d124 Update XOSPDelta Updater
+f5f8068 xosp:changelog: correctly point out the days to be included in the file
+7175900 Update XCA
+da314e6 Update XOSPDelta Updater
+8715ab9 vendor:xosp: add the new XOSP Wallpapers line up
+
+====================
+     04-28-2017
+====================
+
+
+   * android/
+e3fd35b Revert "Remove info about IS_ARM64 flag"
+40fe24e Merge pull request #42 from AndropaX/patch-1
+15bf65b Remove info about IS_ARM64 flag
+
+   * device/xiaomi/kenzo/
+b72c609 kenzo: fix xosp dependencies
+31534fc Revert "kenzo: remove IS_ARM64 flag"
+aca29fb kenzo: update dependencies
+2bc8a78 kenzo: remove IS_ARM64 flag
+
+   * packages/apps/Settings/
+0e67ae4 Lights with Screen On [2/2]: Optional allowment of lights
+
+   * vendor/xosp/
+a9c78fb Revert "Get rid of IS_ARM64 flag"
+fca0502 Merge pull request #2 from AndropaX/patch-1
+c11f930 Get rid of IS_ARM64 flag
+
+====================
+     04-27-2017
+====================
+
+
+   * android/
+6b07bc0 additions: remove device_qcom_common
+beba72f Merge pull request #41 from AndropaX/xosp-n-rebase
+
+   * frameworks/base/
+28ce446 Lights with Screen On [1/2]: Optional allowment of lights
+
+   * packages/apps/Settings/
+6afe436 Settings: Allow/Prevent notification light in Zen mode (2 of 2) This allows the user to prevent the notification lights from showing during DND mode as per Android 5.0.x +
+772e96c [2/2] Settings: Battery and Notification Lights     Put together from:
+
+   * vendor/xiaomi/
+5f1b7b5 Merge branch 'RR-7.1' of https://github.com/AndropaX/proprietary_vendor_xiaomi into xosp-n
+e6f7e6d update camera blobs (miui 7.4.27)
+
+====================
+     04-26-2017
+====================
+
+
+   * android/
+f3e5302 Get rid of fetching all dependencies
+
+   * hardware/libhardware_legacy/
+262000d Merge pull request #1 from AndropaX/xosp-n-rebase
+fdaaea2 wifi: add firmware loader support for the non-LKM case
+
+   * kernel/xiaomi/msm8956/
+5121a50 msm8956: disable fips
+ba86086 kenzo: enable appsbl qseecom support flag for M boot stack
+
+   * packages/apps/Settings/
+36809cf Merge pull request #19 from EsromG5/patch-1
+b546d29 values-pt-rBR: Add initial translations
+
+   * vendor/xiaomi/
+8a2bed6 Merge branch 'RR-7.1' of https://github.com/AndropaX/proprietary_vendor_xiaomi into xosp-n Add libra
+
+   * vendor/xosp/
+4374d08 PNG rules, indeed.
+25f4692 PNG Rules!
+
+====================
+     04-25-2017
+====================
+
+
+   * frameworks/base/
+90cfd0b keyguard: update font style for lockscreen
+55da699 BatteryMeterDrawable: make sure we use our battery icon
+01d2c11 BatteryService: fix build error
+6149a15 Custom ambient display settings (1/2) *This is a rehash of parts of slims and parts of omni's ambient display mods *Added my own little twist on some of the things *Moved all options into a seperate ambient display fragment
+9b9d338 BatteryService: add dash charging support
+a18ff3a FWB: Battery light: 100% charged level (1/2)
+4930678         [1/2] frameworks/base: Battery and Notification Lights
+
+   * kernel/xiaomi/msm8956/
+0bb9b11 defconfig: Updates
+c016a92 Merge remote-tracking branch 'f2fs-stable/linux-3.10.y' into xosp-n
+6e423d6 drivers: staging: prima: update to LA.BR.1.3.6_rb1.17
+d7571b8 Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.17' into xosp-n
+
+   * packages/apps/Email/
+6478a07 Automatic translation import
+c448762 Automatic translation import
+87f1c3d Automatic translation import
+87113b0 Automatic translation import
+f4a8d47 Automatic translation import
+
+   * packages/apps/Settings/
+33c013c Correctly point theme_accent color
+64b79cd StatsReceiver: fix null pointer exception
+71758b6 xosp: add StatsReceiver service
+
+   * packages/apps/UnifiedEmail/
+54ea3ac Automatic translation import
+4e55545 Automatic translation import
+fdbfb52 Automatic translation import
+2ded945 Automatic translation import
+565f76f Fix cut off notification sounds.
+8155952 Automatic translation import
+
+   * vendor/xosp/
+b424c24 [41.2.A.0.191] Add and update current Xperia Wallpapers
+966a752 xosp: remove old XOSP walls
+d5bff07 apns: fix apns for VoLTE
+
+====================
+     04-24-2017
+====================
+
+
+   * android/
+f63faf0 Merge pull request #40 from nero-d/patch-1
+e7fdad9 Update deps for Onyx.
+
+   * device/xiaomi/kenzo/
+21c7835 kenzo: ramdisk: Start qseecomd early
+
+   * device/xiaomi/msm8956-common/
+153d45e msm8956: ramdisk: move qseecomd service to device tree
+
+   * kernel/xiaomi/msm8956/
+1c36179 Input: misc: goodix_fp: Change netlink group to 29, because it is conflit with wifi driver and return WLAN_FEATURE_RMC
+0b186b5 input: misc: goodix_fp: Disable all key event if new driver detected
+77d1f72 kenzo: Only allow one fingerprint device to be created Only allow one fingerprint device to be created, because they share gpios, if one has request gpios, another will fail when requesting gpios. Included: input: misc: goodix_fp: Support use netlink to communicate with user app input: misc: goodix_fp: Fix warning of unbalanced irq Disable WLAN_FEATURE_RMC: Seems not used by hal, and conflit with goodix fpsensor driver.
+2379d81 Import goodix fp code
+3bfc5d9 msm8956: squashed revert of goodix commits Revert "Input: misc: goodix_fp: change netlink group to 29, because it is conflicting with the wifi driver and return WLAN_FEATURE_RMC"
+d5d7964 proc: Set androidboot.verifiedbootstate=green
+c8845ae Revert "proc: Remove verifiedbootstate flag from /proc/cmdline"
+
+   * packages/apps/Settings/
+c9972b4 XOSPNavBarSwitch: remove navbar dependency
+
+   * packages/services/Telecomm/
+92f9637 Merge pull request #1 from EsromG5/patch-1
+
+   * vendor/xosp/
+f33b4f4 Revert "Revert "XCA 2.2.1""
+
+====================
+     04-23-2017
+====================
+
+
+   * packages/services/Telecomm/
+1fca1ea Fix audio incall for samsung devices chipset msm8916
+
+   * vendor/xosp/
+220f56f vendor:xosp:README: Remove BlurSettings old issue
+75708d8 Revert "XCA 2.2.1"
 
