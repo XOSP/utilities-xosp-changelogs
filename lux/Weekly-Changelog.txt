@@ -11,149 +11,141 @@
 
 
 ====================
-     04-29-2017
+     05-07-2017
 ====================
 
 
-   * device/motorola/lux/
-2b8fa1e lux: Rewrite dependencies file
-
-   * frameworks/base/
-29ca89e [1/2] Frameworks_base: Double tap to wake on doze
-323861e [2/2] frameworks_base: SlimDoze 7.1.1
-0efa4f8 Revert "Custom ambient display settings (1/2)"
-
-   * packages/apps/Settings/
-bb8fd52 Unbreak NotificationLight options
-c242bef [1/2] Settings: SlimDoze 7.1.1
+   * vendor/motorola/
+3a43b3d victara: Add libtqi-perfd-client.so
 
    * vendor/xosp/
-ff4d124 Update XOSPDelta Updater
-f5f8068 xosp:changelog: correctly point out the days to be included in the file
-7175900 Update XCA
-da314e6 Update XOSPDelta Updater
-8715ab9 vendor:xosp: add the new XOSP Wallpapers line up
+33b5ad7 Update XOSPDelta Updater
 
 ====================
-     04-28-2017
+     05-06-2017
 ====================
 
 
    * android/
-e3fd35b Revert "Remove info about IS_ARM64 flag"
-40fe24e Merge pull request #42 from AndropaX/patch-1
-15bf65b Remove info about IS_ARM64 flag
+c062b21 xosp:Switch to android-7.1.1_r40
+ce2d4a7 xosp: stop using AOSP browser (1/2)
+
+   * build/
+9df8ffa Merge tag 'android-7.1.1_r40' into xosp-n-rebase
+9df8ed5 build: stop using AOSP browser (2/2)
 
    * frameworks/base/
-28ce446 Lights with Screen On [1/2]: Optional allowment of lights
-
-   * packages/apps/Settings/
-0e67ae4 Lights with Screen On [2/2]: Optional allowment of lights
-6afe436 Settings: Allow/Prevent notification light in Zen mode (2 of 2) This allows the user to prevent the notification lights from showing during DND mode as per Android 5.0.x +
-772e96c [2/2] Settings: Battery and Notification Lights     Put together from:
+02ce04c core: make night display available by default
 
    * vendor/xosp/
-a9c78fb Revert "Get rid of IS_ARM64 flag"
-fca0502 Merge pull request #2 from AndropaX/patch-1
-c11f930 Get rid of IS_ARM64 flag
+64c4248 Chromium: fix the Makefile
+ef2613a Chromium: fix the Makefile
+46f7b9c vendor:xosp: Start using Chromium Prebuilts
 
 ====================
-     04-27-2017
+     05-05-2017
 ====================
 
 
    * android/
-6b07bc0 additions: remove device_qcom_common
-beba72f Merge pull request #41 from AndropaX/xosp-n-rebase
+17fd922 README: remove this...
 
-   * hardware/libhardware_legacy/
-262000d Merge pull request #1 from AndropaX/xosp-n-rebase
-
-====================
-     04-26-2017
-====================
-
-
-   * android/
-f3e5302 Get rid of fetching all dependencies
+   * build/
+33d267f Allow force-sync
 
    * frameworks/base/
-90cfd0b keyguard: update font style for lockscreen
-
-   * hardware/libhardware_legacy/
-fdaaea2 wifi: add firmware loader support for the non-LKM case
+e87b25f PhoneWindowManager: underp this
 
    * packages/apps/Settings/
-36809cf Merge pull request #19 from EsromG5/patch-1
-b546d29 values-pt-rBR: Add initial translations
-33c013c Correctly point theme_accent color
-
-   * vendor/xosp/
-4374d08 PNG rules, indeed.
-25f4692 PNG Rules!
-b424c24 [41.2.A.0.191] Add and update current Xperia Wallpapers
-966a752 xosp: remove old XOSP walls
+d20183d System App remover: misc fixes
+43913a8 System AppRemover: Improvements
 
 ====================
-     04-25-2017
+     05-04-2017
+====================
+
+
+   * kernel/motorola/msm8916/
+b1a7db1 scsi: sg: check length passed to SG_NEXT_CMD_LEN
+8941f7c BACKPORT: sg: relax 16 byte cdb restriction
+841b657 BACKPORT: block: add blk_rq_set_block_pc()
+13ae260 KEYS: Change the name of the dead type to ".dead" to prevent user access
+228d70a KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings
+70c2df8 KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
+df347fe mm: migrate dirty page without clear_page_dirty_for_io etc
+86c0630 ASoC : msm: qdsp6v2: set pointer to NULL after free.
+63c7ce7 drivers: soc: add size check
+cac1b90 msm: vidc: Protect debug_buffer access in core_info_read with lock.
+5f4c010 xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder
+b995662 msm: mdss: Install sync fences after user copy
+8635124 tracing: do not leak kernel addresses
+927986a UPSTREAM: tracing: Fix trace_printk() to print when not using bprintk()
+60c2266 FROMLIST: ASoC: msm-cpe-lsm: cleanup ioctl functions
+
+   * packages/apps/Settings/
+889801e Fix system app remover to work in Lollipop
+ebd25f5 SystemApp Remover
+5d40317 Unbreak NotificationLight options
+
+   * vendor/motorola/
+9b10207 victara: Hexedit libqc-opt.so for N
+35319b9 victara: Switch to using libqc-opt
+
+====================
+     05-03-2017
 ====================
 
 
    * frameworks/base/
-55da699 BatteryMeterDrawable: make sure we use our battery icon
-01d2c11 BatteryService: fix build error
-6149a15 Custom ambient display settings (1/2) *This is a rehash of parts of slims and parts of omni's ambient display mods *Added my own little twist on some of the things *Moved all options into a seperate ambient display fragment
-9b9d338 BatteryService: add dash charging support
-a18ff3a FWB: Battery light: 100% charged level (1/2)
-4930678         [1/2] frameworks/base: Battery and Notification Lights
+783a955 Revert "GlobalActions: Use circular user avatars"
+90ffa79 fix incorrect context classloader initialization in system_server
+189d00e The network event should be an asynchronous callback.
+a4d52b9 Fix keyguard is black background while screen turning off/on quickly
+d028c62 [AssetManager] revert some fastJni
+40d94ca PhoneWindowManager: show transient bar when coming from keyguard
+2002a19 policy: introduce global immersive mode
+d9353fc base: Change toast frames color to some better look ones
+3f50173 hardware: Camera: Return -1 if value does not exist
+18a1f4d Integer.valueOf() -> Integer.parseInt() to avoid allocation.
+2849b38 Avoid needless Integer.valueOf() object allocation.
+37f89c7 DadZone: add missing call to TypedArray.recycle() to prevent leaks when restarting SystemUI for themes
+8c1cd70 KeyButtonView: use a static instance of AudioManager since we don't need a separate one for each KeyButtonView instance
 
-   * packages/apps/Email/
-6478a07 Automatic translation import
-c448762 Automatic translation import
-87f1c3d Automatic translation import
-87113b0 Automatic translation import
-f4a8d47 Automatic translation import
-
-   * packages/apps/Settings/
-64b79cd StatsReceiver: fix null pointer exception
-71758b6 xosp: add StatsReceiver service
-
-   * packages/apps/UnifiedEmail/
-54ea3ac Automatic translation import
-4e55545 Automatic translation import
-fdbfb52 Automatic translation import
-2ded945 Automatic translation import
-565f76f Fix cut off notification sounds.
-8155952 Automatic translation import
-
-   * vendor/xosp/
-d5bff07 apns: fix apns for VoLTE
+   * kernel/motorola/msm8916/
+e9ca7ab bcl: fix allocation for BCL attribute
+45189a8 ASoC: msm8x16-wcd: prevent out of bounds access
+a75955a ASoC: soc: msm: initialize buffer to prevent kernel data leakage
+8deee17 msm: camera: flash: Validate the power setting size
+bc8149c msm: camera: sensor: Validate i2c_freq_mode in msm_cci_set_clk_param
+a160d046 msm: crypto: set CLR_CNTXT bit for crypto operations
+7be3576 xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
+1b34cc2 msm: rndis_ipa: Remove rndis_ipa loopback functionality
+436ebaa msm: camera: sensor: Fix the improper pointer dereference
+4791751 regulator: core: Fix regualtor_ena_gpio_free not to access pin after freeing
 
 ====================
-     04-24-2017
+     05-02-2017
 ====================
 
 
-   * android/
-f63faf0 Merge pull request #40 from nero-d/patch-1
-e7fdad9 Update deps for Onyx.
+   * kernel/motorola/msm8916/
+ab7aa70 soc: qcom: scm: add check to avoid buffer overflow
+39ee515 qseecom: improve input validatation for qseecom_send_service_cmd
+2167e26 msm: ADSPRPC: Check for buffer overflow condition
+f77a75b uio: fix potential use after free issue when accessing debug_buffer
+e34966b crypto: msm: check length before copying to buf in _debug_stats_read
+da638cc ASoC: soc: prevent risk of buffer overflow
+4747210 ASoC: msm: qdsp6v2: return error when copy from userspace fails
+432c213 drivers: soc: add mutex to prevent response being processed twice
+71be8f7 ASoC: msm: qdsp6v2: completely deallocate on cal block creation failure
+a751305 perf: Tighten (and fix) the grouping condition
+79d5878 trace: resolve stack corruption due to string copy
 
-   * packages/apps/Settings/
-c9972b4 XOSPNavBarSwitch: remove navbar dependency
-
-   * packages/services/Telecomm/
-92f9637 Merge pull request #1 from EsromG5/patch-1
-1fca1ea Fix audio incall for samsung devices chipset msm8916
-
-   * vendor/xosp/
-f33b4f4 Revert "Revert "XCA 2.2.1""
+   * vendor/motorola/
+43d0c43 shamu: update blobs from N6F27C factory image
 
 ====================
-     04-23-2017
+     05-01-2017
 ====================
 
-
-   * vendor/xosp/
-220f56f vendor:xosp:README: Remove BlurSettings old issue
-75708d8 Revert "XCA 2.2.1"
 
