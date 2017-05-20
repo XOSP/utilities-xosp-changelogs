@@ -11,216 +11,458 @@
 
 
 ====================
-     05-07-2017
+     05-20-2017
 ====================
 
+
+   * bionic/
+9073dd7 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * device/xiaomi/kenzo/
+d5f355d kenzo: Drop fp wrapper to dynamically select fp HAL
+
+   * device/xiaomi/msm8956-common/
+2070832 msm8956: Write USB device info only once
+
+   * frameworks/base/
+e968f49 Misc fixes
+0a8195b fwb: underp it
+1721d2b FWB: The Return of the Ticker 2/2
+bfa91cb [SQUASHED] Lockscreen Weather
+f7bc28b Add VOLTE icon
+9c04c65 Fix playing screenshot's sound when camera's sounds off
+7b64107 Disable/Enable screenshot sound [1/2]
+
+   * kernel/xiaomi/msm8956/
+2a61d1c msm: qpnp-haptic: Process haptics asynchronously
+14f2c52 qpnp-haptic: Dejank the haptics
+
+   * packages/apps/Settings/
+7213394b settings: underp everything
+fafc3fd Merge branch 'xosp-n-rebase' of https://github.com/XOSP-Project/android_packages_apps_Settings into xosp-n-rebase
+72bf463 Misc fixes
+cf7d4f2 Merge branch 'xosp-n-rebase' of https://github.com/XOSP-Project/android_packages_apps_Settings into xosp-n-rebase
+60b936d Lockscreen Weather squash: Lock screen: Weather panel improvements Ls weather: options to hide the weather when notifications are visible
+dce920c Lockscreen Weather squash: Lock screen: Weather panel improvements Ls weather: options to hide the weather when notifications are visible
+a3b17e0 The Return of the Ticker 1/2
+033a8a8 Systemappremover:Fix it for priv-apps It was removing apps from wrong path
+b7692b9 AE: make first entry removable too
+cde6cf1 Disable/Enable screenshot sound [2/2]
+
+   * vendor/xiaomi/
+478bb39 Merge remote-tracking branch 'upstream/cm-14.1' into xosp-n
 
    * vendor/xosp/
-33b5ad7 Update XOSPDelta Updater
+7d0c545 xosp_devices: Update list of Official devices
+1ea0209 vendor:xosp: fix Chromium logic
+62be12c TO-BE-REVERTED: include all the changes we made since 07/05/17
+13e3c11 [41.2.A.0.219] Update XOSPApps signature
+347cb63 Update XCA
+7d13bc7 Merge remote-tracking branch 'origin/xosp-n-rebase' into xosp-n-rebase4
+af43018 Update XOSPDelta Updater
 
 ====================
-     05-06-2017
+     05-19-2017
+====================
+
+
+   * hardware/qcom/audio-caf/msm8916/
+a4a87a7 hal: dolby: Only set C_KEY if ACDB License is enabled.
+be0e36b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.16' into xosp-n-caf-8916
+
+   * hardware/qcom/audio-caf/msm8952/
+236778c Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.17' into xosp-n-caf-8952
+
+   * hardware/qcom/audio-caf/msm8974/
+d4c6661 Merge remote-tracking branch 'lineage/cm-14.1-caf-8974' into xosp-n-caf-8974
+
+   * hardware/qcom/audio-caf/msm8994/
+252691b policy_hal: Line up default features with rest of HAL
+5382b53 audio: Fix flac offload not working
+14be98d Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into xosp-n-caf-8994
+
+   * hardware/qcom/audio/default/
+72497d3 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * hardware/qcom/display/
+a3d9308 display: msm8226: fix merge derp
+06d8402 hwc2: Only set display_width and display_height when equal to zero
+96f1f94 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * hardware/qcom/display-caf/msm8994/
+c44734d Fix duplicate copy file rules
+a13172c Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into xosp-n-caf-8994
+
+   * hardware/qcom/display-caf/msm8996/
+989cc8a Merge remote-tracking branch 'lineage/cm-14.1-caf-8996' into xosp-n-caf-8996
+
+   * hardware/qcom/media/
+eb1bca8 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * hardware/qcom/media-caf/apq8084/
+f509945 Fix duplicated OMX.qcom.audio.decoder.aac entry
+
+   * hardware/qcom/media-caf/msm8937/
+b76e29d media: libOmxSw encoders require prop headers :(
+6c201e3 mm-video-v4l2: serialize FTB's for dropped frames
+665afa0 mm-video-v4l2: vidc: venc: Free buffer FDs and handles
+97db873 mm-video-v4l2: vdec: Support for HEVCMain10HDR10 profile
+89eab6c mm-video-v4l2: Update max level for h264 decoder to 5.1
+a73d65e mm-video-v4l2: venc: Disable Pframes incase of resolution 5k/6k
+51e03c1 mm-video-v4l2: Reset drv_ctx o/p buffer requirements in loaded state
+a0a8413 mm-video-v4l2: vdec: Convert maximum display luminance in cd/m2
+66a3bbd mm-video-v4l2: vdec:Metadata for HDR and ColorAspects
+da1169a mm-video-v4l2: vdec: Support for HDR Info extension
+
+   * hardware/qcom/media-caf/msm8994/
+b0aecbd Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into xosp-n-caf-8994
+
+   * hardware/qcom/media-caf/msm8996/
+9df118e Merge remote-tracking branch 'lineage/cm-14.1-caf-8996' into xosp-n-caf-8996
+
+   * packages/resources/devicesettings/
+bd3c549 Automatic translation import
+
+   * vendor/xiaomi/
+b3eb1a3 ido: Use radio blobs from crackling
+23477b4 ido: Enable CNE/DPM feature
+bac444f ido: Use gps blobs from crackling
+087d778 ido: Update graphics blobs from crackling
+
+   * vendor/xosp/
+9bd0f1c Merge pull request #3 from axxx007xxxz/xosp-n-rebase
+1a4b391 prebuilt: priv-app: Update Magisk Manager
+
+====================
+     05-18-2017
+====================
+
+
+   * build/
+83c17ca Use 'release-keys' for build tag
+07369bf disable Dalvik lock contention logging as it isnt needed
+
+   * frameworks/av/
+bbdb5ca fixed leak memory by some extractor using
+037e83e audioflinger: increase max tracks per uid
+e0425ad Do not seek when switching to background playback
+ddc9878 camera: Fix high battery drain after using flashlight
+
+====================
+     05-17-2017
+====================
+
+
+   * dalvik/
+3e2132f Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * external/aac/
+e7a64f9 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * external/boringssl/
+893b648 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * external/flac/
+cda8ced Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * external/libnfc-nci/
+63a7949 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * external/okhttp/
+de8b272 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * external/tinyalsa/
+096f573 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * external/toybox/
+5d79d3b Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * frameworks/av/
+081cde5 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * frameworks/base/
+abd5afd Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * hardware/ril/
+f4271dd Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * packages/apps/Nfc/
+267cb29 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * packages/apps/Tag/
+797b630 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * packages/providers/BlockedNumberProvider/
+be2dcec Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * packages/providers/CalendarProvider/
+8249d58 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * system/bt/
+9ac1fad Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * system/media/
+6bb9393 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * system/tools/aidl/
+a08f952 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * vendor/xiaomi/
+36ed8fa capricorn: Add IMX378 PDAF blobs
+
+   * vendor/xosp/
+1745120 vendor:xosp: make Chromium optional
+
+====================
+     05-16-2017
+====================
+
+
+   * frameworks/base/
+d94f644 core: fix a color
+039781d base: Forward Port Volume Long Press Skip Tracks (1/2)
+434cf40 Revert "base: Forward Port Volume Long Press Skip Tracks (1/2)"
+ef5921e core: disable screen navigation bar by default
+5772775 fwb: Misc 7.1.2 merge fixes
+
+   * vendor/xiaomi/
+f9fe356 capricorn: Update blobs from latest 7.0 release
+a7b10a6 capricorn: Initial commit
+
+====================
+     05-15-2017
+====================
+
+
+   * bootable/recovery/
+05c01d7 Revert "Revert "recovery:updater: Changes to support 32->64 bit upgrades""
+
+   * kernel/xiaomi/msm8956/
+f6c6adc kernel: Only expose su when daemon is running
+
+   * packages/apps/Settings/
+12e4df7 CAF Merge fixes (2)
+4cb1a33 CAF Merge fixes
+713ebea Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+====================
+     05-14-2017
+====================
+
+
+   * external/chromium-webview/
+b544e48 Update README
+
+   * frameworks/opt/telephony/
+6fd0d61 CAF Merge fixes
+
+   * hardware/qcom/audio-caf/msm8996/
+6e8e9c5 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+   * hardware/qcom/display-caf/msm8996/
+332f57a Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+   * hardware/qcom/media-caf/msm8996/
+87965a0 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+   * packages/providers/TelephonyProvider/
+1847199 CAF Merge fixes
+
+   * system/bt/
+fa04d73 CAF merge fixes
+
+   * system/core/
+7a61530 fs_mgr: Use    * pathmap for recovery
+2a7ac69 healthd: Use    * pathmap for recovery
+
+====================
+     05-13-2017
 ====================
 
 
    * android/
-c062b21 xosp:Switch to android-7.1.1_r40
-ce2d4a7 xosp: stop using AOSP browser (1/2)
+c74605b xosp:Switch to android-7.1.2_r11
 
    * build/
-9df8ffa Merge tag 'android-7.1.1_r40' into xosp-n-rebase
-9df8ed5 build: stop using AOSP browser (2/2)
+1355323 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+a4de167 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase2
 
-   * device/xiaomi/msm8956-common/
-69df01d msm8956: Clean up kernel cmdline
-74666ce msm8956: Update power configs
-
-   * frameworks/base/
-02ce04c core: make night display available by default
-
-   * kernel/xiaomi/msm8956/
-9d124c5 kenzo: Import dtsi changes from new miui kernel
-621ddd4 msm8956: fix sdcardfs build errors
-e5ac502 sdcardfs: Change magic value
-90efe2b ANDROID: sdcardfs: Call lower fs's revalidate
-6d3ca60 ANDROID: sdcardfs: Avoid setting GIDs outside of valid ranges
-291c344 Revert "Revert "Android: sdcardfs: Don't do d_add for lower fs""
-a555467 ANDROID: sdcardfs: Use filesystem specific hash
-1b64d74 Revert "Android: sdcardfs: Don't do d_add for lower fs"
-70b27dc Android: sdcardfs: Don't complain in fixup_lower_ownership
-ed300d0 Android: sdcardfs: Don't do d_add for lower fs
-8486ad3 ANDROID: sdcardfs: ->iget fixes
-48c06cc Android: sdcardfs: Change cache GID value
-8f01c2e ANDROID: sdcardfs: Directly pass lower file for mmap
-0ec132e ANDROID: sdcardfs: update module info
-4f68536 ANDROID: sdcardfs: use d_splice_alias
-798b680 ANDROID: sdcardfs: fix ->llseek to update upper and lower offset
-1dcca33 ANDROID: sdcardfs: copy lower inode attributes in ->ioctl
-dc0d24b ANDROID: sdcardfs: remove unnecessary call to do_munmap
-a25ff6e ANDROID: sdcardfs: Fix style issues in macros
-05cd128 ANDROID: sdcardfs: Use seq_puts over seq_printf
-282963d ANDROID: sdcardfs: Use to kstrout
-9995f0f ANDROID: sdcardfs: Use pr_[...] instead of printk
-f897ec4 ANDROID: sdcardfs: remove unneeded null check
-04d1f60 ANDROID: sdcardfs: Fix style issues with comments
-c9d93b5 ANDROID: sdcardfs: Fix formatting
-91b3830 ANDROID: sdcardfs: correct order of descriptors
-1c6c3fa2 ANDROID: sdcardfs: Fix gid issue
-c5c0a57 ANDROID: sdcardfs: Use tabs instead of spaces in multiuser.h
-644b1bd ANDROID: sdcardfs: Remove uninformative prints
-0533cbe ANDROID: sdcardfs: move path_put outside of spinlock
-b923e94 ANDROID: sdcardfs: Use case insensitive hash function
-403a18c ANDROID: sdcardfs: declare MODULE_ALIAS_FS
-d25dd87 ANDROID: sdcardfs: Get the blocksize from the lower fs
-83e4227 ANDROID: sdcardfs: Use d_invalidate instead of drop_recurisve
-d3c4a3a ANDROID: sdcardfs: Switch to internal case insensitive compare
-fbbacc8 ANDROID: sdcardfs: Use spin_lock_nested
-b4e8879 ANDROID: sdcardfs: Replace get/put with d_lock
-a68c68a ANDROID: sdcardfs: rate limit warning print
-79471e4 ANDROID: sdcardfs: Fix case insensitive lookup
-d1f8038 ANDROID: sdcardfs: support direct-IO (DIO) operations
-823a567 ANDROID: sdcardfs: implement vm_ops->page_mkwrite
-58a3843 ANDROID: sdcardfs: Don't bother deleting freelist
-7f17aca ANDROID: sdcardfs: Add missing path_put
-ffabad7 ANDROID: sdcardfs: Fix incorrect hash
-3e09948 ANDROID: sdcardfs: Switch strcasecmp for internal call
-bbeeb0fe ANDROID: sdcardfs: switch to full_name_hash and qstr
-e1db971 ANDROID: sdcardfs: Add GID Derivation to sdcardfs
-8666535 ANDROID: sdcardfs: Remove redundant operation
-23928a7 ANDROID: sdcardfs: add support for user permission isolation
-ec6c9ba ANDROID: sdcardfs: Refactor configfs interface
-821d077 ANDROID: sdcardfs: Allow non-owners to touch
-7924cbc ANDROID: sdcardfs: Fix locking issue with permision fix up
-c672fa8 sdcardfs: Use per mount permissions
-f81cb26 sdcardfs: Add gid and mask to private mount data
-3a99030 sdcardfs: User new permission2 functions
-204d2f1 sdcardfs: Move directory unlock before touch
-8626f0d sdcardfs: fix external storage exporting incorrect uid
-79824e4 sdcardfs: Added top to sdcardfs_inode_info
-05aee0f sdcardfs: Switch package list to RCU
-ae525b7 sdcardfs: Fix locking for permission fix up
-eba7f87 sdcardfs: Check for other cases on path lookup
-a6d5585 sdcardfs: override umask on mkdir and create
-b1df293 ANDROID: sdcardfs: fix itnull.cocci warnings
-255d19b sdcardfs: Truncate packages_gid.list on overflow
-b9eada42 vfs: change d_canonical_path to take two paths
-844e0e3 sdcardfs: remove unneeded __init and __exit
-f89bd04 sdcardfs: Remove unused code
-3d6884a sdcardfs: remove effectless config option
-f6a7c83 sdcardfs: Add support for d_canonicalize
-b33cc6b sdcardfs: Bring up to date with Android M permissions:
-dc9bc2a sdcardfs: Changed type-cast in packagelist management
-f05d23f sdcardfs: port to 3.10
-93077e6 Initial port of sdcardfs
-8324cb4 msm8956: squashed revert of sdcardfs commits Revert "ANDROID: sdcardfs: Fix locking issue with permision fix up"
-
-   * vendor/xosp/
-64c4248 Chromium: fix the Makefile
-ef2613a Chromium: fix the Makefile
-46f7b9c vendor:xosp: Start using Chromium Prebuilts
-
-====================
-     05-05-2017
-====================
-
-
-   * android/
-17fd922 README: remove this...
-
-   * build/
-33d267f Allow force-sync
+   * external/icu/
+70fa924 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
 
    * frameworks/base/
-e87b25f PhoneWindowManager: underp this
+c6d1b0a Merge remote-tracking branch 'origin/xosp-n-rebase' into xosp-n-rebase
+52186ef Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
 
-   * packages/apps/Settings/
-d20183d System App remover: misc fixes
-43913a8 System AppRemover: Improvements
+   * frameworks/opt/telephony/
+227c70c Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
 
-====================
-     05-04-2017
-====================
+   * hardware/qcom/audio-caf/msm8996/
+23be04d msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
 
+   * packages/apps/Bluetooth/
+fc4de40 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
 
-   * frameworks/base/
-783a955 Revert "GlobalActions: Use circular user avatars"
-90ffa79 fix incorrect context classloader initialization in system_server
-189d00e The network event should be an asynchronous callback.
-a4d52b9 Fix keyguard is black background while screen turning off/on quickly
-d028c62 [AssetManager] revert some fastJni
-40d94ca PhoneWindowManager: show transient bar when coming from keyguard
-2002a19 policy: introduce global immersive mode
-d9353fc base: Change toast frames color to some better look ones
-3f50173 hardware: Camera: Return -1 if value does not exist
-18a1f4d Integer.valueOf() -> Integer.parseInt() to avoid allocation.
-2849b38 Avoid needless Integer.valueOf() object allocation.
-37f89c7 DadZone: add missing call to TypedArray.recycle() to prevent leaks when restarting SystemUI for themes
-8c1cd70 KeyButtonView: use a static instance of AudioManager since we don't need a separate one for each KeyButtonView instance
+   * packages/apps/CarrierConfig/
+9eb2c31 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
 
-   * packages/apps/Settings/
-889801e Fix system app remover to work in Lollipop
-ebd25f5 SystemApp Remover
-5d40317 Unbreak NotificationLight options
+   * packages/apps/Dialer/
+e2b51de Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
 
-====================
-     05-03-2017
-====================
+   * packages/providers/ContactsProvider/
+0ed1e29 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
 
+   * packages/providers/TelephonyProvider/
+c6883a4 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
 
-====================
-     05-02-2017
-====================
+   * system/bt/
+93983f7 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
 
-
-   * device/xiaomi/kenzo/
-9e88ed3 kenzo: update dependencies
-9144c31 kenzo: Hide sRGB toggle in developer options
-0285b43 kenzo: Add BSOD Killer
-7b976a4 kenzo: kang VR HAL from Angler
-48d4cc1 XOSP-ify
-
-   * device/xiaomi/msm8956-common/
-b1563f9 XOSP-ify
-fc1fb7d msm8956: address denials
-c9b2e18 msm8956: correct pixel density
-954a447 msm8956: comment out 'TARGET_PROVIDES_LIBLIGHT'
-66024b9 msm8956: overlay: enable NightDisplay
-6b6c256 msm8956: overlay: uncomment config_deviceHardwareKeys
-2b17e6f msm8956: cleanup CM stuff in overlay
-07d682c msm8956: remove KeyDisabler
-4d8c693 msm8956: doze: Add dashboard summary
-fbabe27 msm8956: doze: Use commonized strings translations  * Translations from the new    *     android_packages_resources_devicesettings
-4899213 msm8956: Bring back AOSP Doze
-695276b Update WCNSS_qcom_cfg.ini
-11a5ffa msm8956: enable HW Acceleration
-b5742e4 dex2oat: Use 6 cores instead of 4
-b713fce msm8956: enable miracast
-
-   * kernel/xiaomi/msm8956/
-f8d11a1 kenzo: fix mistakes
-9a6ffa3 kenzo: enable appsbl qseecom support flag for M boot stack
-6b7c3a7 kenzo: Fix & enable Goodix GF318M fingerprint support
-c38036e msm8956:  move goodix fingerprint
-1738def Revert "drivers: input: misc: include goodix/Kconfig in Kconfig"
-2c4cda9 defconfig: Updates
-29b1f9a Merge remote-tracking branch 'f2fs-stable/linux-3.10.y' into xosp-n
-c11304e drivers: staging: prima: update to LA.BR.1.3.6_rb1.17
-a25b9b5 Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.17' into xosp-n
+   * system/core/
+3a74fc9 healthd: fix mistake
+2484f14 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
 
    * vendor/xiaomi/
-98ff752 Merge remote-tracking branch 'Andro/RR-7.1' into HEAD
-3e69e67 kenzo: use new camera patch
+5e5b773 lithium: Fix front camera mount angle
+56d8339 lithium: Add initial blobs
+60da7dc Merge branch 'RR-7.1' of https://github.com/AndropaX/proprietary_vendor_xiaomi into xosp-n
+5cb6943 libra: update camera blobs from miui 7.5.11
 
 ====================
-     05-01-2017
+     05-12-2017
 ====================
 
 
-   * device/xiaomi/kenzo/
-87e84e3 kenzo: Add goodix services and sepolicy
-8594e2e kenzo: Support Goodix fingerprint
-84e67a6 kenzo: Remove unused fpc firmware
+   * frameworks/av/
+9321605 Merge pull request #1 from daedroza/xosp-n-rebase
+49e31d1 Revert "Revert "mediacodec: minijail: Enable exporting of policy files""
+
+   * system/extras/
+3fe8a44 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * system/netd/
+93802f3 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+====================
+     05-11-2017
+====================
+
+
+   * art/
+c721f78 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * development/
+8eb5f40 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * external/ipsec-tools/
+1102066 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * external/skia/
+e0ddd41 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * frameworks/av/
+cc69964 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * frameworks/native/
+48749bd Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * frameworks/opt/net/ims/
+68c4e47 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * frameworks/opt/net/wifi/
+0b5ebea Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * hardware/broadcom/libbt/
+e829d52 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * hardware/broadcom/wlan/
+91a5779 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * hardware/libhardware/
+8e5a113 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * libcore/
+664ed30 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/Camera2/
+430620e Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/CellBroadcastReceiver/
+9a0897d Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/CertInstaller/
+3056d79 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/Contacts/
+d31dc0e Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/ContactsCommon/
+9bca19d Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/EmergencyInfo/
+7236d65 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/ExactCalculator/
+b9d8010 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/KeyChain/
+0e6d3ea Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/ManagedProvisioning/
+9e556b6 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/PackageInstaller/
+c99e273 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/PhoneCommon/
+cd81a3a Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/Stk/
+5c0e4ca Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/StorageManager/
+03e19f0 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/providers/DownloadProvider/
+bbf9cde Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/providers/MediaProvider/
+0cee8b2 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/services/Car/
+7db2f7d Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/services/Mms/
+4e40308 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/services/Telecomm/
+5b227ff Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/services/Telephony/
+5d5d010 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * system/keymaster/
+2cac4f2 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * system/security/
+4f91304 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * system/sepolicy/
+53b6079 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * system/vold/
+e0119ce Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+====================
+     05-10-2017
+====================
+
+
+====================
+     05-09-2017
+====================
+
 
    * vendor/xiaomi/
-8ce56b8 kenzo: Update
+f850f1e kenzo: Rename fingerprint HALs
 
