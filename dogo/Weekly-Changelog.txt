@@ -1,0 +1,520 @@
+
+ Copyright (C) 2013-2017 Xperia Open Source Project
+
+
+ Notice
+ This is an auto generated changelog for the XOSPChangeLOGApp.
+ The changelog is done only for official supported devices and it is updated each week.
+ If you want to see the changelog of a specific weekly build,
+ check this repository: https://github.com/XOSP-Project/utilities-xosp-changelogs
+ Find your device and check the history of the commits
+
+
+====================
+     05-21-2017
+====================
+
+
+   * bionic/
+9073dd7 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * frameworks/support/
+3723706 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * packages/apps/Nfc/
+52cac8d Nfc: Include android-support-v4 for the NXP stack
+
+   * packages/apps/Settings/
+7213394b settings: underp everything
+
+   * vendor/xosp/
+7d0c545 xosp_devices: Update list of Official devices
+1ea0209 vendor:xosp: fix Chromium logic
+
+====================
+     05-20-2017
+====================
+
+
+   * frameworks/base/
+e968f49 Misc fixes
+0a8195b fwb: underp it
+1721d2b FWB: The Return of the Ticker 2/2
+bfa91cb [SQUASHED] Lockscreen Weather
+f7bc28b Add VOLTE icon
+9c04c65 Fix playing screenshot's sound when camera's sounds off
+7b64107 Disable/Enable screenshot sound [1/2]
+
+   * hardware/qcom/audio-caf/msm8916/
+a4a87a7 hal: dolby: Only set C_KEY if ACDB License is enabled.
+be0e36b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.16' into xosp-n-caf-8916
+
+   * hardware/qcom/audio-caf/msm8952/
+236778c Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.17' into xosp-n-caf-8952
+
+   * hardware/qcom/audio-caf/msm8974/
+d4c6661 Merge remote-tracking branch 'lineage/cm-14.1-caf-8974' into xosp-n-caf-8974
+
+   * hardware/qcom/audio-caf/msm8994/
+252691b policy_hal: Line up default features with rest of HAL
+5382b53 audio: Fix flac offload not working
+14be98d Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into xosp-n-caf-8994
+
+   * hardware/qcom/audio/default/
+72497d3 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * hardware/qcom/display/
+a3d9308 display: msm8226: fix merge derp
+
+   * hardware/qcom/media/
+eb1bca8 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * hardware/qcom/media-caf/apq8084/
+f509945 Fix duplicated OMX.qcom.audio.decoder.aac entry
+
+   * hardware/qcom/media-caf/msm8937/
+b76e29d media: libOmxSw encoders require prop headers :(
+6c201e3 mm-video-v4l2: serialize FTB's for dropped frames
+665afa0 mm-video-v4l2: vidc: venc: Free buffer FDs and handles
+97db873 mm-video-v4l2: vdec: Support for HEVCMain10HDR10 profile
+89eab6c mm-video-v4l2: Update max level for h264 decoder to 5.1
+a73d65e mm-video-v4l2: venc: Disable Pframes incase of resolution 5k/6k
+51e03c1 mm-video-v4l2: Reset drv_ctx o/p buffer requirements in loaded state
+a0a8413 mm-video-v4l2: vdec: Convert maximum display luminance in cd/m2
+66a3bbd mm-video-v4l2: vdec:Metadata for HDR and ColorAspects
+da1169a mm-video-v4l2: vdec: Support for HDR Info extension
+
+   * hardware/qcom/media-caf/msm8994/
+b0aecbd Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into xosp-n-caf-8994
+
+   * hardware/qcom/media-caf/msm8996/
+9df118e Merge remote-tracking branch 'lineage/cm-14.1-caf-8996' into xosp-n-caf-8996
+
+   * packages/apps/Settings/
+fafc3fd Merge branch 'xosp-n-rebase' of https://github.com/XOSP-Project/android_packages_apps_Settings into xosp-n-rebase
+72bf463 Misc fixes
+cf7d4f2 Merge branch 'xosp-n-rebase' of https://github.com/XOSP-Project/android_packages_apps_Settings into xosp-n-rebase
+60b936d Lockscreen Weather squash: Lock screen: Weather panel improvements Ls weather: options to hide the weather when notifications are visible
+dce920c Lockscreen Weather squash: Lock screen: Weather panel improvements Ls weather: options to hide the weather when notifications are visible
+a3b17e0 The Return of the Ticker 1/2
+033a8a8 Systemappremover:Fix it for priv-apps It was removing apps from wrong path
+b7692b9 AE: make first entry removable too
+cde6cf1 Disable/Enable screenshot sound [2/2]
+
+   * vendor/xosp/
+62be12c TO-BE-REVERTED: include all the changes we made since 07/05/17
+13e3c11 [41.2.A.0.219] Update XOSPApps signature
+347cb63 Update XCA
+7d13bc7 Merge remote-tracking branch 'origin/xosp-n-rebase' into xosp-n-rebase4
+af43018 Update XOSPDelta Updater
+
+====================
+     05-19-2017
+====================
+
+
+   * build/
+83c17ca Use 'release-keys' for build tag
+07369bf disable Dalvik lock contention logging as it isnt needed
+
+   * frameworks/av/
+bbdb5ca fixed leak memory by some extractor using
+037e83e audioflinger: increase max tracks per uid
+e0425ad Do not seek when switching to background playback
+ddc9878 camera: Fix high battery drain after using flashlight
+
+   * hardware/qcom/display/
+06d8402 hwc2: Only set display_width and display_height when equal to zero
+96f1f94 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * hardware/qcom/display-caf/msm8994/
+c44734d Fix duplicate copy file rules
+a13172c Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into xosp-n-caf-8994
+
+   * hardware/qcom/display-caf/msm8996/
+989cc8a Merge remote-tracking branch 'lineage/cm-14.1-caf-8996' into xosp-n-caf-8996
+
+   * vendor/xosp/
+9bd0f1c Merge pull request #3 from axxx007xxxz/xosp-n-rebase
+1a4b391 prebuilt: priv-app: Update Magisk Manager
+
+====================
+     05-18-2017
+====================
+
+
+   * device/sony/dogo/
+07a8ee5 Update xosp.dependencies
+
+====================
+     05-17-2017
+====================
+
+
+   * dalvik/
+3e2132f Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * external/aac/
+e7a64f9 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * external/boringssl/
+893b648 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * external/flac/
+cda8ced Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * external/libnfc-nci/
+63a7949 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * external/okhttp/
+de8b272 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * external/tinyalsa/
+096f573 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * external/toybox/
+5d79d3b Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * frameworks/av/
+081cde5 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * frameworks/base/
+abd5afd Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * hardware/ril/
+f4271dd Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * kernel/sony/apq8064/
+f774c3b Revert "kernel: Only expose su when daemon is running"
+7d730f5 slimbus: Fix channel concurrent usage during reconfiguration sequence
+6c8ed79 kernel: Only expose su when daemon is running
+
+   * packages/apps/Nfc/
+267cb29 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * packages/apps/Tag/
+797b630 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * packages/providers/BlockedNumberProvider/
+be2dcec Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * packages/providers/CalendarProvider/
+8249d58 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * system/bt/
+9ac1fad Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * system/media/
+6bb9393 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * system/tools/aidl/
+a08f952 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+
+   * vendor/xosp/
+1745120 vendor:xosp: make Chromium optional
+
+====================
+     05-16-2017
+====================
+
+
+   * bootable/recovery/
+05c01d7 Revert "Revert "recovery:updater: Changes to support 32->64 bit upgrades""
+
+   * frameworks/base/
+d94f644 core: fix a color
+039781d base: Forward Port Volume Long Press Skip Tracks (1/2)
+434cf40 Revert "base: Forward Port Volume Long Press Skip Tracks (1/2)"
+ef5921e core: disable screen navigation bar by default
+5772775 fwb: Misc 7.1.2 merge fixes
+
+====================
+     05-15-2017
+====================
+
+
+   * hardware/qcom/audio-caf/msm8996/
+6e8e9c5 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+   * hardware/qcom/display-caf/msm8996/
+332f57a Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+   * hardware/qcom/media-caf/msm8996/
+87965a0 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+   * packages/apps/Settings/
+12e4df7 CAF Merge fixes (2)
+4cb1a33 CAF Merge fixes
+713ebea Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/providers/TelephonyProvider/
+1847199 CAF Merge fixes
+
+====================
+     05-14-2017
+====================
+
+
+   * external/chromium-webview/
+b544e48 Update README
+
+   * frameworks/opt/telephony/
+6fd0d61 CAF Merge fixes
+
+   * hardware/qcom/audio-caf/msm8996/
+23be04d msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
+
+   * system/bt/
+fa04d73 CAF merge fixes
+
+   * system/core/
+7a61530 fs_mgr: Use    * pathmap for recovery
+2a7ac69 healthd: Use    * pathmap for recovery
+3a74fc9 healthd: fix mistake
+2484f14 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+====================
+     05-13-2017
+====================
+
+
+   * android/
+c74605b xosp:Switch to android-7.1.2_r11
+
+   * build/
+1355323 Merge tag 'android-7.1.2_r11' into xosp-n-rebase
+a4de167 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase2
+
+   * external/icu/
+70fa924 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * frameworks/base/
+c6d1b0a Merge remote-tracking branch 'origin/xosp-n-rebase' into xosp-n-rebase
+52186ef Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * frameworks/opt/telephony/
+227c70c Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * kernel/sony/apq8064/
+3e37357 UPSTREAM: tty: n_hdlc: get rid of racy n_hdlc.tbuf
+e7e38e7 UPSTREAM: TTY: n_hdlc, fix lockdep false positive
+94cb1be UPSTREAM: timerfd: Protect the might cancel mechanism proper
+85d5a016 BACKPORT: posix_acl: Clear SGID bit when setting file permissions
+5fc514b f2fs: Sync with upstream f2fs-stable 3.10.y
+b15094a sunrpc/cache.h: replace simple_strtoul
+0df8958 sunrpc/cache.h: fix coding style
+0a598c7 Bluetooth: Remove unused hci_le_ltk_reply()
+bd2d628 slub: Get rid of the node field
+6cc9a39 ANDROID: sdcardfs: fix sdcardfs_destroy_inode for the inode RCU approach
+1761b35 make the GPU idle at 128 MHz
+a0bd4a2 crypto: msm: check integer overflow on total data len in qcedev.c
+261fe8d hid: usbhid: Changes to prevent buffer overflow
+6757c75 mm: fix warning in __set_page_dirty_nobuffers
+428bb20 defconfig: fusion3: Enable sdcardFS
+78f5c7f defconfig: fusion3: DEFAULT_NOOP -> DEFAULT_ROW
+1008e82 mm: Tighten x86 /dev/mem with zeroing reads
+9170e25 x86/mm/init.c: Fix devmem_is_allowed() off by one
+4c8cca8 mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
+9216ee7 defconfig: fusion3: Use -O2 instead of -Os
+1dc889a KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
+f314542 mm: migrate dirty page without clear_page_dirty_for_io etc
+406a9a0 ANDROID: sdcardfs: Call lower fs's revalidate
+c718358 Revert "Android: sdcardfs: Don't do d_add for lower fs"
+c32ba17 Android: sdcardfs: Don't do d_add for lower fs
+c81dd9c ANDROID: sdcardfs: ->iget fixes
+6324762 BACKPORT: fs: limit filesystem stacking depth
+d5835a1 ANDROID: sdcardfs: Remove uninformative prints
+03707e9 ANDROID: sdcardfs: move path_put outside of spinlock
+accbc82 ANDROID: sdcardfs: Remove redundant operation
+17c6f47 ANDROID: sdcardfs: support direct-IO (DIO) operations
+8275d78 ANDROID: sdcardfs: implement vm_ops->page_mkwrite
+4025574 ANDROID: sdcardfs: Allow non-owners to touch
+b2ca3a0 sdcardfs: Move directory unlock before touch
+bb9a181 sdcardfs: Change magic value
+4efa0ef sdcardfs: fix external storage exporting incorrect uid
+42d6192 sdcardfs: Remove stale dentries when reusing an inode.
+38940c6 sdcardfs: Fix issue with d_child move
+7d5af68 sdcardfs: Added top to sdcardfs_inode_info
+4efe279 sdcardfs: Fix locking
+9030451 sdcardfs: Check for other cases on path lookup
+10e64fe sdcardfs: override umask on mkdir and create
+89ffef7 ANDROID: sdcardfs: fix itnull.cocci warnings
+cdb7cc6 sdcardfs: Truncate packages_gid.list on overflow
+bc5d349 fuse: Add support for d_canonical_path
+396fa5c vfs: change d_canonical_path to take two paths
+e490ad0 sdcardfs: remove unneeded __init and __exit
+d6be856 sdcardfs: Remove unused code
+85a63d7 inotify: Fix erroneous update of bit count
+8c479eb sdcardfs: Add support for d_canonicalize
+c77c20b vfs: add d_canonical_path for stacked filesystem support
+00c9d7a sdcardfs: Bring up to date with Android M permissions:
+529a514 sdcardfs: Changed type-cast in packagelist management
+1540336 sdcardfs: Port to 3.4
+7cdaa7a Included sdcardfs source code for kernel 3.0
+0a0513f get rid of kern_path_parent()
+f288144 msm: crypto: set CLR_CNTXT bit for crypto operations
+4f9bca3 f2fs: Squashed Revert of recent commits
+
+   * packages/apps/Bluetooth/
+fc4de40 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/CarrierConfig/
+9eb2c31 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/Dialer/
+e2b51de Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/providers/ContactsProvider/
+0ed1e29 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/providers/TelephonyProvider/
+c6883a4 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * system/bt/
+93983f7 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * system/extras/
+3fe8a44 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * system/netd/
+93802f3 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+====================
+     05-12-2017
+====================
+
+
+   * art/
+c721f78 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * development/
+8eb5f40 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * external/ipsec-tools/
+1102066 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * external/skia/
+e0ddd41 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * frameworks/av/
+9321605 Merge pull request #1 from daedroza/xosp-n-rebase
+49e31d1 Revert "Revert "mediacodec: minijail: Enable exporting of policy files""
+cc69964 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * frameworks/native/
+48749bd Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * frameworks/opt/net/ims/
+68c4e47 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * frameworks/opt/net/wifi/
+0b5ebea Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * hardware/broadcom/libbt/
+e829d52 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * hardware/broadcom/wlan/
+91a5779 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * hardware/libhardware/
+8e5a113 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * libcore/
+664ed30 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/Camera2/
+430620e Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/CellBroadcastReceiver/
+9a0897d Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/CertInstaller/
+3056d79 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/Contacts/
+d31dc0e Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/ContactsCommon/
+9bca19d Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/EmergencyInfo/
+7236d65 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/ExactCalculator/
+b9d8010 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/KeyChain/
+0e6d3ea Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/ManagedProvisioning/
+9e556b6 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/PackageInstaller/
+c99e273 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/PhoneCommon/
+cd81a3a Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/Stk/
+5c0e4ca Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/apps/StorageManager/
+03e19f0 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/providers/DownloadProvider/
+bbf9cde Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/providers/MediaProvider/
+0cee8b2 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/services/Car/
+7db2f7d Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/services/Mms/
+4e40308 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/services/Telecomm/
+5b227ff Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * packages/services/Telephony/
+5d5d010 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * system/keymaster/
+2cac4f2 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * system/security/
+4f91304 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * system/sepolicy/
+53b6079 Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+   * system/vold/
+e0119ce Merge tag 'LA.UM.5.6.r1-04600-89xx.0' into xosp-n-rebase
+
+====================
+     05-11-2017
+====================
+
+
+   * device/sony/dogo/
+80550b2 Update xosp.mk
+
+   * device/sony/fusion3-common/
+86e8516 fusion3: overlay: blur fix
+5661c82 xosp-n initial
+
+   * vendor/sony/
+c30e776 Revert "fusion3: Use CAF Adreno blobs"
+df279bf Revert "fusion3: Use msm8909 renderscript adreno blobs"
+
+====================
+     05-10-2017
+====================
+
+
+   * device/sony/dogo/
+5540b33 Update xosp.dependencies
+63de41d Update xosp.dependencies
+bc25719 Update README.md
+ddc01da Update README.md
+
