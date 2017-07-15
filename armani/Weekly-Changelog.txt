@@ -11,972 +11,133 @@
 
 
 ====================
-     07-08-2017
+     07-15-2017
+====================
+
+
+   * frameworks/base/
+6ffa4c7 Add Music QS Tile
+
+   * hardware/qcom/display-caf/msm8996/
+3005091 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
+
+   * packages/apps/Settings/
+6506d54 ManageApplications: Remove advanced option from the menu
+
+   * vendor/xosp/
+126dc36 Merge "xosp: Update SuperSU Installer to V2.82" into xosp-n-rebase
+671d42d xosp: Update SuperSU Installer to V2.82
+75e8edf prebuilt: priv-app: Update Magisk Manager
+
+====================
+     07-14-2017
+====================
+
+
+   * frameworks/base/
+04f9ae0 core:[41.2.A.0.219] Update all SystemUI drawables
+
+   * vendor/xosp/
+db484a8 prebuilt: priv-app: Update Magisk Manager
+60928a9 prebuilt: etc: Update Magisk
+
+====================
+     07-13-2017
+====================
+
+
+====================
+     07-12-2017
+====================
+
+
+====================
+     07-11-2017
+====================
+
+
+   * frameworks/base/
+0e01c43 core: fix a derp
+da9e649 Revert "Add importance level to block lock screen notifications (fixed) (1/2)"
+8f25360 Revert "Support enforcing a minimum delay between notification sounds of an app."
+2b57f49 Revert "Fix automatic zen rules."
+
+   * packages/apps/Settings/
+6f617f1 Merge Notifications And SoundSettings
+4500621 Revert "Add importance level to block lock screen notifications (fixed) (2/2)"
+35301cb Revert "Add setup UI for minimum delay between an app's notification sounds."
+2b4f78d Revert "Turn on Power Notification Controls by default (2/2)"
+71f6a39 Revert "Fix zen mode allowed event preference summary."
+
+   * vendor/xosp/
+2b6497a prebuilt: priv-app: Update Magisk Manager
+2ad7a91 prebuilt: etc: Update Magisk
+aa7fd31 Use Makefiles for XOSPApps Essentials
+
+====================
+     07-10-2017
+====================
+
+
+   * frameworks/base/
+9f7c6f3 Fix TaskRecord wrong dump element firstActiveTime
+8d2ca40 Camera2: Fix Error Callback if buffer lost.
+4223224 Wifi: Send DHCP DISCOVER with rapid commit
+3a62ab2 KernelCpuSpeedReader: Account for missing sysfs nodes
+7bab594 NullPointerException: Attempt to invoke virtual method 'int android.os.Parcel.dataSize()' on a null object reference
+73b0417 fingerprint: handle PerformanceStats NULL pointers
+79f534c Optimised hwui rounded corners shader
+4996201 Remove FastJNI optimization on AssetManager to avoid dead lock.
+4074108 Fixed NPE in canAddMoreManagedProfiles
+fc85f40 QS: Remove listeners only if added
+72c8e8f StorageManager: Improve exception handling
+dc96edd Add support for page theme color to WebView and WebChromeClient.
+e8c658a fix anr when concurrent request provider
+3685f7e Ensure that the decor view is attached to window.
+2ca5e1a Bad token of activity when do the launch work at the app process side.
+adbed2e Query geo description in worker thread to prevent ANR
+c569aab remove duplicated incorrectly code in ProcessRecord
+91c99b5 Fix PacketKeepalive.stop() crash
+b2db91d FATAL EXCEPTION IN SYSTEM PROCESS: android.ui
+1da6e4b Restart persistent process if start timeout.
+8309fea fix system_server crash issue caused by fd leak.
+48d8584 SystemUI: Fix QSTileHost exception
+0678240 fingerprint: notify client when cancelling succeeded
+6512740 Zygote: Fix GL preload property evaluation
+ef90c1a telecom: Fix order of arguments when creating Details object
+
+====================
+     07-09-2017
 ====================
 
 
    * android/
-72c2fc1 Merge "xosp: stop tracking opencv3" into xosp-n-rebase
+4a60a4e additions: Track display-caf from LineageOS
 
    * vendor/xiaomi/
-e4ea1b5 libra: merge miui stable v8.5.1.0 blobs
+c073937 kenzo: update blobs
 
    * vendor/xosp/
-c3f1dbd Revert "Update XCA"
-18a3dbf Merge "TO-BE-REVERTED: include all the changes made since 20/05/17" into xosp-n-rebase
-d307001 Merge "Revert "TO-BE-REVERTED: include all the changes we made since 07/05/17"" into xosp-n-rebase
-75e4f75 TO-BE-REVERTED: include all the changes made since 20/05/17
-4dcb75e Revert "TO-BE-REVERTED: include all the changes we made since 07/05/17"
-2b34d10 Update XCA
-
-====================
-     07-07-2017
-====================
-
-
-   * android/
-7038d9d xosp: stop tracking opencv3
-9ea69fb xosp:Switch to android-7.1.2_r27
-
-   * bionic/
-68ddffd Merge tag 'android-7.1.2_r27' into xosp-n-rebase
-
-   * build/
-4477bac Merge tag 'android-7.1.2_r27' into xosp-n-rebase
-
-   * external/boringssl/
-3cc8ccb Merge tag 'android-7.1.2_r27' into xosp-n-rebase
-
-   * external/skia/
-ea03e19 Merge tag 'android-7.1.2_r27' into xosp-n-rebase
-
-   * frameworks/av/
-5b620d6 Merge tag 'android-7.1.2_r27' into xosp-n-rebase
-
-   * frameworks/base/
-6f1c7cf Merge tag 'android-7.1.2_r27' into xosp-n-rebase
-
-   * frameworks/native/
-cc63f0b Merge tag 'android-7.1.2_r27' into xosp-n-rebase
-
-   * frameworks/opt/telephony/
-6042bf6 telephony: Misc Fixes
-
-   * libcore/
-23c7658 Merge tag 'android-7.1.2_r27' into xosp-n-rebase
-
-   * packages/providers/DownloadProvider/
-6fa363a Merge tag 'android-7.1.2_r27' into xosp-n-rebase
-
-   * packages/providers/MediaProvider/
-32fcdee Merge tag 'android-7.1.2_r27' into xosp-n-rebase
-
-   * system/sepolicy/
-da9cb26 Merge tag 'android-7.1.2_r27' into xosp-n-rebase
-
-====================
-     07-06-2017
-====================
-
-
-====================
-     07-05-2017
-====================
-
-
-====================
-     07-04-2017
-====================
-
-
-====================
-     07-03-2017
-====================
-
-
-====================
-     07-02-2017
-====================
-
-
-   * vendor/xosp/
-b54bc82 Revert "envsetup.sh: Clean up (for xospapps_essentials)"
-
-====================
-     07-01-2017
-====================
-
-
-====================
-     06-30-2017
-====================
-
-
-====================
-     06-29-2017
-====================
-
-
-====================
-     06-28-2017
-====================
-
-
-====================
-     06-27-2017
-====================
-
-
-====================
-     06-26-2017
-====================
-
-
-====================
-     06-25-2017
-====================
-
-
-====================
-     06-24-2017
-====================
-
-
-   * vendor/xosp/
-81c4e5d Update smali/baksmali to version: 2.2.1
-
-====================
-     06-23-2017
-====================
-
-
-   * vendor/xosp/
-3f5adcb envsetup.sh: Clean up (for xospapps_essentials)
-
-====================
-     06-22-2017
-====================
-
-
-====================
-     06-21-2017
-====================
-
-
-   * vendor/xosp/
-8f67be7 envsetup.sh: Remove unnecessary redirections
-
-====================
-     06-20-2017
-====================
-
-
-====================
-     06-19-2017
-====================
-
-
-====================
-     06-18-2017
-====================
-
-
-====================
-     06-17-2017
-====================
-
-
-====================
-     06-16-2017
-====================
-
-
-====================
-     06-15-2017
-====================
-
-
-====================
-     06-14-2017
-====================
-
-
-====================
-     06-13-2017
-====================
-
-
-====================
-     06-12-2017
-====================
-
-
-====================
-     06-11-2017
-====================
-
-
-====================
-     06-10-2017
-====================
-
-
-   * android/
-fd9fcf8 Merge "xosp:Switch to android-7.1.2_r17" into xosp-n-rebase
-
-   * packages/apps/Bluetooth/
-6676f6e bluetooth: merge fixes
-
-   * vendor/xosp/
-252669f Merge "xospapps: fix keyboard libs copy" into xosp-n-rebase
-78c0ded xosp: Add gitreview file
-
-====================
-     06-09-2017
-====================
-
-
-   * frameworks/base/
-9163358 Merge "Camera : allow camera to use power key as shutter" into xosp-n-rebase
-
-   * system/core/
-421d7e6 Merge tag 'android-7.1.2_r17' into xosp-n-rebase
-
-   * vendor/xosp/
-d3e9dcf xospapps: fix keyboard libs copy
-
-====================
-     06-08-2017
-====================
-
-
-   * android/
-9481c2c Merge "xosp: remove IS_ARM64 documentation" into xosp-n-rebase
-
-   * packages/apps/Settings/
-3b6951c Ticker: default color should be white
-
-====================
-     06-07-2017
-====================
-
-
-   * android/
-bbc7635 xosp:Switch to android-7.1.2_r17
-dc2516b xosp: remove IS_ARM64 documentation
-
-   * build/
-86dc4cc Merge tag 'android-7.1.2_r17' into xosp-n-rebase
-
-   * external/boringssl/
-17100a4 Merge tag 'android-7.1.2_r17' into xosp-n-rebase
-
-   * external/chromium-webview/
-2909904 Update webviews
-
-   * frameworks/av/
-1fcb850 Merge tag 'android-7.1.2_r17' into xosp-n-rebase
-
-   * frameworks/base/
-3c3d85a Merge tag 'android-7.1.2_r17' into xosp-n-rebase
-
-   * frameworks/native/
-5baf781 Merge tag 'android-7.1.2_r17' into xosp-n-rebase
-
-   * libcore/
-86e7e3d Merge tag 'android-7.1.2_r17' into xosp-n-rebase
-
-   * packages/apps/Bluetooth/
-711507b Merge tag 'android-7.1.2_r17' into xosp-n-rebase
-
-   * system/bt/
-cbde6c7 Merge tag 'android-7.1.2_r17' into xosp-n-rebase
-
-====================
-     06-06-2017
-====================
-
-
-   * frameworks/base/
-5644128 themes: don't tint the NavigationBar in Settings
-
-   * packages/apps/Settings/
-a38825e Merge "themes: resources clean up" into xosp-n-rebase
-3824717 themes: resources clean up
-281c772 AboutPhone: clean up
-9509cfb LockscreenPersonalizations:hide Weather settings for now
-
-====================
-     06-05-2017
-====================
-
-
-   * android/
-54b09df README: just make the repo sync a bit nicer
-
-   * device/qcom/common/
-20226b9 power: Kill "Failed to acquire lock" log
-c2dea8a power: use 8937 hal for 8953
-c9fcb5e recovery: Use    * pathmap for recovery
-
-   * packages/providers/TelephonyProvider/
-90eb053 telephony: SMS databases fixes
-
-   * packages/services/Telecomm/
-ba678e0 (1/2) Make sensitive phone numbers not to be shown in call log history.
-
-   * vendor/xosp/
-a9c982e Deprecate IS_ARM64 flag (1/2)
-0a11b71 xosp: don't include chromium in userdebug builds
-2048ac3 vendor:xosp: Add gerrit documentation and clean up README
-ca1cb64 Merge "sensitive_pn: Add sensitive phone numbers for India" into xosp-n-rebase
-45cf4f6 Merge "sensitive_pn: Add more numbers for Germany" into xosp-n-rebase
-bb44895 Merge "sensitive_pn: Add sensitive phone numbers for Norway" into xosp-n-rebase
-de8b2a9 Merge "sensitive_pn: Add additional US numbers" into xosp-n-rebase
-2a5a155 Merge "sensitive_pn: add sensitive number for Indonesia" into xosp-n-rebase
-83234f2 Merge "sensitive_pn: Add sensitive phone number for Romania" into xosp-n-rebase
-fe8a859 Merge "sensitive_pn: Added sensitive number for the Netherlands" into xosp-n-rebase
-ba79cec Merge "sensitive_pn: add sensitive numbers for Turkey" into xosp-n-rebase
-03370e9 Merge "sensitive_pn: Add sensitive phone number for Bangladesh" into xosp-n-rebase
-7286954 Merge "sensitive_pn: Add US number" into xosp-n-rebase
-fa46b8b Merge "Add sensitive phone numbers for Brazil" into xosp-n-rebase
-083c822 Merge "sensitive_pn: reorder by MCC code" into xosp-n-rebase
-70f6f0b Merge "sensitive_pn: Add Australian sensitive phone number." into xosp-n-rebase
-ae0a5b1 Merge "sensitive_pn: Add New Zealand sensitive numbers." into xosp-n-rebase
-c42e676 Merge "(2/2) Make sensitive phone numbers not to be shown in call log history." into xosp-n-rebase
-
-====================
-     06-04-2017
-====================
-
-
-   * android/
-136c8b6 xosp: Add gerrit documentation
-
-   * hardware/qcom/display/
-6e8a424 display: Fix missmerge typo
-
-   * system/core/
-d476990 Lockscreen charging info: real time values [1/2]
-
-   * vendor/xosp/
-9205c3f Merge "Show full alarm info" into xosp-n-rebase
-5b292be Merge "extract_utils: fix extracting XML files containing binary characters" into xosp-n-rebase
-0bfc62c Merge "kernel: Fix broken C_INCLUDE_PATH for Darwin" into xosp-n-rebase
-17171dd Merge "kernel: Include openssl headers and dylibs on darwin" into xosp-n-rebase
-
-====================
-     06-03-2017
-====================
-
-
-   * android/
-7c48195 Revert "TES"
-46debc2 TES
-
-   * build/
-4e6c5b4 roomservice: search devices repos in main org
-
-   * device/xiaomi/armani/
-6a6aadb xosp: Add gitreview file
-
-   * frameworks/base/
-d1bb00f Test commit
-85460d4 Camera : allow camera to use power key as shutter
-
-   * vendor/xiaomi/
-a1d2a51 xosp: Add gitreview file
-
-   * vendor/xosp/
-f1dfb69 sensitive_pn: Add sensitive phone numbers for India
-f106177 sensitive_pn: Add more numbers for Germany
-2171ed3 sensitive_pn: Add sensitive phone numbers for Norway
-5fed1bd sensitive_pn: Add additional US numbers
-f42342b sensitive_pn: add sensitive number for Indonesia
-48955d4 sensitive_pn: Add sensitive phone number for Romania
-2b6a17e sensitive_pn: Added sensitive number for the Netherlands
-299e471 sensitive_pn: add sensitive numbers for Turkey
-bb9fbae sensitive_pn: Add sensitive phone number for Bangladesh
-31334f2 sensitive_pn: Add US number
-91d79f4 Add sensitive phone numbers for Brazil
-e874e7c sensitive_pn: reorder by MCC code
-786ce47 sensitive_pn: Add Australian sensitive phone number.
-1dd06f7 sensitive_pn: Add New Zealand sensitive numbers.
-2991c27 (2/2) Make sensitive phone numbers not to be shown in call log history.
-112b226 Show full alarm info
-2a822bd extract_utils: fix extracting XML files containing binary characters
-0b3b7ed kernel: Fix broken C_INCLUDE_PATH for Darwin
-1342748 kernel: Include openssl headers and dylibs on darwin
-
-====================
-     06-02-2017
-====================
-
-
-   * android/
-1f86ef8 Revert "TEST"
-b0b5509 TEST
-
-   * art/
-fc0239e xosp: Add gitreview file
-cd0d94c xosp: Add gitreview file
-56e1644 xosp: Add gitreview file
-
-   * bionic/
-b850cb0 xosp: Add gitreview file
-
-   * build/
-3ebf89a xosp: Add gitreview file
-
-   * build/kati/
-169fbf9 xosp: Add gitreview file
-
-   * dalvik/
-a3c8dc9 xosp: Add gitreview file
-
-   * development/
-d1761c5 xosp: Add gitreview file
-
-   * device/qcom/common/
-191f8a2 xosp: Add gitreview file
-
-   * external/ant-wireless/ant_service/
-17c10ac xosp: Add gitreview file
-
-   * external/ant-wireless/antradio-library/
-b083d12 xosp: Add gitreview file
-
-   * external/connectivity/
-d3df8c0 xosp: Add gitreview file
-
-   * external/gson/
-f649510 xosp: Add gitreview file
-
-   * external/ipsec-tools/
-324b279 xosp: Add gitreview file
-
-   * external/jemalloc/
-7afd178 xosp: Add gitreview file
-
-   * external/json-c/
-59e5388 xosp: Add gitreview file
-
-   * external/libnetfilter_conntrack/
-c10e8a7 xosp: Add gitreview file
-
-   * external/libnfc-nci/
-a3bb20c xosp: Add gitreview file
-
-   * external/libnfc-nxp/
-852d64b xosp: Add gitreview file
-
-   * external/libselinux/
-b5d8e70 xosp: Add gitreview file
-
-   * external/lzma/
-9a28276 xosp: Add gitreview file
-
-   * external/mksh/
-1c87c67 xosp: Add gitreview file
-
-   * external/okhttp/
-22f6734 xosp: Add gitreview file
-
-   * external/powertop/
-9514ebf xosp: Add gitreview file
-
-   * external/protobuf-c/
-91803b3 xosp: Add gitreview file
-
-   * external/skia/
-cbd3b63 xosp: Add gitreview file
-
-   * external/tinyalsa/
-2638eec xosp: Add gitreview file
-
-   * external/tinycompress/
-e531661 xosp: Add gitreview file
-
-   * external/tinyxml2/
-ada569f xosp: Add gitreview file
-
-   * external/toybox/
-e03a15b xosp: Add gitreview file
-
-   * external/wpa_supplicant_8/
-d99aef3 xosp: Add gitreview file
-
-   * external/zlib/
-0d1fb98 xosp: Add gitreview file
-
-   * frameworks/av/
-fdaf2b9 xosp: Add gitreview file
-
-   * frameworks/base/
-34ef71c xosp: Add gitreview file
-
-   * frameworks/native/
-dd8a6c3 xosp: Add gitreview file
-
-   * frameworks/opt/net/ims/
-001d086 xosp: Add gitreview file
-
-   * frameworks/opt/net/wifi/
-b3a24c8 xosp: Add gitreview file
-
-   * frameworks/opt/telephony/
-8a614ed xosp: Add gitreview file
-
-   * hardware/broadcom/libbt/
-9cf788b xosp: Add gitreview file
-
-   * hardware/intel/common/libmix/
-3f975e7 xosp: Add gitreview file
-
-   * hardware/intel/common/libva/
-8d07dd1 xosp: Add gitreview file
-
-   * hardware/intel/common/utils/
-2794157 xosp: Add gitreview file
-
-   * hardware/intel/img/hwcomposer/
-6f20541 xosp: Add gitreview file
-
-   * hardware/intel/img/psb_headers/
-5d079bf xosp: Add gitreview file
-
-   * hardware/intel/img/psb_video/
-171f441 xosp: Add gitreview file
-
-   * hardware/invensense/
-0ec862e xosp: Add gitreview file
-
-   * hardware/libhardware/
-af00094 xosp: Add gitreview file
-
-   * hardware/qcom/bt/
-1effdcd xosp: Add gitreview file
-
-   * hardware/qcom/camera/
-2f69f4e xosp: Add gitreview file
-
-   * hardware/qcom/display/
-0b1d2fc Revert "hwc2: Only set display_width and display_height when equal to zero"
-c7f9617 xosp: Add gitreview file
-
-   * hardware/qcom/gps/
-e703002 xosp: Add gitreview file
-
-   * hardware/qcom/media/
-88f582e xosp: Add gitreview file
-
-   * hardware/qcom/wlan/
-ff7615c xosp: Add gitreview file
-
-   * hardware/ril/
-081480c xosp: Add gitreview file
-
-   * libcore/
-ebbc6fb xosp: Add gitreview file
-
-   * packages/apps/Bluetooth/
-6b2a18e xosp: Add gitreview file
-
-   * packages/apps/Camera2/
-2be0968 xosp: Add gitreview file
-
-   * packages/apps/CarrierConfig/
-8e6bfb9 xosp: Add gitreview file
-
-   * packages/apps/CellBroadcastReceiver/
-c0cf790 xosp: Add gitreview file
-
-   * packages/apps/CertInstaller/
-4c3bc09 xosp: Add gitreview file
-
-   * packages/apps/Contacts/
-162df66 xosp: Add gitreview file
-
-   * packages/apps/ContactsCommon/
-06eb755 xosp: Add gitreview file
-
-   * packages/apps/Dialer/
-a7be3b8 xosp: Add gitreview file
-
-   * packages/apps/EmergencyInfo/
-a5eb0bc xosp: Add gitreview file
-
-   * packages/apps/ExactCalculator/
-4d43dfa xosp: Add gitreview file
-
-   * packages/apps/KeyChain/
-2751688 xosp: Add gitreview file
-
-   * packages/apps/ManagedProvisioning/
-071ae63 xosp: Add gitreview file
-
-   * packages/apps/Nfc/
-974f253 xosp: Add gitreview file
-
-   * packages/apps/PackageInstaller/
-3f8c62f xosp: Add gitreview file
-
-   * packages/apps/PhoneCommon/
-fb98bb9 xosp: Add gitreview file
-
-   * packages/apps/SafetyRegulatoryInfo/
-82b84a7 xosp: Add gitreview file
-
-   * packages/apps/Settings/
-486528f xosp: Add gitreview file
-
-   * packages/apps/Stk/
-e0cf4d3 xosp: Add gitreview file
-
-   * packages/apps/StorageManager/
-a5aa4fd xosp: Add gitreview file
-
-   * packages/apps/Tag/
-e8b7cb2 xosp: Add gitreview file
-
-   * packages/providers/BlockedNumberProvider/
-74d959c xosp: Add gitreview file
-
-   * packages/providers/BookmarkProvider/
-392c551 xosp: Add gitreview file
-
-   * packages/providers/CalendarProvider/
-847db65 xosp: Add gitreview file
-
-   * packages/providers/CallLogProvider/
-32e062e xosp: Add gitreview file
-
-   * packages/providers/ContactsProvider/
-39115c3 xosp: Add gitreview file
-
-   * packages/providers/DownloadProvider/
-cae3092 xosp: Add gitreview file
-
-   * packages/providers/MediaProvider/
-828e600 xosp: Add gitreview file
-
-   * packages/providers/PartnerBookmarksProvider/
-58cce9c xosp: Add gitreview file
-
-   * packages/providers/TelephonyProvider/
-e46bc8d xosp: Add gitreview file
-
-   * packages/services/Car/
-0571858 xosp: Add gitreview file
-
-   * packages/services/Mms/
-efcf4d2 xosp: Add gitreview file
-
-   * packages/services/Telecomm/
-2bd9d1f xosp: Add gitreview file
-
-   * packages/services/Telephony/
-494dd28 xosp: Add gitreview file
-
-   * system/bt/
-cfeb2c8 xosp: Add gitreview file
-
-   * system/core/
-1813a16 xosp: Add gitreview file
-
-   * system/extras/
-f18bea3 xosp: Add gitreview file
-
-   * system/keymaster/
-c583750 xosp: Add gitreview file
-
-   * system/media/
-fd85114 xosp: Add gitreview file
-
-   * system/netd/
-d11a187 xosp: Add gitreview file
-
-   * system/qcom/
-0949886 xosp: Add gitreview file
-
-   * system/security/
-682ad72 xosp: Add gitreview file
-
-   * system/sepolicy/
-ce994bc xosp: Add gitreview file
-
-   * system/tools/aidl/
-4f64e74 xosp: Add gitreview file
-
-   * system/vold/
-218117f xosp: Add gitreview file
-
-   * vendor/codeaurora/telephony/
-ec1faf2 xosp: Add gitreview file
-
-   * vendor/qcom/opensource/bluetooth/
-2f81b39 xosp: Add gitreview file
-
-   * vendor/qcom/opensource/cryptfs_hw/
-da6e595 cryptfs_hw: Fix stack out of bound issue
-
-   * vendor/qcom/opensource/dataservices/
-2574bee xosp: Add gitreview file
-
-   * vendor/qcom/opensource/dpm/
-996cc69 xosp: Add gitreview file
-
-   * vendor/qcom/opensource/time-services/
-36676a0 xosp: Add gitreview file
-
-====================
-     06-01-2017
-====================
-
-
-====================
-     05-31-2017
-====================
-
-
-   * android/
-d5fbf30 xosp: Add gitreview file
-
-====================
-     05-30-2017
-====================
-
-
-   * bionic/
-07a0190 Add support for modifying decay timer.
-aa8ffd0 Set __ARM_ARCH__ correctly for ARMv8 32bit builds
-fde4a83 libc: arm: add NEON-optimized memchr implementation from newlib
-3cb5072 libc: add optimized ARM64 strrchr from newlib
-
-   * frameworks/base/
-06b16c8 Set the decay timer for all forked apps.
-cef95bf [PackageManagerService]: Fix the IndexOutOfBoundsException issue.
-46d8cf3 SoundPool: decrease binder call when calling SoundPool.play
-ad5bacc use FgThread.class instead of UiThread.class for lock object
-2d9e37b [PackageManagerService]: Fixes can not boot issue.
-6304477 Destroy Allocation with ScriptIntrinsicLut
-c450222 Destroy Allocation right away on exception
-87404e7 PowerManagerService: Fix button backlight not disabling when encrypted
-ae0d403 PowerProfile: allow reading from a file instead of resource
-442f616 Schedule  agentDisconnected() in handler thread
-fce87b7 frameworks/base: reduce the setTransactions
-096aecd Reduce hwui CPU time by using glDrawRangeElements
-bd7e0ab Revert "SystemUI: Add SlotId for MultiSim"
-a06997c PowerManager: Bring back the compatibility with AOSP
-eff63b0 Hotspot Tile: longclick should open Tethering settings
-d7d1673 Fix Hotspot tile is shown on Guest user
-1ff360d SettingsProvider: Update icon.
-fc1b2d0 SystemUI: Dismiss keyguard on boot if disabled by current profile
-
-   * frameworks/native/
-09401b9 surfaceflinger: Make USE_COLOR_METADATA an opt-in
-
-   * frameworks/opt/telephony/
-6f272f6 TelephonyComponentFactory: fix QtiTelephonyComponentFactory warnings crashes
-ac35e88 Create cdma dummy apns.
-df08c13 GsmCdmaPhone: Fix GSM SIM card ICCID on NV sub CDMA devices
-
-   * packages/services/Telephony/
-bf4d51f Fix minor inconsistency in the CDMA call settings
-29eecfa telephony: fix crash when missing simcard
-92906c8 Telephony: AIRPLANE_MODE_ON has moved
-f2082d3 Telephony: Fix "Redirect to roaming SIM network setting(Dual SIM)"
-00ccd00 Telephony: Fix mobile network settings for CDMA without LTE
-
-====================
-     05-29-2017
-====================
-
-
-====================
-     05-28-2017
-====================
-
-
-   * vendor/xosp/
-a29de13 Update XOSPDelta
-14e9236 Update XOSPDelta Updater
-26b7db8 sepolicy: fix SomcDLNA denial
-
-====================
-     05-27-2017
-====================
-
-
-   * hardware/qcom/audio/default/
-bdc3ee0 msm8960: Fix build after 7.1.2
-
-   * vendor/xosp/
-f9e43ff XOSPDelta Updater 3.1.2
-cff4271 Merge pull request #5 from AndropaX/xosp-n-rebase
-
-====================
-     05-26-2017
-====================
-
-
-   * build/
-b621610 Version bump to NZH54B
-
-====================
-     05-25-2017
-====================
-
-
-   * bionic/
-73c8fe1 Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-0b12831 linker: remove link from external library on unload
-
-   * build/
-014f665 Make change and version bump to NZH54
-468971e [DO NOT MERGE]Updating security string to 2017-07-05 on nyc-dev bug:38342695 (cherry picked from commit 96d958c34509a65e5f7787945f9923fb44c42f05)
-46fb9ae [DO NOT MERGE]Updating security string to 2017-07-01 on nyc-dev bug:38342695 (cherry picked from commit 77dad3dfcd677136f6657e1b95dd84ed1be1d728)
-
-   * external/boringssl/
-fef2da3 Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-6345487 CVE 2016-2109 fix
-
-   * external/dng_sdk/
-781748f Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-0680ae9 Throw exception on integer overflow in dng_ifd.cpp.
-
-   * external/libavc/
-66f0783 Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-0e688a9 Decoder: Fix end of bitstream error.
-ee93b9e Decoder: Fix allocation for Mbaff weight matrix
-cc5a278 Decoder: Initialize MB info buffer to zero.
-600b985 Decoder: Fixed flag u1_top_bottom_decoded.
-66edc4f Decoder: Added an error check while parsing PPS.
-9f6b024 Fix stack buffer overflow in ih264d_process_intra_mb
-e285291 Decoder: Fix in reference list initialization.
-b9d2d0c Decoder: Fixes in accessing mbaff flag in error cases
-6629167 Fix in the case of MMCO 3 (long term reference idx).
-
-   * external/libgdx/
-697d26b Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-24309a8 Fix 36385715 heap overflow when loading HDR files
-007cbc8 Fix Pixmap overflow. Bug 36621442
-57b3779 Fix series of JPEG vulnerabilities
-d095261 Fix 36385715 heap overflow when loading HDR files
-
-   * external/libhevc/
-a1dda71 Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-59ed59e Fix heap buffer overflow while searching for valid PPS
-ac09a1b Check for buffer overflow in pps/slice header parsing
-00bdddf memset SPS to zero
-cf76ac5 Fix reallocation for new sps
-78c8eaf DO NOT MERGE Handle streams with change in max_dec_buffering/num_reorder_frames without resolution change
-0921fd8 Check for cpb cnt in hrd parsing
-
-   * external/libmpeg2/
-c49ab32 Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-afaf341 Check Number of Skip MBs
-3f8b60c Error Resilience - Check on as_recent_fld[0][1]
-e684058 Fix Bytes Consumed Issue
-
-   * external/skia/
-978cdc8 Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-6051638 Set a limit on the size for BMP images DO NOT MERGE
-
-   * external/sonivox/
-cf2560d Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-2461d73 Fix infinite recursion
-86783bc Check chunk size
-
-   * external/tremolo/
-588aaf7 Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-46094de Always use unsigned char
-
-   * frameworks/av/
-516a8ad Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-7a3abad Modifying MetaData invalidates previous char*
-4023632 Fix memory leak in error case
-363f295 Limit ogg packet size
-03c5850 Prevent OOB write in soft_avc encoder
-8c68a43 Don't allow using or allocating a buffer after the first state transition
-
-   * frameworks/base/
-bf4ad52 Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-f760540 ZygoteInit: Remove CAP_SYS_RESOURCE
-24c38ee system_server: add CAP_SYS_PTRACE
-80dbaa7 Fix re-enabling alert window appop after leaving VR mode.
-c00fac1 Make a11y node info parceling more robust
-
-   * frameworks/native/
-c84df65 Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-0ac6968 libgui: check for invalid slot in attachBuffer
-74fd449 libgui: Check slot received from IGBP in Surface
-947031c ui: Fix bad size check in Fence::unflatten
-
-   * libcore/
-bebf72f Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-3b42d63 Proper fix for rejecting ftp URL with /r/n.
-c148670 Test for rejection of ftp URL with /r/n in userinfo
-
-   * packages/providers/DownloadProvider/
-9766e1b Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-ffaa5eb DO NOT MERGE Deleting downloads for removed uids on downloadprovider start
-
-   * packages/providers/MediaProvider/
-d48aa05 Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-2fb4a84 [DO NOT MERGE] Enforce user separation on external storage
-
-   * packages/services/Telephony/
-dbd84f2 Telephony: Fix translatability of network modes
-7f1185c Telephony: Break qti-telephony-framework dependency
-
-   * system/sepolicy/
-b7fe2d0 Merge cherrypicks of [2310999, 2310925, 2310891, 2311000, 2310892, 2310858, 2310986, 2310963, 2311043, 2310928, 2311044, 2310990, 2311022, 2311023, 2310917, 2310994, 2311024, 2311045, 2310967, 2310995, 2311003, 2311059, 2311025, 2311060, 2310953, 2311061, 2311004, 2311046, 2311005, 2311047, 2311006, 2311079, 2310954, 2311026, 2310896, 2310898, 2310997, 2311062, 2310955, 2311029, 2310998, 2311080, 2311119, 2311030, 2310933, 2311140, 2311063, 2310934, 2311049, 2311050, 2311084, 2311031, 2311145, 2311164] into nyc-mr2-security-c-release
-a5bb259 system_server: replace sys_resource with sys_ptrace
-
-====================
-     05-24-2017
-====================
-
-
-   * build/
-38c126f NZH34C
-
-====================
-     05-23-2017
-====================
-
-
-   * frameworks/base/
-0590722 Tethering: fix tethering in case FST and STA+SAP concurrency
-4080bf2 Connectivity: Check tether type when interface picked for SoftAP
-ffe1637 Tethering: add TETHERING_WIGIG type
-
-   * vendor/xosp/
-b638b22 xosp: build LiveWallpapersPicker
-
-====================
-     05-22-2017
-====================
-
-
-   * build/
-40af20d Merge pull request #1 from AndropaX/xosp-n-rebase
-deb0f1c build: don't override default sounds
-
-   * frameworks/base/
-f861607 fwb: restore aosp grey color pallete
-61d17fc fwb: use round icons, as XZ premium
-
-   * packages/apps/Camera2/
-b0eb796 Merge pull request #1 from AndropaX/xosp-n-rebase
-1478b41 Camera: update icon
-
-   * packages/apps/ExactCalculator/
-0a9824a Merge pull request #1 from AndropaX/xosp-n-rebase
-6c0668d Calculator: update icon
-
-   * vendor/xosp/
-47f9f7e Merge pull request #4 from AndropaX/xosp-n-rebase
-57c8faf xosp: define default ringote
+d5d82a5 sensitive_pn: Enter full list of Indian MCC codes
+a1ffca0 sensitive_pn: Enter full list of GB MCC codes
+6905759 sensitive_pn: Enter full list of US MCC codes
+8d3046b Add LTE support for China Telecom Macau.
+83be5b7 qcom_utils: Cleanup supported QCOM_BOARD_PLATFORMS
+90bf324 apns-conf: Add Japan Umobile APNs
+fb4d0e3 sensitive_pn: Add sensitive numbers for Greece
+a2018dd sensitive_pn: fix Czech Republic MCC
+5a6ed62 sensitive_pn: Add Taiwanese sensitive numbers
+95d554d Add sensitive numbers for Ukraine.
+cf777d7 Add Virgin Media Ireland to APN's
+39dbd33 sensitive_pn: Add additional FR number
+09519c1 sensitive_pn: Add additional GB numbers
+59787b6 sensitive_pn: Add additional PT numbers
+98955bd sensitive_pn: add missing phone number for Brazil
+4de61d9 Add sensitive numbers for Israel.
+6678c10 sensitive_pn: Add sensitive phone numbers for Czech Republic
+401ab62 sensitive_pn: Add Canadian sensitive numbers
+fb8bbb0 sensitive_pn: Add more numbers from the Netherlands
+b3783db fix check_blacklist function to work on wiped /system partition
+c285468 sensitive_pn: Add sensitive numbers for Serbia
+c80c361 Revert "TO-BE-REVERTED: include all the changes made since 20/05/17"
 
