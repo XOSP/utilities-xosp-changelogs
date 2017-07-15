@@ -1,1 +1,1 @@
-delta.XOSP-OFFICIAL-20170708-angler
+delta.XOSP-OFFICIAL-20170527-angler
