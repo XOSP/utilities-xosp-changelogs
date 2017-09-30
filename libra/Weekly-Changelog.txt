@@ -11,522 +11,140 @@
 
 
 ====================
-     08-08-2017
+     10-01-2017
 ====================
 
 
-   * android/
-487048b xosp:Switch to android-7.1.2_r33
+   * frameworks/base/
+25ccc7e Longpress power lockscreen torch [1/2] Long pressing power while screen is off will launch torch
+cefd4c4 Add Sync QS Tile
 
-   * build/
-6176c8e Merge tag 'android-7.1.2_r33' into xosp-n-rebase
+   * hardware/qcom/display-caf/msm8916/
+b9fc743 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.26' into cm-14.1-caf-8916
 
-   * device/xiaomi/libra/
-197d752 enable sdcardfs
+   * packages/apps/Settings/
+748e865 Lockscreen Rotation: Create a summary for the preference
+62a942b Longpress power lockscreen torch [2/2]
 
-   * external/skia/
-ef49e66 Merge tag 'android-7.1.2_r33' into xosp-n-rebase
+   * vendor/xosp/
+19a1f29 TO-NEVER-BE-REVERTED: Include all latest changes made since 21/09/17
+
+====================
+     09-30-2017
+====================
+
+
+====================
+     09-29-2017
+====================
+
+
+====================
+     09-28-2017
+====================
+
+
+====================
+     09-27-2017
+====================
+
+
+====================
+     09-26-2017
+====================
+
+
+====================
+     09-25-2017
+====================
+
+
+   * frameworks/base/
+dd5526e Move KILL_APP_LONGPRESS_TIMEOUT to Settings.Secure
+d5e2d20 [Base] long press back to kill configurable timeout
+deda537 Perf: Fix RemoteViews memory leak
+0882324 Fix drm hal resource leaks
+f6f9092 Fixed another memory leak
+fea2873 Clear native shader when Paint shader changes
+704615b Fix static analyzer complaints
+d1a8e0b Merge "Fix warning: Potential leak of memory pointed to by 'set'" into xosp-n-rebase
+a87114b Merge "Fix dead lock in Tethering state machine" into xosp-n-rebase
+e9475a2 Merge "core/jni: Use sdclang lto for building libandroid_runtime" into xosp-n-rebase
+2573030 Merge "Switch frameworks/base/core/jni from gcc to clang." into xosp-n-rebase
+ddf2cd6 Merge "Binder: Be forceful about a forceful exit" into xosp-n-rebase
+6a0cc47 Merge "Check for spurious wake ups" into xosp-n-rebase
+d7c5171 Merge "GC in heapDumpFinished to cleanup hprof fd" into xosp-n-rebase
+1eaf9af Merge "Revert "[SQUASHED] Lockscreen Weather"" into xosp-n-rebase
+
+   * packages/apps/Settings/
+e96f49c [Settings] long press back to kill configurable timeout
+789ef29 Settings: Forward port long-press-back to kill app (1/2)
+2d4305b Merge "Revert "Lockscreen Weather squash:"" into xosp-n-rebase
+2f8c94d Revert "Lockscreen Weather squash:"
+
+====================
+     09-24-2017
+====================
+
+
+   * frameworks/base/
+b70cfac Merge "SystemUI: Fix task lock & freeform buttons placement" into xosp-n-rebase
+e42d8b7 Merge "SystemUI: Support recents task locking" into xosp-n-rebase
+
+   * packages/apps/Settings/
+038f3e4 Fix typo
+
+   * vendor/xosp/
+6e88bdc Update initial attach for Tmo US
+4ac77dc Add Correios Celular (BR) APN
+878ad1c Add WOM Internet/MMS (CL) apn
+
+====================
+     09-23-2017
+====================
+
 
    * frameworks/av/
-00ea9ab Merge tag 'android-7.1.2_r33' into xosp-n-rebase
+6b59f04 fix potential mediaserver crash in ACodec::getPortFormat
+2303091 Fix memory leak warning.
+30cb856 Fix tiny memory leak
+9b27c59 stagefright: Fix SurfaceMediaSource buffer search condition when buffer return
 
    * frameworks/base/
-d8d07f6 Merge tag 'android-7.1.2_r33' into xosp-n-rebase
-
-   * frameworks/native/
-93a16c8 Merge tag 'android-7.1.2_r33' into xosp-n-rebase
-
-   * frameworks/opt/net/wifi/
-01ac09d Merge tag 'android-7.1.2_r33' into xosp-n-rebase
-
-====================
-     08-07-2017
-====================
-
-
-====================
-     08-06-2017
-====================
-
-
-   * hardware/qcom/display-caf/apq8084/
-e2f4340 cec: Fix breakage due to API change
-
-   * kernel/xiaomi/msm8992/
-9559796 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_xiaomi_msm8992 into HEAD
-
-====================
-     08-05-2017
-====================
-
-
-   * bionic/
-87bff13 Merge "libc: ARM: Add 32-bit Kryo memcpy" into xosp-n-rebase
-bb58b7c Merge "libc: use Cortex-A7/A53 memset on Kryo" into xosp-n-rebase
-b82c0a4 Merge "Add kryo support." into xosp-n-rebase
-e3d6bfd Merge "[AArch64] Optimized memcmp" into xosp-n-rebase
-e376345 Merge "libc: Fix minor issues in memchr NEON implementation" into xosp-n-rebase
-ffa015a xosp: Add gitreview file
-cfa3bb8 libc: ARM: Add 32-bit Kryo memcpy
-8ecf877 libc: use Cortex-A7/A53 memset on Kryo
-f99b231 Add kryo support.
-a148902 [AArch64] Optimized memcmp
-9f1e3ca libc: Fix minor issues in memchr NEON implementation
-
-   * frameworks/av/
-1d0d64d CameraService: Fix cameraId type of onDeviceStatusChanged
-ddd392d cameraservice: device1: Fix "slow" legacy HALs
-5230478 libstagefright_httplive: revert seektime adjustment in LiveSession
-b2145aa audioflinger: put fastmixer with active tracks into mix state when suspended
-876c4b1 libstagefright: encoder must exist when source starting
-36f2fc3 HLS: force audio/video both to start from IDR position
-a841830 stagefright: don't assume 16 bit format
-07deae5 Camera: Add null check on mDevice to avoid crash
-ee4b8f9 stagefright: Remove the HAL3 limitation from the video reference clock selection
-edecf11 libmedia: synchronize access to meta
-12a312f audiopolicy: mute strategies when device is a2dp after suspended
-a9c4521 audio: hold effect mutex when releasing effect engine
-fe0448d audiopolicy: Do not select A2DP device if suspended
-253e046 audiopolicy: Invalidate direct PCM tracks when mono is set
-cf31934 audioflinger: update IO info when releasing audio patch
-fed542b NuPlayer: Decoder: Check for valid codec on resume
-86f0b6c AudioPolicyMng: check for null audioSession when realeasing input
-6d7ebbc video: Disable sync frame decoder mode for closest seek
-e5c022b NuPlayer: fix possible deadlock due to recursive mutex access
-7b670b0 stagefright: stop audio encoding before releasing writer thread
-c6225d6 Camera: Add NULL check on mDevice to avoid crash.
-606049a stagefright: Remove extra memcpy
-309bdac camera: Allow camera HAL to get caller package
-75853fd av: "ACodec: update native window crop rectangle" depends on QCOM
-eb8d580 Flush video decoder when audio sink resume.
-f7850d1 nuplayer: Call video flush on audio teardown
-fddaaed cameraserver: disable background scheduling of cameraserver
-
-   * frameworks/base/
-898dfec Statusbar clock and date customizations [1/2]
-
-   * frameworks/native/
-d3e1b57 Surface: Use async lock/unlock in copyBlt
-450c1a7 Surface: Ensure synchronisation of copyBlt
-75ecc05 Fix a anr bug caused by sendFinishedSignal logical error
-45bbce8 vulkan: add support for AArch32 targets
-
-   * vendor/xosp/
-c26ff32 Merge "Update XCA" into xosp-n-rebase
-c6315c8 Update XCA
-03a3e91 sensitive_pn: add EU 116 Numbers
-0f55f24 apns: correct the mvno_match_data for MasMovil Spain
-6e7a50a sensitive_pn: Include France DOM (Overseas regions) codes
-1154b9c kernel: Add savedefconfig target
-8a76310 vendor:xosp: Remove XOSPDelta
-
-====================
-     08-04-2017
-====================
-
-
-   * frameworks/base/
-9dca915 Show carrier label / custom [1/2] [Squashed]
-
-   * kernel/xiaomi/msm8992/
-ca8aae6 dts: libra/aqua: rewrite notification led configutation
-3ef5d2b dts: libra/aqua: move common led configuration to another file
-c79f971 leds: leds-qpnp: add synchronized rgb control
-937df55 pwm: qpnp-pwm: add api for synchronous enable of pwms
+c3baa98 Merge "SystemUI: locked tasks should have a valid view" into xosp-n-rebase
+352d2f3 Merge "Init MemoryIntArray#mFd with -1" into xosp-n-rebase
+9ded367 Merge "SystemUI: Fix SystemUI Crash Issue" into xosp-n-rebase
+a5d2342 Merge "FlashlightTile: Retry opening camera later on if it failed before" into xosp-n-rebase
+2c1cc13 Merge "Fix wrong array index bound in NotificationUsageStats" into xosp-n-rebase
+9acc06b Merge "Add adb over network QS Tile" into xosp-n-rebase
+440947f Fix warning: Potential leak of memory pointed to by 'set'
+1b05df7 Fix dead lock in Tethering state machine
+d0827b1 core/jni: Use sdclang lto for building libandroid_runtime
+08c9478 Switch frameworks/base/core/jni from gcc to clang.
+94b5ae9 Binder: Be forceful about a forceful exit
+a375693 Check for spurious wake ups
+5bde34a GC in heapDumpFinished to cleanup hprof fd
+0a1c323 Revert "[SQUASHED] Lockscreen Weather"
+cae4dda SystemUI: Fix task lock & freeform buttons placement
+97a98b0 SystemUI: Support recents task locking
+2ab829b SystemUI: locked tasks should have a valid view
+53e95f4 Init MemoryIntArray#mFd with -1
+59bfed3 SystemUI: Fix SystemUI Crash Issue
+564eb1d FlashlightTile: Retry opening camera later on if it failed before
+c11c98d Fix wrong array index bound in NotificationUsageStats
+7dd451a Add adb over network QS Tile
+4d2dc31 Add lockscreen rotation as an optional rotation setting [1/2] *Allow locking rotation in any angle
 
    * packages/apps/Settings/
-71a0768 Statusbar clock and date customizations [2/2] Squashed commit of the following:
-25da093 Show carrier label / custom [2/2] [Squashed]
+bcffaf3 Add lockscreen rotation as an optional rotation setting [2/2] Squash with: Settings: Remove screen rotation from accessibility
 
    * vendor/xosp/
-2f20bd8 Merge "prebuilt: priv-app: Update Magisk Manager" into xosp-n-rebase
-7a8250c Merge "prebuilt: etc: Update Magisk" into xosp-n-rebase
+eeaffcc Merge "Vendor: Forward port ADB over network [2/3]" into xosp-n-rebase
+6deac3b Vendor: Forward port ADB over network [2/3]
+04962df Revert "Add the missing RIL policy"
 
 ====================
-     08-03-2017
+     09-22-2017
 ====================
 
-
-====================
-     08-02-2017
-====================
-
-
-====================
-     08-01-2017
-====================
-
-
-   * kernel/xiaomi/msm8992/
-4f38967 Revert "libra_defconfig: replace qualcomm cpu boost with cpu input boost"
-adbcef8 enable sound control
-b814c53 libra_defconfig: enable kcal
-b67a737 msm: mdss: Change KCAL post-processing driver to make invert mode working in CM for OP2
-d35b127 msm: mdss: add squashed KCAL support
-de51266 sound: soc: add faux sound control for wcd9330
-302051e Add option to disable touchscreen firmware update
-6f62f93 update config
-5a4ee8e Add SIO and FIOPS i/o schedulers
-e686b9e libra_defconfig: enable sdcardfs
-ff2eefc qpnp-smbcharger: Publish charger voltage to the usb psy
-159e3b3 libra_defconfig: regenerate
-c3424f9 libra_defconfig: replace qualcomm cpu boost with cpu input boost
-7897c6e cpu_input_boost: adapt cluster masks for msm8992
-9c219f3 cpu_input_boost: backport to 3.10
-24e9a91 cpufreq: Introduce CPU input boost driver
-8b37541 BACKPORT: qcom-cpufreq: Use CLKFLAG_NO_RATE_CACHE
-1717dee clk: qcom: clock-cpu-8994: Use CLKFLAG_NO_RATE_CACHE for a57_hf_mux_v2
-b58544c fs: aio: remove blk plug
-3142364 block: disable add_random
-21ef756 Revert "KSM: Start KSM by default"
-12118c2 lib/memcopy: use glibc version
-69386db lib/string: use glibc version
-51e597a ARM: optimize memset_io()/memcpy_fromio()/memcpy_toio()
-10c496d asm-generic: atomic.h: relaxed atomic_read
-42dabe8 mm: do not activate swap write failed pages
-01449f8 msm: mdss: Correct the AD backlight calculation formulas
-dd63bb5 readahead: make context readahead more conservative
-3a16990 lowmemorykiller: Don't count swap cache pages twice
-2de2cfe lowmemorykiller: account for unevictable pages
-18ce2bf cpuidle: don't disable cpuidle when entering suspend
-e205823 cpufreq: interactive governor drops bits in time calculation
-b7c1df3 cpufreq: governor: Be friendly towards latency-sensitive bursty workloads
-c5e0dbe cpufreq: Break out early when frequency equals target_freq
-1c9121e sched: LOAD_FREQ (4*HZ+61) avoids loadavg Moire
-3cf9830 sched: fix task-priority when using SCHED_RESET_ON_FORK
-7234145 sched/loadavg: Fix loadavg artifacts on fully idle and on fully loaded systems
-d5cca53 UPSTREAM: sched/fair: Avoid pulling all tasks in idle balancing
-
-====================
-     07-31-2017
-====================
-
-
-   * android/
-dde759e added github, gitlab, bitbucket remotes
-
-   * kernel/xiaomi/msm8992/
-e206cce qcom: mpm: use interruptible wait to reduce load avg
-dc10e97 msm: Use interruptible wait to not affect load average
-010358d qcom: msm-core: uninterruptible wait - you can kiss my arse goodbye
-3a27203 libra_defconfig: enable power efficient workqueues
-a44e8f1 kthread_work: wake up worker only when the worker is idle
-f47f44b power: smb349-dual-charger: queue work on system_power_efficient_wq
-384eb04 devfreq: Use high priority workqueue
-68b1bb3 mdss: move to a kthread for vsync_retire_work_handler
-6f878aa msm: mdss: flush retire work before ctl_stop operation
-211db7f kgsl: convert some workqueues to use kthreads
-8c57f31 power: smb135x-charger: queue work on system_power_efficient_wq
-05f4d7b qcom: msm-core: queue work on system_power_efficient_wq
-49f8a6f power: bcl: queue work on system_power_efficient_wq
-63f1575 power: smbcharger: queue work on system_power_efficient_wq
-65a00d4 drivers: thermal: queue work on system_power_efficient_wq
-038e6a7 power: qpnp-fg: queue work on system_power_efficient_wq
-54f1921 rcu: Move SRCU grace period work to power efficient workqueue
-b5892c8 net/ipv4: queue work on power efficient wq
-f0ef9b9 firmware: use power efficient workqueue for unloading and aborting fw load
-18874fc net: wireless: move regulatory timeout work to power efficient workqueue
-c780999 workqueue: squashed: Add system wide power_efficient workqueues
-b49af29 libra_defconfig: enable uvc
-382389f libra_defconfig: add ntfs support
-80c4a3f libra_defconfig: disable timer stats
-df1d0da libra_defconfig: disable CONFIG_PFT as it is unsupported
-b69a538 libra_defconfig: remove mobicore
-b61c93b libra_defconfig: include useful modules in kernel
-ffb5f9b libra_defconfig: disable HDMI
-b095448 libra_defconfig: disable Dolby
-c4f303f libra_defconfig: disable SYSV IPC support
-c0427a7 libra_defconfig: remove unused drivers
-c89bee6 libra_defconfig: enable seccomp
-f833dd5 libra_defconfig: enable westwood
-3acbd68 libra_defconfig: enable hw accelerated CRC32
-a8055ae libra_defconfig: enable f2fs
-ea70242 libra_defconfig: disable ssc sensors
-758e943 libra_defconfig: disable download mode and enable memory preserve
-3cfbc94 libra_defconfig: enable pstore
-618b712 dts: libra: add ramoops memory regions
-829bce4 libra_defconfig: enable exfat support
-2e4ae63 Add exFAT support
-76f0ba5 libra_defconfig: enable cpusets
-f913ac2 cpuset: Make cpusets restore on hotplug
-a7b5652 cpuset: Add allow_attach hook for cpusets on android.
-3d4c20d libra_defconfig: enable ip nf match rpfilter
-a7ece6d net: Add TTL target
-c8fdc39 libra_defconfig: enable qcacld-2.0
-8fbfa93 libra_defconfig: enable core ctl
-440ebc1 core_ctl: Manage number of online cores based on system load
-b1469f7 firmware: add ft5346
-1c43c96 drivers: ft5x46: symlink /proc/touchscreen to input device
-b0842f9 drivers: ft5x46: rename sysfs entry to double_tap_enable
-c1b4501 drivers: ft5x46: clean up sysfs entries
-e1d0171 drivers: touchscreen: add ft5x46 driver used on mi4s
-a1845e6 libra_defconfig: enable atmel_mxt
-d41fe62 firmware: add firmware for atmel_mxt libra touchscreen
-16ca710 drivers: atmel_mxt_libra: symlink /proc/touchscreen to input device
-5e7d837 drivers: atmel_mxt_libra: add nav_button_enable support
-2f23180 drivers: atmel_mxt_libra: add edge_touch_mode support
-99f6fda drivers: atmel_mxt_libra: rename nodes
-5ac2ddf drivers: touchscreen: add atmel_mxt driver for libra
-1e0a969 libra_defconfig: remove old atmel mxt mxt configs
-0d1c04d libra_defconfig: enable libra synaptics driver
-b338806 firmware: update synaptics firmware from nougat MIUI
-466f0b4 firmware: add synaptics firmware
-1d694c0 drivers: synaptics_dsx_libra: symlink /proc/touchscreen to input device
-0febe4f drivers: synaptics_dsx_libra: check if buttons are enabled before reporting touch event
-bf76187 drivers: synaptics_dsx_libra: remove unused variables
-f9b8576 drivers: synaptics_dsx_libra: remove edge touch support
-032867f drivers: synaptics_dsx_libra: cleanup
-cefbaa8 drivers: synaptics_dsx_libra: rename nodes
-7f81b7c drivers: synaptics_dsx_libra: use WQ_HIGHPRI to improve response time
-b74c29c drivers: touchscreen: add libra synaptics driver
-3809976 libra_defconfig: remove old synaptics configs
-0a1fa98 drivers: synaptics_dsx: do not build by default
-80f1aac video: mdss: Color temperature interface using PCC
-7fa9857 drivers: media: rc: add 'pwm-ir' IR blaster driver
-5e7bf52 drivers: misc: add 'type-c' USB Type-C driver
-30049e3 drivers: cm36686: silence!
-48f23fb iio: cm36686: remove x7 hal support
-67ac021 drivers: iio: light add 'cm36686' light and proximity driver
-acee9e2 drivers: iio: imu: add 'st_sensor_hub' STMicroelectronics sensor hub driver
-ed5a7d9 libra_defconfig: replace tspdrv with isa1000
-d6fef7f drivers: misc: add isa1000 vibrator driver
-1aa7610 pwm-qpnp: let n=7 only when 7bit is supported
-3f85b77 libra_defconfig: use msm8994 sound driver
-a302108 sound: msm8994: increase headset detection range
-9f9c2fd ASoC: msm: msm8994: wcd9xxx invert headset detection gpio
-5fe9751 qpnp-smbcharger: force enable charging on power change
-788a9e8 qpnp-smbcharger: disable AICL ADC function
-1cb2ea0 camera_v2: apply xiaomi changes
-35cebe7 Revert "Revert "Revert "msm: camera: eeprom read to camera init"""
-88e5f00 XIAOMI: mmc: workaround for very slow cards
-02c8fec XIAOMI: cgroup: allow GLOBAL_SYSTEM_UID to attach
-8422f9a XIAOMI: msm: vidc: Allow V4L2_CID_MPEG_VIDC_VIDEO_PERF_MODE only for H264 codec
-2980909 XIAOMI: clk: mdss: update PLL enable sequence for improving pll lock time
-1275faf XIAOMI: ARM64: spinlock: add additional SEV in the spinlock unlock code path
-2fcc25b uapi: export lirc.h header
-029e29d lirc.h: remove several unused ioctls
-b6178c6 bz#75751: Move internal header file lirc.h to uapi/
-025ff01 ARM64: add bootinfo
-b1385fa drivers: power: Fix 2% battery level drop
-516f029 dts: msm8992: increase bark and pet times
-97a3658 arm/dts: Update msm8992 interrupt bypass list
-5945c65 ARM: dts: msm: Add interrupts to bypass list on msm8992
-eedac26 ARM: dts: msm: Adjust SPDM params on 8992
-1e9d5e8 dts: libra/aqua: resume charging at 95% to avoid too many charging cycles
-1d8b29d dts: qcom: add libra/aqua support
-cecd3e8 libra_defconfig: use libra support
-d893b5b drivers: platform: add support for libra
-a502d6a libra_defconfig: enable appended dtb image
-78cccef ARM64: configs: add libra defconfig
-f1b793d Makefile: use ccache
-da8820c Makefile: add a53 a57 optimization flags
-e480e2f .gitignore: ignore rejects, patches and build directory
-
-   * vendor/xosp/
-e1dfd44 fixed broken brunch command
-
-====================
-     07-30-2017
-====================
-
-
-====================
-     07-29-2017
-====================
-
-
-   * kernel/xiaomi/msm8992/
-f85da90 fs/exec: fix use after free in execve
-
-====================
-     07-28-2017
-====================
-
-
-   * external/chromium-webview/
-e205b2a Update webview
-
-====================
-     07-27-2017
-====================
-
-
-====================
-     07-26-2017
-====================
-
-
-====================
-     07-25-2017
-====================
-
-
-   * vendor/xosp/
-d359cdc prebuilt: priv-app: Update Magisk Manager
-b6b380a prebuilt: etc: Update Magisk
-
-====================
-     07-24-2017
-====================
-
-
-   * kernel/xiaomi/msm8992/
-d3b6c47 fs: readdir: Fix su hide patch for non-iterate filesystems
-e276637 kernel: Fix potential refcount leak in su check
-1d7d9b6 kernel: Only expose su when daemon is running
-bb4db18 ipv6: fix out of bound writes in __ip6_append_data()
-cfdedb1 ipv6/dccp: do not inherit ipv6_mc_list from parent
-052dba1 sctp: do not inherit ipv6_{mc|ac|fl}_list from parent
-17be369 ipv6: Check ip6_find_1stfragopt() return value properly.
-02189a6 ipv6: Prevent overrun when parsing v6 header options
-b6ba0ba msm: mdss: Fix invalid dma attachment during fb shutdown
-7ef7084 scsi: sg: check length passed to SG_NEXT_CMD_LEN
-5e69838 BACKPORT: sg: relax 16 byte cdb restriction
-7cd9467 BACKPORT: block: add blk_rq_set_block_pc()
-3df4980 perf: Do not double free
-bad081a perf/core: Fix concurrent sys_perf_event_open() vs. 'move_group' race
-2d66be7 tcp: do not lock listener to process SYN packets
-de97e45 tcp: remove BUG_ON() in tcp_check_req()
-80395b87 time: Remove CONFIG_TIMER_STATS
-28af3ea UPSTREAM: ALSA: timer: Fix missing queue indices reset at SNDRV_TIMER_IOCTL_SELECT
-69eb01b BACKPORT: ALSA: timer: Fix race between read and ioctl
-80da451 fs/exec.c: account for argv/envp pointers
-2ba26f7 Revert "proc: smaps: Allow smaps access for CAP_SYS_RESOURCE"
-ca23d2d netlink: Fix dump skb leak/double free
-9937822 netlink: Eliminate kmalloc in netlink dump operation.
-a53dfae splice: introduce FMODE_SPLICE_READ and FMODE_SPLICE_WRITE
-37aaceb ASoC: msm: qdsp6v2: Change audio drivers to use %pK
-
-====================
-     07-23-2017
-====================
-
-
-====================
-     07-22-2017
-====================
-
-
-   * device/xiaomi/libra/
-0a83439 gps: move configs to config dir
-648cd92 audio: mixer_paths: reverse camcorder mics
-
-   * kernel/xiaomi/msm8992/
-9226013 msm: camera: restructure data handling to be more robust
-3358396 ipv4: Don't do expensive useless work during inetdev destroy.
-e6c2531 netfilter: x_tables: check for size overflow
-cb42379 KEYS: Fix handling of stored error in a negatively instantiated user key
-06f32c6 net: add length argument to skb_copy_and_csum_datagram_iovec
-8ca7a81 Input: aiptek - fix crash on detecting device without endpoints
-72dda22 mnt: Fail collect_mounts when applied to unmounted mounts
-861b141 tty: Fix hang at ldsem_down_read()
-2300c30 BACKPORT: fs: limit filesystem stacking depth
-1bdf0c3 sched: Fix information leak in sys_sched_getattr()
-982d83e diag: Fix possible underflow/overflow issues
-c4eedf2 udf: Check path length when reading symlink
-
-====================
-     07-21-2017
-====================
-
-
-   * vendor/xosp/
-58f1f4d Merge "build: brunch: Use all threads by default" into xosp-n-rebase
-b1de504 Merge "Revert "Use Makefiles for XOSPApps Essentials"" into xosp-n-rebase
-c183ecb Revert "Use Makefiles for XOSPApps Essentials"
-
-====================
-     07-20-2017
-====================
-
-
-====================
-     07-19-2017
-====================
-
-
-====================
-     07-18-2017
-====================
-
-
-   * vendor/xosp/
-904551a build: brunch: Use all threads by default
-
-====================
-     07-17-2017
-====================
-
-
-====================
-     07-16-2017
-====================
-
-
-====================
-     07-15-2017
-====================
-
-
-   * hardware/qcom/display-caf/msm8996/
-3005091 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
-
-   * vendor/xosp/
-126dc36 Merge "xosp: Update SuperSU Installer to V2.82" into xosp-n-rebase
-671d42d xosp: Update SuperSU Installer to V2.82
-75e8edf prebuilt: priv-app: Update Magisk Manager
-
-====================
-     07-14-2017
-====================
-
-
-   * frameworks/base/
-6ffa4c7 Add Music QS Tile
-04f9ae0 core:[41.2.A.0.219] Update all SystemUI drawables
-
-   * packages/apps/Settings/
-6506d54 ManageApplications: Remove advanced option from the menu
-
-   * vendor/xosp/
-db484a8 prebuilt: priv-app: Update Magisk Manager
-60928a9 prebuilt: etc: Update Magisk
-
-====================
-     07-13-2017
-====================
-
-
-====================
-     07-12-2017
-====================
-
-
-====================
-     07-11-2017
-====================
-
-
-   * vendor/xosp/
-2b6497a prebuilt: priv-app: Update Magisk Manager
-2ad7a91 prebuilt: etc: Update Magisk
-aa7fd31 Use Makefiles for XOSPApps Essentials
-
-====================
-     07-10-2017
-====================
-
-
-   * frameworks/base/
-0e01c43 core: fix a derp
-da9e649 Revert "Add importance level to block lock screen notifications (fixed) (1/2)"
-8f25360 Revert "Support enforcing a minimum delay between notification sounds of an app."
-2b57f49 Revert "Fix automatic zen rules."
-
-   * packages/apps/Settings/
-6f617f1 Merge Notifications And SoundSettings
-4500621 Revert "Add importance level to block lock screen notifications (fixed) (2/2)"
-35301cb Revert "Add setup UI for minimum delay between an app's notification sounds."
-2b4f78d Revert "Turn on Power Notification Controls by default (2/2)"
-71f6a39 Revert "Fix zen mode allowed event preference summary."
 
