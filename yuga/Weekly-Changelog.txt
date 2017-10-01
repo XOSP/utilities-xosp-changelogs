@@ -11,488 +11,140 @@
 
 
 ====================
-     08-08-2017
+     10-01-2017
 ====================
 
 
-   * android/
-487048b xosp:Switch to android-7.1.2_r33
+   * frameworks/base/
+25ccc7e Longpress power lockscreen torch [1/2] Long pressing power while screen is off will launch torch
+cefd4c4 Add Sync QS Tile
 
-   * build/
-6176c8e Merge tag 'android-7.1.2_r33' into xosp-n-rebase
+   * hardware/qcom/display-caf/msm8916/
+b9fc743 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.26' into cm-14.1-caf-8916
 
-   * external/skia/
-ef49e66 Merge tag 'android-7.1.2_r33' into xosp-n-rebase
+   * packages/apps/Settings/
+748e865 Lockscreen Rotation: Create a summary for the preference
+62a942b Longpress power lockscreen torch [2/2]
+
+   * vendor/xosp/
+19a1f29 TO-NEVER-BE-REVERTED: Include all latest changes made since 21/09/17
+
+====================
+     09-30-2017
+====================
+
+
+====================
+     09-29-2017
+====================
+
+
+====================
+     09-28-2017
+====================
+
+
+====================
+     09-27-2017
+====================
+
+
+====================
+     09-26-2017
+====================
+
+
+====================
+     09-25-2017
+====================
+
+
+   * frameworks/base/
+dd5526e Move KILL_APP_LONGPRESS_TIMEOUT to Settings.Secure
+d5e2d20 [Base] long press back to kill configurable timeout
+
+   * packages/apps/Settings/
+e96f49c [Settings] long press back to kill configurable timeout
+789ef29 Settings: Forward port long-press-back to kill app (1/2)
+
+====================
+     09-24-2017
+====================
+
+
+   * frameworks/base/
+deda537 Perf: Fix RemoteViews memory leak
+0882324 Fix drm hal resource leaks
+f6f9092 Fixed another memory leak
+fea2873 Clear native shader when Paint shader changes
+704615b Fix static analyzer complaints
+d1a8e0b Merge "Fix warning: Potential leak of memory pointed to by 'set'" into xosp-n-rebase
+a87114b Merge "Fix dead lock in Tethering state machine" into xosp-n-rebase
+e9475a2 Merge "core/jni: Use sdclang lto for building libandroid_runtime" into xosp-n-rebase
+2573030 Merge "Switch frameworks/base/core/jni from gcc to clang." into xosp-n-rebase
+ddf2cd6 Merge "Binder: Be forceful about a forceful exit" into xosp-n-rebase
+6a0cc47 Merge "Check for spurious wake ups" into xosp-n-rebase
+d7c5171 Merge "GC in heapDumpFinished to cleanup hprof fd" into xosp-n-rebase
+1eaf9af Merge "Revert "[SQUASHED] Lockscreen Weather"" into xosp-n-rebase
+b70cfac Merge "SystemUI: Fix task lock & freeform buttons placement" into xosp-n-rebase
+e42d8b7 Merge "SystemUI: Support recents task locking" into xosp-n-rebase
+
+   * packages/apps/Settings/
+2d4305b Merge "Revert "Lockscreen Weather squash:"" into xosp-n-rebase
+2f8c94d Revert "Lockscreen Weather squash:"
+038f3e4 Fix typo
+
+   * vendor/xosp/
+6e88bdc Update initial attach for Tmo US
+4ac77dc Add Correios Celular (BR) APN
+878ad1c Add WOM Internet/MMS (CL) apn
+
+====================
+     09-23-2017
+====================
+
 
    * frameworks/av/
-00ea9ab Merge tag 'android-7.1.2_r33' into xosp-n-rebase
+6b59f04 fix potential mediaserver crash in ACodec::getPortFormat
+2303091 Fix memory leak warning.
+30cb856 Fix tiny memory leak
+9b27c59 stagefright: Fix SurfaceMediaSource buffer search condition when buffer return
 
    * frameworks/base/
-d8d07f6 Merge tag 'android-7.1.2_r33' into xosp-n-rebase
-
-   * frameworks/native/
-93a16c8 Merge tag 'android-7.1.2_r33' into xosp-n-rebase
-
-   * frameworks/opt/net/wifi/
-01ac09d Merge tag 'android-7.1.2_r33' into xosp-n-rebase
-
-====================
-     08-07-2017
-====================
-
-
-====================
-     08-06-2017
-====================
-
-
-   * kernel/sony/apq8064/
-444afc0 ALSA: seq: Fix race at creating a queue
-09a03d2 defconfig: fusion3: Disable CONFIG_CP_ACCESS
-876eebd wlan:Check priviledge permission for SET_CHANNEL_RANGE
-242c724 um: Put device-specific code behind #ifndef CONFIG_UML.
-
-====================
-     08-05-2017
-====================
-
-
-   * hardware/qcom/display-caf/apq8084/
-e2f4340 cec: Fix breakage due to API change
-
-   * kernel/sony/apq8064/
-a3e2c9a bluetooth: Validate socket address length in sco_sock_bind().
-3a4bd61 net: ipv4: tcp: Get tcpi_count via file_count() not direct access
-
-====================
-     08-04-2017
-====================
-
-
-   * bionic/
-87bff13 Merge "libc: ARM: Add 32-bit Kryo memcpy" into xosp-n-rebase
-bb58b7c Merge "libc: use Cortex-A7/A53 memset on Kryo" into xosp-n-rebase
-b82c0a4 Merge "Add kryo support." into xosp-n-rebase
-e3d6bfd Merge "[AArch64] Optimized memcmp" into xosp-n-rebase
-e376345 Merge "libc: Fix minor issues in memchr NEON implementation" into xosp-n-rebase
-ffa015a xosp: Add gitreview file
-cfa3bb8 libc: ARM: Add 32-bit Kryo memcpy
-8ecf877 libc: use Cortex-A7/A53 memset on Kryo
-f99b231 Add kryo support.
-a148902 [AArch64] Optimized memcmp
-9f1e3ca libc: Fix minor issues in memchr NEON implementation
-
-   * frameworks/av/
-1d0d64d CameraService: Fix cameraId type of onDeviceStatusChanged
-ddd392d cameraservice: device1: Fix "slow" legacy HALs
-5230478 libstagefright_httplive: revert seektime adjustment in LiveSession
-b2145aa audioflinger: put fastmixer with active tracks into mix state when suspended
-876c4b1 libstagefright: encoder must exist when source starting
-36f2fc3 HLS: force audio/video both to start from IDR position
-a841830 stagefright: don't assume 16 bit format
-07deae5 Camera: Add null check on mDevice to avoid crash
-ee4b8f9 stagefright: Remove the HAL3 limitation from the video reference clock selection
-edecf11 libmedia: synchronize access to meta
-12a312f audiopolicy: mute strategies when device is a2dp after suspended
-a9c4521 audio: hold effect mutex when releasing effect engine
-fe0448d audiopolicy: Do not select A2DP device if suspended
-253e046 audiopolicy: Invalidate direct PCM tracks when mono is set
-cf31934 audioflinger: update IO info when releasing audio patch
-fed542b NuPlayer: Decoder: Check for valid codec on resume
-86f0b6c AudioPolicyMng: check for null audioSession when realeasing input
-6d7ebbc video: Disable sync frame decoder mode for closest seek
-e5c022b NuPlayer: fix possible deadlock due to recursive mutex access
-7b670b0 stagefright: stop audio encoding before releasing writer thread
-c6225d6 Camera: Add NULL check on mDevice to avoid crash.
-606049a stagefright: Remove extra memcpy
-309bdac camera: Allow camera HAL to get caller package
-75853fd av: "ACodec: update native window crop rectangle" depends on QCOM
-eb8d580 Flush video decoder when audio sink resume.
-f7850d1 nuplayer: Call video flush on audio teardown
-fddaaed cameraserver: disable background scheduling of cameraserver
-
-   * frameworks/base/
-898dfec Statusbar clock and date customizations [1/2]
-9dca915 Show carrier label / custom [1/2] [Squashed]
-
-   * frameworks/native/
-d3e1b57 Surface: Use async lock/unlock in copyBlt
-450c1a7 Surface: Ensure synchronisation of copyBlt
-75ecc05 Fix a anr bug caused by sendFinishedSignal logical error
-45bbce8 vulkan: add support for AArch32 targets
-
-   * kernel/sony/apq8064/
-0cbbd5b Revert "Revert "fusion3: defconfig: Enable CONFIG_WQ_POWER_EFFICIENT_DEFAULT""
-fc97e92 Revert "Revert "workqueues: Sync WQ_POWER_EFFICIENT with 'mm-6.0'""
-76d8de6 Revert "freezer: set PF_SUSPEND_TASK flag on tasks that call freeze_processes"
-0acfcdc cfg80211: Allow use_mfp to be specified with the connect command
-a888311 ipv4: try to cache dst_entries which would cause a redirect
-d4756e9 Revert "timer: optimize apply_slack()"
-6d06606 Revert "timer: Generalize timer->base flags handling"
+c3baa98 Merge "SystemUI: locked tasks should have a valid view" into xosp-n-rebase
+352d2f3 Merge "Init MemoryIntArray#mFd with -1" into xosp-n-rebase
+9ded367 Merge "SystemUI: Fix SystemUI Crash Issue" into xosp-n-rebase
+a5d2342 Merge "FlashlightTile: Retry opening camera later on if it failed before" into xosp-n-rebase
+2c1cc13 Merge "Fix wrong array index bound in NotificationUsageStats" into xosp-n-rebase
+9acc06b Merge "Add adb over network QS Tile" into xosp-n-rebase
+440947f Fix warning: Potential leak of memory pointed to by 'set'
+1b05df7 Fix dead lock in Tethering state machine
+d0827b1 core/jni: Use sdclang lto for building libandroid_runtime
+08c9478 Switch frameworks/base/core/jni from gcc to clang.
+94b5ae9 Binder: Be forceful about a forceful exit
+a375693 Check for spurious wake ups
+5bde34a GC in heapDumpFinished to cleanup hprof fd
+0a1c323 Revert "[SQUASHED] Lockscreen Weather"
+cae4dda SystemUI: Fix task lock & freeform buttons placement
+97a98b0 SystemUI: Support recents task locking
+2ab829b SystemUI: locked tasks should have a valid view
+53e95f4 Init MemoryIntArray#mFd with -1
+59bfed3 SystemUI: Fix SystemUI Crash Issue
+564eb1d FlashlightTile: Retry opening camera later on if it failed before
+c11c98d Fix wrong array index bound in NotificationUsageStats
+7dd451a Add adb over network QS Tile
+4d2dc31 Add lockscreen rotation as an optional rotation setting [1/2] *Allow locking rotation in any angle
 
    * packages/apps/Settings/
-71a0768 Statusbar clock and date customizations [2/2] Squashed commit of the following:
-25da093 Show carrier label / custom [2/2] [Squashed]
+bcffaf3 Add lockscreen rotation as an optional rotation setting [2/2] Squash with: Settings: Remove screen rotation from accessibility
 
    * vendor/xosp/
-c26ff32 Merge "Update XCA" into xosp-n-rebase
-c6315c8 Update XCA
-03a3e91 sensitive_pn: add EU 116 Numbers
-0f55f24 apns: correct the mvno_match_data for MasMovil Spain
-6e7a50a sensitive_pn: Include France DOM (Overseas regions) codes
-1154b9c kernel: Add savedefconfig target
-8a76310 vendor:xosp: Remove XOSPDelta
-2f20bd8 Merge "prebuilt: priv-app: Update Magisk Manager" into xosp-n-rebase
-7a8250c Merge "prebuilt: etc: Update Magisk" into xosp-n-rebase
+eeaffcc Merge "Vendor: Forward port ADB over network [2/3]" into xosp-n-rebase
+6deac3b Vendor: Forward port ADB over network [2/3]
+04962df Revert "Add the missing RIL policy"
 
 ====================
-     08-03-2017
+     09-22-2017
 ====================
 
-
-   * kernel/sony/apq8064/
-aff18d8 Revert "fusion3: defconfig: Enable CONFIG_WQ_POWER_EFFICIENT_DEFAULT"
-1f91c07 Revert "workqueues: Sync WQ_POWER_EFFICIENT with 'mm-6.0'"
-ec6be6c BACKPORT: Bluetooth: Fix potential NULL dereference in RFCOMM bind callback
-15d23a0 AIO: Don't plug the I/O queue in do_io_submit() Asynchronous I/O latency to a solid-state disk greatly increased between the 2.6.32 and 3.0 kernels. By removing the plug from do_io_submit(), we observed a 34% improvement in the I/O latency.
-f2c0f04 Revert "fs: aio: Optimization for SSD-only machines"
-3ddb04b Revert "fusion3: defconfig: Enable CONFIG_AIO_SSD_ONLY"
-
-====================
-     08-02-2017
-====================
-
-
-   * kernel/sony/apq8064/
-10cea3e uninline file_free_rcu()
-714af24 lib: Fix generic strnlen_user for 32-bit big-endian machines
-04ffb41 switch the protection of percpu_counter list to spinlock
-8a460f7 security/keys/keyctl.c: suppress memory allocation failure warning
-ec34e4b kernel: power: Add PM_USERSPACE_FROZEN workqueue
-6c23d8e freezer: set PF_SUSPEND_TASK flag on tasks that call freeze_processes
-66c900b genirq: Provide means to retrigger parent
-a13502f clockchips: Add FEAT_PERCPU clockevent flag
-6297abf math64: Add mul_u64_u32_shr()
-650e47a PM / suspend: Remove unnecessary !!
-21b634e time: create __getnstimeofday for WARNless calls
-3d8389e timekeeping: Correct run-time detection of persistent_clock.
-c9cce23 timekeeping: Add persistent_clock_exist flag
-0883e8c Revert "Revert "PM: wakelock: Abort task freezing if a wake lock is held.""
-a94ce2e timer: Generalize timer->base flags handling
-e3516e3 smp: Allow booting a specific subset of CPUs
-7df57b7 cpumask: Fix cpumask leak in partition_sched_domains()
-0de8843 posix-cpu-timers: don't account cpu timer after stopped thread runtime accounting
-3d44669 rcu: Add a module parameter to force use of expedited RCU primitives
-5e3c0f9 genirq: Add devm_request_any_context_irq()
-bc7f806 genirq: Generic irq chip requires IRQ_DOMAIN
-32f05f2 CHROMIUM: clocksource: allow clocksources to be selected earlier during boot
-363cdd4 Revert "PM: wakelock: Abort task freezing if a wake lock is held."
-f7a6cfa irq: Set CPU affinity right on thread creation
-a6610bb smp: Fix idle_thread_init() inline stub
-3c90282 nohz: stat: Fix CPU idle time accounting Since cpustat[CPUTIME_IDLE] is never connected to ts->idle_sleeptime,# Please enter the commit message for your changes. Lines starting never read from cpustat[CPUTIME_IDLE] when reporting stats in# with '#' will be ignored, and an empty message aborts the commit. /proc/stat.# On branch my-tw-4.4 Note this was rejected by Michal Hocko when it was initially proposed# (use "git reset HEAD <file>..." to unstage) by Martin Schwidefsky in LKML, so if you want to upstream it, better# find an alternative (either completely disable cpustat[CPUTIME_IDLE]# modified: kernel/time/tick-sched.c for CONFIG_NO_HZ or somehow connect them to keep them in sync.)# bug 1190321 Change-Id: Idc92488910b826aff850a010016d8326c7ab9e6c Signed-off-by: Bo Yan <byan@nvidia.com> Reviewed-on: http://git-master/r/214638 Reviewed-by: Automatic_Commit_Validation_User GVS: Gerrit_Virtual_Submit Reviewed-by: Liang Cheng (SW) <licheng@nvidia.com> Tested-by: Liang Cheng (SW) <licheng@nvidia.com>
-1192215 ACPI / processor: prevent cpu from becoming online
-e6e1481 kernel/cpu.c: Add comment for priority in cpu_hotplug_pm_callback
-25d07d4 mm/hotplug: correctly setup fallback zonelists when creating new pgdat
-c975538 timer: optimize apply_slack()
-df4f556 msm: move printk out of spin lock low_water_lock
-ce62814 hrtimer: Prevent enqueue of hrtimer on dead CPU
-c8e1212 hrtimer: Consider preemption when migrating hrtimer cpu_bases
-c66e22c sched: add wait_for_completion_io[_timeout]
-5e33bcc sched: Micro-optimize the smart wake-affine logic
-c97a4d4 sched: Implement smarter wake-affine logic
-505195d sched: reinitialize rq->next_balance when a CPU is hot-added
-739736b regulator: Add proxy consumer driver
-5e09d47 REGULATOR: Remove no longer used function after cleanups.
-d01b6d1 regulator: core: remove sysfs entry properly in regulator_put
-abf0654 regulator: core: Allow multiple requests of a single supply mapping
-d3cb214 CONFIG_REGULATOR_PROXY_CONSUMER: better definition.
-e6f3c35 regulator: Call proxy-consumer functions for each regulator registered
-54ca597 ARM: topology: Add efficiency coefficient for Krait
-21fa2cb msm_serial_hs_lite: Remove kernel panic
-f2f7af7 slimbus: Cleanup dev_list when device is removed
-3328579 mmc: core: Fix NULL pointer dereference issue with mmc_blk_reset()
-be07cee arm: topology: Allow specifying the CPU efficiency from device tree
-ef683d9 ARM: topology: Fix Null pointer dereference
-bcf0ede arm: topology: Define arch_get_cpu_efficiency() API for scheduler
-63e3515 ARM: topology: Suppress clock-frequency error
-3ed9372 ARM: 8008/1: topology: Coding style fixes
-98113f8 ARM: 7920/1: topology: Staticise non-exported symbols
-96a3486 ARM: topology: remove hwid/MPIDR dependency from cpu_capacity
-f34f91b arm: remove cast for kzalloc return value
-12ccdbb ARM: kernel: update topology to use new MPIDR macros
-32e9e64 ARM: kernel: enhance MPIDR macro definitions
-d77adc5 ARM: 7482/1: topology: fix section mismatch warning for init_cpu_topology
-33b52ff ARM: 7463/1: topology: Update cpu_power according to DT information
-734db88 ARM: 7462/1: topology: factorize the update of sibling masks
-00312f5 ARM: 7461/1: topology: Add arch_scale_freq_power function
-9674163 defconfig: fusion3: Enable FORCE_FAST_CHARGE
-d0085f6 drivers: power: Add USB fastcharge sysfs
-
-====================
-     08-01-2017
-====================
-
-
-====================
-     07-31-2017
-====================
-
-
-   * android/
-dde759e added github, gitlab, bitbucket remotes
-
-   * kernel/sony/apq8064/
-0010fa9 Revert "Revert "Revert "Effectively revert "gpu: ion: replace __GFP_ZERO with manual zero'ing""""
-
-   * vendor/xosp/
-e1dfd44 fixed broken brunch command
-
-====================
-     07-30-2017
-====================
-
-
-   * kernel/sony/apq8064/
-7b5d677 staging: LMK: Evaluate regular swap space when calculating memory
-70a86dd Fix CONFIG_HZ dependency in wifi driver.
-c9850e0 arm/configs: add NFLOG to hammerhead_defconfig
-ee54402 include: Remove executable bit from sdio_func.h
-
-====================
-     07-29-2017
-====================
-
-
-====================
-     07-28-2017
-====================
-
-
-   * external/chromium-webview/
-e205b2a Update webview
-
-====================
-     07-27-2017
-====================
-
-
-====================
-     07-26-2017
-====================
-
-
-====================
-     07-25-2017
-====================
-
-
-   * vendor/xosp/
-d359cdc prebuilt: priv-app: Update Magisk Manager
-b6b380a prebuilt: etc: Update Magisk
-
-====================
-     07-24-2017
-====================
-
-
-   * kernel/sony/apq8064/
-d06298c Revert "msm: pm-8x60: Don't save or restore GIC,VFP state in power collapse"
-38e5356 power: validate wakeup source before activating it.
-d8fe5b6 PM: Introduce suspend state PM_SUSPEND_FREEZE
-
-====================
-     07-23-2017
-====================
-
-
-   * kernel/sony/apq8064/
-6720d88 Revert "Revert "Effectively revert "gpu: ion: replace __GFP_ZERO with manual zero'ing"""
-
-====================
-     07-22-2017
-====================
-
-
-   * kernel/sony/apq8064/
-68739ad rtc: pm8xxx: move device_init_wakeup() before rtc_register
-62a8042 PM / Domains: don't use [delayed_]work_pending()
-1fd9839 PM: Reorganize device PM initialization
-b827b8d PM / Runtime: let rpm_resume() succeed if RPM_ACTIVE, even when disabled, v2
-12a0671 PM / QoS: Add return code to pm_qos_get_value function.
-ffccc91 wlan: Remove WLAN_FEATURE_HOLD_RX_WAKELOCK feature
-3f16edd wireless: sort and extend element ID list
-eba1401 PM: Rename CAP_EPOLLWAKEUP to CAP_BLOCK_SUSPEND
-aced1bf Wlan: Optimize set key part to reduce the set key time
-7e1e406 wlan: Fix null mac address check in WDA
-179af9a wlan: Return updated rssi value to upperlayer
-7830db5 wlan: Update qie_age->age to match the BSS age in the driver
-cc5e8d2 wlan: Increase the Wait for key timer value
-a6907fb wlan: Disconnect the session when WaitForKey timer expires
-ed00f6a wlan: Use system time instead of jiffies for BSS received time
-28a5b53 prima: Reduce expiration time of traffic timer during roaming
-
-====================
-     07-21-2017
-====================
-
-
-   * vendor/xosp/
-58f1f4d Merge "build: brunch: Use all threads by default" into xosp-n-rebase
-b1de504 Merge "Revert "Use Makefiles for XOSPApps Essentials"" into xosp-n-rebase
-c183ecb Revert "Use Makefiles for XOSPApps Essentials"
-
-====================
-     07-20-2017
-====================
-
-
-====================
-     07-19-2017
-====================
-
-
-   * kernel/sony/apq8064/
-0fab6e8 Revert "ipc/mqueue: improve performance of send/recv"
-e51c9cb driver: soc: bam_dmux: Fix spinlock lock-up
-251971a arm, hw-breakpoint: Fix CPU hotplug callback registration
-f4bf127 CPU hotplug, perf: Fix CPU hotplug callback registration
-2f7c49b perf, cpu hotplug: Use cached value of smp_processor_id()
-def01ae perf, cpu hotplug: Run CPU_STARTING notifiers with irqs disabled
-7e63658 Doc/cpu-hotplug: Specify race-free way to register CPU hotplug callbacks
-8c0905c CPU hotplug, writeback: Don't call writeback_set_ratelimit() too often during hotplug
-30727e2 sched/core: Fix an SMP ordering race in try_to_wake_up() vs. schedule()
-bf276d6 ipc/mqueue: improve performance of send/recv
-9b1cb7f PM / sleep: unregister wakeup source when disabling device wakeup
-3d8d05a ACPUCLOCK: increase L2 speed, scale frequencies in sync and remove unneeded frequencies
-
-====================
-     07-18-2017
-====================
-
-
-   * vendor/xosp/
-904551a build: brunch: Use all threads by default
-
-====================
-     07-17-2017
-====================
-
-
-   * kernel/sony/apq8064/
-52a16e4 defconfig: fusion3: Disable CONFIG_STRICT_MEMORY_RWX
-eb6f62a sched_clock: Avoid corrupting hrtimer tree during suspend
-2abded6 arm: arch_timer: Update for 64bit sched_clock
-d61e3de sched_clock: Add support for >32 bit sched_clock
-b0a285dd sched_clock: Use an hrtimer instead of timer
-fe80995 sched_clock: Use seqcount instead of rolling our own
-fabe390 ARM: sched_clock: Load cycle count after epoch stabilizes
-ef87c93 sched_clock: Make ARM's sched_clock generic for all architectures
-
-====================
-     07-16-2017
-====================
-
-
-====================
-     07-15-2017
-====================
-
-
-   * hardware/qcom/display-caf/msm8996/
-3005091 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
-
-   * vendor/xosp/
-126dc36 Merge "xosp: Update SuperSU Installer to V2.82" into xosp-n-rebase
-671d42d xosp: Update SuperSU Installer to V2.82
-75e8edf prebuilt: priv-app: Update Magisk Manager
-
-====================
-     07-14-2017
-====================
-
-
-   * frameworks/base/
-6ffa4c7 Add Music QS Tile
-04f9ae0 core:[41.2.A.0.219] Update all SystemUI drawables
-
-   * kernel/sony/apq8064/
-0084ca9 ASoC: msm: qdsp6: check audio client pointer before accessing
-0482148 ASoC: msm: qdsp6: validate audio client in callback
-9f81702 ASoC: msm: qdsp6v2: check audio client pointer before accessing
-5213ec4 ASoC: msm: qdsp6v2: validate audio client in callback
-e41f6cf ashmem: remove cache maintenance support
-1d04b5c msm: kgsl: Fix kgsl memory allocation and free race condition
-0875afe msm: kgsl: remove or fix badly formated printk messages
-ef32968 ipv4: keep skb->dst around in presence of IP options
-0f156b5 ALSA: timer: Fix race between read and ioctl
-40f846f ALSA: timer: Fix missing queue indices reset at SNDRV_TIMER_IOCTL_SELECT
-e7ae03a Revert "proc: smaps: Allow smaps access for CAP_SYS_RESOURCE"
-729a650 USB: iowarrior: fix oops with malicious USB descriptors
-1360e3f Input: gtco - fix crash on detecting device without endpoints
-fdf2eda Input: powermate - fix oops with malicious USB descriptors
-96d0104 Input: ati_remote2 - fix crashes on detecting device with invalid descriptor
-fbaa8b5 USB: digi_acceleport: do sanity checking for the number of ports
-1defc38 USB: mct_u232: add sanity checking in probe
-08966fac ARM: perf: reject groups spanning multiple hardware PMUs
-
-   * packages/apps/Settings/
-6506d54 ManageApplications: Remove advanced option from the menu
-
-   * vendor/xosp/
-db484a8 prebuilt: priv-app: Update Magisk Manager
-60928a9 prebuilt: etc: Update Magisk
-
-====================
-     07-13-2017
-====================
-
-
-   * kernel/sony/apq8064/
-37eeaeb mmc: core: Fix possbile memory leak
-5664b5e msm: hotplug: Do not skip the platform init for boot core
-86288a5 input: synaptics: allocate heap memory for temp buf
-0af6f77 lowmemorykiller: Introduce sysfs node for ALMK and PPR adj threshold
-d89cbde sched/rt: print RT tasks when RT throttling is activated
-a0c98a4 usb: ehci-msm: Fix unclocked access on system resume
-
-====================
-     07-12-2017
-====================
-
-
-   * kernel/sony/apq8064/
-43ae612 android: binder: Disable preemption while freeing kernel memory.
-760c2af android: binder: Use wake up hint for synchronous transactions.
-4d3ef21 drivers: convert shrinkers to new count/scan API
-1c035d6 drivers:leds:leds-lm3533_ng: hack algorithm to reduce the Auto Brightness
-
-====================
-     07-11-2017
-====================
-
-
-   * vendor/xosp/
-2b6497a prebuilt: priv-app: Update Magisk Manager
-2ad7a91 prebuilt: etc: Update Magisk
-
-====================
-     07-10-2017
-====================
-
-
-   * frameworks/base/
-0e01c43 core: fix a derp
-da9e649 Revert "Add importance level to block lock screen notifications (fixed) (1/2)"
-8f25360 Revert "Support enforcing a minimum delay between notification sounds of an app."
-2b57f49 Revert "Fix automatic zen rules."
-
-   * packages/apps/Settings/
-6f617f1 Merge Notifications And SoundSettings
-4500621 Revert "Add importance level to block lock screen notifications (fixed) (2/2)"
-35301cb Revert "Add setup UI for minimum delay between an app's notification sounds."
-2b4f78d Revert "Turn on Power Notification Controls by default (2/2)"
-71f6a39 Revert "Fix zen mode allowed event preference summary."
-
-   * vendor/xosp/
-aa7fd31 Use Makefiles for XOSPApps Essentials
 
