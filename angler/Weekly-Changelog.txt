@@ -11,364 +11,69 @@
 
 
 ====================
-     08-08-2017
-====================
-
-
-   * android/
-487048b xosp:Switch to android-7.1.2_r33
-
-   * build/
-6176c8e Merge tag 'android-7.1.2_r33' into xosp-n-rebase
-
-   * external/skia/
-ef49e66 Merge tag 'android-7.1.2_r33' into xosp-n-rebase
-
-   * frameworks/av/
-00ea9ab Merge tag 'android-7.1.2_r33' into xosp-n-rebase
-
-   * frameworks/base/
-d8d07f6 Merge tag 'android-7.1.2_r33' into xosp-n-rebase
-
-   * frameworks/native/
-93a16c8 Merge tag 'android-7.1.2_r33' into xosp-n-rebase
-
-   * frameworks/opt/net/wifi/
-01ac09d Merge tag 'android-7.1.2_r33' into xosp-n-rebase
-
-====================
-     08-07-2017
+     10-05-2017
 ====================
 
 
 ====================
-     08-06-2017
+     10-04-2017
 ====================
 
-
-   * hardware/qcom/display-caf/apq8084/
-e2f4340 cec: Fix breakage due to API change
-
-====================
-     08-05-2017
-====================
-
-
-   * bionic/
-87bff13 Merge "libc: ARM: Add 32-bit Kryo memcpy" into xosp-n-rebase
-bb58b7c Merge "libc: use Cortex-A7/A53 memset on Kryo" into xosp-n-rebase
-b82c0a4 Merge "Add kryo support." into xosp-n-rebase
-e3d6bfd Merge "[AArch64] Optimized memcmp" into xosp-n-rebase
-e376345 Merge "libc: Fix minor issues in memchr NEON implementation" into xosp-n-rebase
-ffa015a xosp: Add gitreview file
-cfa3bb8 libc: ARM: Add 32-bit Kryo memcpy
-8ecf877 libc: use Cortex-A7/A53 memset on Kryo
-f99b231 Add kryo support.
-a148902 [AArch64] Optimized memcmp
-9f1e3ca libc: Fix minor issues in memchr NEON implementation
-
-   * frameworks/av/
-1d0d64d CameraService: Fix cameraId type of onDeviceStatusChanged
-ddd392d cameraservice: device1: Fix "slow" legacy HALs
-5230478 libstagefright_httplive: revert seektime adjustment in LiveSession
-b2145aa audioflinger: put fastmixer with active tracks into mix state when suspended
-876c4b1 libstagefright: encoder must exist when source starting
-36f2fc3 HLS: force audio/video both to start from IDR position
-a841830 stagefright: don't assume 16 bit format
-07deae5 Camera: Add null check on mDevice to avoid crash
-ee4b8f9 stagefright: Remove the HAL3 limitation from the video reference clock selection
-edecf11 libmedia: synchronize access to meta
-12a312f audiopolicy: mute strategies when device is a2dp after suspended
-a9c4521 audio: hold effect mutex when releasing effect engine
-fe0448d audiopolicy: Do not select A2DP device if suspended
-253e046 audiopolicy: Invalidate direct PCM tracks when mono is set
-cf31934 audioflinger: update IO info when releasing audio patch
-fed542b NuPlayer: Decoder: Check for valid codec on resume
-86f0b6c AudioPolicyMng: check for null audioSession when realeasing input
-6d7ebbc video: Disable sync frame decoder mode for closest seek
-e5c022b NuPlayer: fix possible deadlock due to recursive mutex access
-7b670b0 stagefright: stop audio encoding before releasing writer thread
-c6225d6 Camera: Add NULL check on mDevice to avoid crash.
-606049a stagefright: Remove extra memcpy
-309bdac camera: Allow camera HAL to get caller package
-75853fd av: "ACodec: update native window crop rectangle" depends on QCOM
-eb8d580 Flush video decoder when audio sink resume.
-f7850d1 nuplayer: Call video flush on audio teardown
-fddaaed cameraserver: disable background scheduling of cameraserver
-
-   * frameworks/base/
-898dfec Statusbar clock and date customizations [1/2]
-
-   * frameworks/native/
-d3e1b57 Surface: Use async lock/unlock in copyBlt
-450c1a7 Surface: Ensure synchronisation of copyBlt
-75ecc05 Fix a anr bug caused by sendFinishedSignal logical error
-45bbce8 vulkan: add support for AArch32 targets
-
-   * packages/apps/Settings/
-71a0768 Statusbar clock and date customizations [2/2] Squashed commit of the following:
-
-   * vendor/xosp/
-c26ff32 Merge "Update XCA" into xosp-n-rebase
-c6315c8 Update XCA
-03a3e91 sensitive_pn: add EU 116 Numbers
-0f55f24 apns: correct the mvno_match_data for MasMovil Spain
-6e7a50a sensitive_pn: Include France DOM (Overseas regions) codes
-1154b9c kernel: Add savedefconfig target
-8a76310 vendor:xosp: Remove XOSPDelta
-2f20bd8 Merge "prebuilt: priv-app: Update Magisk Manager" into xosp-n-rebase
-7a8250c Merge "prebuilt: etc: Update Magisk" into xosp-n-rebase
-
-====================
-     08-04-2017
-====================
-
-
-   * frameworks/base/
-9dca915 Show carrier label / custom [1/2] [Squashed]
-
-   * packages/apps/Settings/
-25da093 Show carrier label / custom [2/2] [Squashed]
-
-====================
-     08-03-2017
-====================
-
-
-====================
-     08-02-2017
-====================
-
-
-====================
-     08-01-2017
-====================
-
-
-====================
-     07-31-2017
-====================
-
-
-   * android/
-dde759e added github, gitlab, bitbucket remotes
-
-   * vendor/xosp/
-e1dfd44 fixed broken brunch command
-
-====================
-     07-30-2017
-====================
-
-
-====================
-     07-29-2017
-====================
-
-
-====================
-     07-28-2017
-====================
-
-
-   * external/chromium-webview/
-e205b2a Update webview
-
-====================
-     07-27-2017
-====================
-
-
-====================
-     07-26-2017
-====================
-
-
-   * vendor/xosp/
-d359cdc prebuilt: priv-app: Update Magisk Manager
-b6b380a prebuilt: etc: Update Magisk
-
-====================
-     07-25-2017
-====================
-
-
-====================
-     07-24-2017
-====================
-
-
-====================
-     07-23-2017
-====================
-
-
-====================
-     07-22-2017
-====================
-
-
-====================
-     07-21-2017
-====================
-
-
-   * vendor/xosp/
-58f1f4d Merge "build: brunch: Use all threads by default" into xosp-n-rebase
-b1de504 Merge "Revert "Use Makefiles for XOSPApps Essentials"" into xosp-n-rebase
-c183ecb Revert "Use Makefiles for XOSPApps Essentials"
-
-====================
-     07-20-2017
-====================
-
-
-====================
-     07-19-2017
-====================
-
-
-   * vendor/xosp/
-904551a build: brunch: Use all threads by default
-
-====================
-     07-18-2017
-====================
-
-
-====================
-     07-17-2017
-====================
-
-
-====================
-     07-16-2017
-====================
-
-
-====================
-     07-15-2017
-====================
-
-
-   * frameworks/base/
-6ffa4c7 Add Music QS Tile
-04f9ae0 core:[41.2.A.0.219] Update all SystemUI drawables
-
-   * hardware/qcom/display-caf/msm8996/
-3005091 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
-
-   * packages/apps/Settings/
-6506d54 ManageApplications: Remove advanced option from the menu
-
-   * vendor/xosp/
-126dc36 Merge "xosp: Update SuperSU Installer to V2.82" into xosp-n-rebase
-671d42d xosp: Update SuperSU Installer to V2.82
-75e8edf prebuilt: priv-app: Update Magisk Manager
-
-====================
-     07-14-2017
-====================
-
-
-   * vendor/xosp/
-db484a8 prebuilt: priv-app: Update Magisk Manager
-60928a9 prebuilt: etc: Update Magisk
-
-====================
-     07-13-2017
-====================
-
-
-====================
-     07-12-2017
-====================
-
-
-   * vendor/xosp/
-2b6497a prebuilt: priv-app: Update Magisk Manager
-2ad7a91 prebuilt: etc: Update Magisk
-
-====================
-     07-11-2017
-====================
-
-
-   * frameworks/base/
-0e01c43 core: fix a derp
-da9e649 Revert "Add importance level to block lock screen notifications (fixed) (1/2)"
-8f25360 Revert "Support enforcing a minimum delay between notification sounds of an app."
-2b57f49 Revert "Fix automatic zen rules."
-
-   * packages/apps/Settings/
-6f617f1 Merge Notifications And SoundSettings
-4500621 Revert "Add importance level to block lock screen notifications (fixed) (2/2)"
-35301cb Revert "Add setup UI for minimum delay between an app's notification sounds."
-2b4f78d Revert "Turn on Power Notification Controls by default (2/2)"
-71f6a39 Revert "Fix zen mode allowed event preference summary."
 
    * vendor/huawei/
-c6d690b cherry: Fix file permission
-1ddfabd msm8916: Update widevine from crackling TOS111B
-21ff665 msm8916: Update GPS blobs from crackling TOS111B
-984548f msm8916: Update adreno from crackling TOS111B
-
-   * vendor/xosp/
-aa7fd31 Use Makefiles for XOSPApps Essentials
+b76631f angler: add HwSarControlService apk from N2G48C factory image
 
 ====================
-     07-10-2017
+     10-03-2017
+====================
+
+
+====================
+     10-02-2017
+====================
+
+
+====================
+     10-01-2017
+====================
+
+
+====================
+     09-30-2017
 ====================
 
 
    * frameworks/base/
-9f7c6f3 Fix TaskRecord wrong dump element firstActiveTime
-8d2ca40 Camera2: Fix Error Callback if buffer lost.
-4223224 Wifi: Send DHCP DISCOVER with rapid commit
-3a62ab2 KernelCpuSpeedReader: Account for missing sysfs nodes
-7bab594 NullPointerException: Attempt to invoke virtual method 'int android.os.Parcel.dataSize()' on a null object reference
-73b0417 fingerprint: handle PerformanceStats NULL pointers
-79f534c Optimised hwui rounded corners shader
-4996201 Remove FastJNI optimization on AssetManager to avoid dead lock.
-4074108 Fixed NPE in canAddMoreManagedProfiles
-fc85f40 QS: Remove listeners only if added
-72c8e8f StorageManager: Improve exception handling
-dc96edd Add support for page theme color to WebView and WebChromeClient.
-e8c658a fix anr when concurrent request provider
-3685f7e Ensure that the decor view is attached to window.
-2ca5e1a Bad token of activity when do the launch work at the app process side.
-adbed2e Query geo description in worker thread to prevent ANR
-c569aab remove duplicated incorrectly code in ProcessRecord
-91c99b5 Fix PacketKeepalive.stop() crash
-b2db91d FATAL EXCEPTION IN SYSTEM PROCESS: android.ui
-1da6e4b Restart persistent process if start timeout.
-8309fea fix system_server crash issue caused by fd leak.
-48d8584 SystemUI: Fix QSTileHost exception
-0678240 fingerprint: notify client when cancelling succeeded
-6512740 Zygote: Fix GL preload property evaluation
-ef90c1a telecom: Fix order of arguments when creating Details object
+25ccc7e Longpress power lockscreen torch [1/2] Long pressing power while screen is off will launch torch
+cefd4c4 Add Sync QS Tile
+
+   * hardware/qcom/display-caf/msm8916/
+b9fc743 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.26' into cm-14.1-caf-8916
+
+   * packages/apps/Settings/
+748e865 Lockscreen Rotation: Create a summary for the preference
+62a942b Longpress power lockscreen torch [2/2]
 
    * vendor/xosp/
-d5d82a5 sensitive_pn: Enter full list of Indian MCC codes
-a1ffca0 sensitive_pn: Enter full list of GB MCC codes
-6905759 sensitive_pn: Enter full list of US MCC codes
-8d3046b Add LTE support for China Telecom Macau.
-83be5b7 qcom_utils: Cleanup supported QCOM_BOARD_PLATFORMS
-90bf324 apns-conf: Add Japan Umobile APNs
-fb4d0e3 sensitive_pn: Add sensitive numbers for Greece
-a2018dd sensitive_pn: fix Czech Republic MCC
-5a6ed62 sensitive_pn: Add Taiwanese sensitive numbers
-95d554d Add sensitive numbers for Ukraine.
-cf777d7 Add Virgin Media Ireland to APN's
-39dbd33 sensitive_pn: Add additional FR number
-09519c1 sensitive_pn: Add additional GB numbers
-59787b6 sensitive_pn: Add additional PT numbers
-98955bd sensitive_pn: add missing phone number for Brazil
-4de61d9 Add sensitive numbers for Israel.
-6678c10 sensitive_pn: Add sensitive phone numbers for Czech Republic
-401ab62 sensitive_pn: Add Canadian sensitive numbers
-fb8bbb0 sensitive_pn: Add more numbers from the Netherlands
-b3783db fix check_blacklist function to work on wiped /system partition
-c285468 sensitive_pn: Add sensitive numbers for Serbia
-c80c361 Revert "TO-BE-REVERTED: include all the changes made since 20/05/17"
+19a1f29 TO-NEVER-BE-REVERTED: Include all latest changes made since 21/09/17
+
+====================
+     09-29-2017
+====================
+
+
+====================
+     09-28-2017
+====================
+
+
+====================
+     09-27-2017
+====================
+
+
+====================
+     09-26-2017
+====================
+
 
